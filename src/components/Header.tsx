@@ -14,7 +14,6 @@ const navItems = [
       { label: "Becarios",      href: "/integrantes/becarios" },
     ],
   },
-  
   {
     label: "Publicaciones",
     sub: [
@@ -29,7 +28,6 @@ const navItems = [
       { label: "Fondos",     href: "/fondos"     },
     ],
   },
-  
 ]
 
 export default function Header() {
@@ -45,11 +43,10 @@ export default function Header() {
             height={180}
             priority
           />
-          
         </Link>
 
         {/* Navegación */}
-        <nav className="flex space-x-6">
+        <nav className="flex space-x-6 items-center">
           {navItems.map((item) =>
             item.sub ? (
               <Dropdown key={item.label} label={item.label} sub={item.sub} />
@@ -63,6 +60,14 @@ export default function Header() {
               </Link>
             )
           )}
+          {/* Botón Contacto */}
+          <Link
+            href="/contacto"
+            className="ml-4 px-5 py-2 rounded-full font-semibold shadow transition-colors text-white"
+            style={{ backgroundColor: "#134e5e" }}
+          >
+            Contacto
+          </Link>
         </nav>
       </div>
     </header>

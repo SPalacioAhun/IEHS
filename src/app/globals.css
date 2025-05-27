@@ -26,5 +26,10 @@ body {
 }
 
 .text-shadow-custom {
-  text-shadow: 2px 2px 4px #333; /* O el color que quieras */
+  text-shadow: 2px 2px 4px #134e5e; /* O el color que quieras */
+}
+
+.text-outline-black {
+  -webkit-text-stroke: 1px #000;  /* Ancho y color del contorno */
+  
 }
