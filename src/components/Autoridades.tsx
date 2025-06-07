@@ -6,20 +6,20 @@ const autoridades = [
   {
     nombre: "Melina Yangilevich",
     cargo: "Directora",
-    foto: "/autoridades/melina.jpg", // Cambia el path según tus imágenes
+    foto: "/melina.png", // Cambia el path según tus imágenes
   },
   {
     nombre: "Paola Gallo",
     cargo: "Vicedirectora",
-    foto: "/autoridades/paola.jpg",
+    foto: "/paolagallo.png",
   },
 ]
 
 const consejo = [
-  { nombre: "Marina Adamini", foto: "/autoridades/marina.jpg" },
-  { nombre: "Lucas Bilbao", foto: "/autoridades/lucas.jpg" },
+  { nombre: "Marina Adamini", foto: "/marina.png" },
+  { nombre: "Lucas Bilbao", foto: "/lucas.png" },
   { nombre: "Magdalena López Pons", foto: "/autoridades/magdalena.jpg" },
-  { nombre: "Juan Ignacio Quintián", foto: "/autoridades/juan.jpg" },
+  { nombre: "Juan Ignacio Quintián", foto: "/juan.png" },
   { nombre: "Carla Dátola", foto: "/autoridades/carla.jpg" },
 ]
 
