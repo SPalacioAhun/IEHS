@@ -122,7 +122,7 @@ export default function Investigadores() {
     {/* Modal: más alto y angosto */}
     <div className="fixed inset-0 z-50 flex items-center justify-center">
       <div
-        className="bg-white border-2 border-[#134e5e] rounded-2xl shadow-2xl px-6 py-12 w-full max-w-sm flex flex-col items-center relative animate-fadein"
+        className="bg-white border-2 border-[#134e5e] rounded-2xl shadow-2xl px-12 py-6 w-full max-w-2x1 flex flex-col items-center relative animate-fadein"
         style={{
           minHeight: "220px",  // Más alto
           maxWidth: "600px",   // Más angosto
@@ -146,10 +146,10 @@ export default function Investigadores() {
           alt={investigadores[popupIdx].nombre}
           className="w-24 h-24 rounded-full mb-3 object-cover border-4 border-[#134e5e]/30"
         />
-        <div className="text-lg font-bold text-[#134e5e] text-center mb-2">
+        <div className="text-lg font-bold text-[#134e5e] text-center mb-2 w-full">
           {investigadores[popupIdx].nombre}
         </div>
-        <p className="text-gray-800 text-sm text-center whitespace-pre-line">
+        <p className="text-gray-800 text-sm text-left whitespace-pre-line w-full">
           {investigadores[popupIdx].descripcion}
         </p>
       </div>
