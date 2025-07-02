@@ -80,57 +80,82 @@
 
 
 // app/page.tsx
-import Header from "@/components/Header"
-import Footer from "@/components/Footer"
-import Image from "next/image"
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Image from "next/image";
+import Autoridades from "@/components/Autoridades";
 
 export const metadata = {
   title: "IEHS – UNICEN",
   description: "Instituto de Estudios Histórico-Sociales",
-}
+};
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       <Header />
 
-      {/* HERO SECCIÓN HISTORIA */}
+      {/* SECCIÓN BIENVENIDA */}
       <section className="relative bg-gradient-to-b from-[#0f3f4d] to-[#1f697a] text-white py-20 overflow-hidden">
-        <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 items-center gap-12 z-10 relative">
+        <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 items-center gap-12 relative z-10">
           {/* Texto */}
           <div>
-            <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
-              Historia
+            <h1 className="text-3xl md:text-4xl font-extrabold mb-6 leading-tight">
+              Bienvenidos al IEHS
             </h1>
-            <h2 className="text-xl md:text-2xl font-light mb-6">
-              Interpretamos el pasado, comprendemos el presente
-            </h2>
-            <p className="text-md md:text-lg mb-8 max-w-lg">
-              El IEHS lleva adelante investigaciones de alto nivel en historia, ciencias sociales y humanidades desde la Universidad Nacional del Centro.
-            </p>
-            <a
-              href="#proyectos"
-              className="inline-block px-6 py-3 bg-white text-[#134e5e] font-semibold rounded-full shadow hover:bg-gray-100 transition"
-            >
-              Conocé más
-            </a>
+            <div className="space-y-4 text-base md:text-lg max-w-2xl">
+              <p>
+                El Instituto de Estudios Histórico-Sociales se creó en 1986 en el
+                marco del clima institucional y académico que propuso a la
+                Universidad como el centro privilegiado de producción del
+                conocimiento científico de excelencia.
+              </p>
+              <p>
+                Desde entonces el IEHS estimula la labor de investigación de gran
+                parte de los docentes del Departamento de Historia y de otros
+                espacios académicos de la Facultad de Ciencias Humanas de la
+                UNCPBA.
+              </p>
+              <p>
+                Diferentes temáticas de estudio, en particular, la historia y la
+                sociedad argentina y americana son abordadas desde entonces por
+                los investigadores que se agrupan en diferentes programas de
+                investigación. Como instancia de intercambio, que favorece el
+                desarrollo en esta tarea, el IEHS organiza diversas actividades
+                académicas como reuniones científicas, conferencias y
+                publicaciones con participación de investigadores nacionales e
+                internacionales.
+              </p>
+              <p>
+                Gracias a la continuidad de esta política académica, se ha podido
+                estimular y garantizar la formación de recursos humanos de alta
+                calificación que hoy se desempeñan como docentes e investigadores
+                de esta casa de estudios. Desde 2012, el IEHS integra el IGEHCS,
+                unidad ejecutora conjunta del CONICET y la UNCPBA.
+              </p>
+              <p>
+                Vinculación reconocida por convenios con: Universidad Autónoma de
+                Nuevo León; Instituto de Investigaciones Antropológicas – UNAM
+                (México); Centro de Investigaciones y Estudios Superiores en
+                Antropología Social (México); Instituto Mora (México).
+              </p>
+            </div>
           </div>
 
-          {/* Imagen curva */}
-          <div className="relative">
-            <div className="overflow-hidden rounded-tl-[60px] rounded-br-[60px] shadow-lg">
+          {/* Imagen */}
+          <div className="relative self-start md:justify-self-end">
+            <div className="overflow-hidden rounded-[80px] ring-4 ring-[#f9623e]/60 shadow-xl">
               <Image
-                src="/frente.iehs.png" // asegurate de tener esta imagen en /public
-                alt="Equipo investigando en biblioteca"
-                width={600}
-                height={400}
+                src="/frente.iehs.png"
+                alt="Instalaciones del IEHS"
+                width={640}
+                height={430}
                 className="object-cover w-full h-full"
+                priority
               />
             </div>
           </div>
         </div>
-
-        {/* Elemento decorativo */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.06)_0%,_transparent_70%)]" />
       </section>
 
@@ -152,7 +177,10 @@ export default function Home() {
         </section>
       </main>
 
+      {/* Sección Autoridades en Landing */}
+      <Autoridades />
+
       <Footer />
     </div>
-  )
+  );
 }

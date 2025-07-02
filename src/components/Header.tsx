@@ -306,7 +306,7 @@ const navItems = [
   {
     label: "Hemeroteca y fondos documentales",
     sub: [
-      { label: "Hemeroteca", href: "/hemeroteca" },
+      { label: "Hemeroteca del IEHS", href: "/hemeroteca" },
       { label: "Fondos", href: "/fondos" },
     ],
   },

@@ -96,7 +96,7 @@ export default function Ediciones() {
       {/* Imagen de portada */}
       <div className="relative h-64 md:h-96 w-full">
         <Image
-          src="/fondo-ediciones.jpg"
+          src="/libreria.jpg"
           alt="Fondo Ediciones"
           layout="fill"
           objectFit="cover"
@@ -134,3 +134,5 @@ export default function Ediciones() {
     </div>
   );
 }
+
+
