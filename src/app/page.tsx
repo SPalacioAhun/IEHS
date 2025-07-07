@@ -84,6 +84,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import Autoridades from "@/components/Autoridades";
+import Link from "next/link";
 
 export const metadata = {
   title: "IEHS – UNICEN",
@@ -161,21 +162,27 @@ export default function Home() {
 
       {/* SECCIONES: Proyectos y Doctorado */}
       <main className="flex-grow bg-[#f9fbfc] py-16" id="proyectos">
-        <section className="container mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="p-8 bg-white rounded-xl shadow-md border hover:shadow-lg transition">
-            <h2 className="text-2xl font-bold text-[#134e5e] mb-2">Proyectos</h2>
-            <p className="text-gray-700">
-              Conocé las líneas de investigación y proyectos vigentes en el IEHS.
-            </p>
-          </div>
-          <div className="p-8 bg-white rounded-xl shadow-md border hover:shadow-lg transition">
-            <h2 className="text-2xl font-bold text-[#134e5e] mb-2">Doctorado</h2>
-            <p className="text-gray-700">
-              Información del programa doctoral y requisitos de inscripción.
-            </p>
-          </div>
-        </section>
-      </main>
+  <section className="container mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-10">
+    <div className="p-8 bg-white rounded-xl shadow-md border hover:shadow-lg transition">
+      <h2 className="text-2xl font-bold text-[#134e5e] mb-2">Proyectos</h2>
+      <p className="text-gray-700">
+        Conocé las líneas de investigación y proyectos vigentes en el IEHS.
+      </p>
+    </div>
+    {/* BLOQUE DOCTORADO ENLAZADO */}
+    <Link
+      href="/doctorado"
+      className="p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer block"
+      prefetch
+    >
+      <h2 className="text-2xl font-bold text-[#134e5e] mb-2">Doctorado</h2>
+      <p className="text-gray-700">
+        Información del programa doctoral y requisitos de inscripción.
+      </p>
+    </Link>
+  </section>
+</main>
+
 
       {/* Sección Autoridades en Landing */}
       <Autoridades />
