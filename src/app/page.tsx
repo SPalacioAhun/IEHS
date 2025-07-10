@@ -147,7 +147,7 @@ export default function Home() {
           <div className="relative self-start md:justify-self-end">
             <div className="overflow-hidden rounded-[80px] ring-4 ring-[#f9623e]/60 shadow-xl">
               <Image
-                src="/frente.iehs.png"
+                src="/frente.iehsReal.png"
                 alt="Instalaciones del IEHS"
                 width={640}
                 height={430}
