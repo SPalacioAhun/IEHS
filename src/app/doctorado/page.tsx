@@ -329,6 +329,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import DoctoradoHeaderNav from "@/components/DoctoradoHeaderNav";
+import RequisitosDoctorado from "@/components/RequisitosDoctorado";
 
 export const metadata = {
   title: "Doctorado en Historia – IEHS – UNICEN",
@@ -661,11 +662,8 @@ export default function Doctorado() {
 
 
       {/* Placeholder para futuras secciones */}
-      <section id="requisitos" className="container mx-auto px-6 py-12">
-        <h2 className="text-2xl md:text-3xl font-bold text-[#134e5e] mb-6">
-          Requisitos
-        </h2>
-        <p className="text-gray-600">Próximamente...</p>
+      <section id="requisitos" >
+        <RequisitosDoctorado />
       </section>
       <section id="matricula" className="container mx-auto px-6 py-12">
         <h2 className="text-2xl md:text-3xl font-bold text-[#134e5e] mb-6">
