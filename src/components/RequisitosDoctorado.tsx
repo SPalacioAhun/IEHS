@@ -90,7 +90,7 @@ export default function RequisitosDoctorado() {
             {/* Botón reglamento */}
             <div className="flex justify-start mt-8">
               <a
-                href="https://iehs.unicen.edu.ar/doctorado/Reglamento%20doctorado.pdf"
+                href="/Reglamento doctorado.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-7 py-3 rounded-xl bg-[#f9623e] text-white font-extrabold shadow hover:bg-[#134e5e] transition text-lg"
