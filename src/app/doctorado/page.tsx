@@ -375,6 +375,7 @@ import MatriculaDoctorado from "@/components/MatriculaDoctorado";
 import TesisDoctorado from "@/components/TesisDoctorado";
 import CursosDoctorado from "@/components/CursosDoctorado";
 import AutoridadesBloqueDoctorado from "@/components/AutoridadesBloqueDoctorado";
+import GraduadosDoctorado from "@/components/GraduadosDoctorado";
 
 
 export const metadata = {
@@ -473,13 +474,7 @@ export default function Doctorado() {
     </svg>
   </span>
  </div>
-
-
-{/* <div className="max-w-3xl mx-auto space-y-10">
-  <AutoridadesBloqueDoctorado />
-</div> */}
-
-  </section>
+ </section>
 
      <section id= "autoridades" className="max-w-3xl mx-auto space-y-10">
         <AutoridadesBloqueDoctorado />
@@ -502,10 +497,7 @@ export default function Doctorado() {
       </section>
 
       <section id="graduados" className="container mx-auto px-6 py-12">
-        <h2 className="text-2xl md:text-3xl font-bold text-[#134e5e] mb-6">
-          Graduados
-        </h2>
-        <p className="text-gray-600">Próximamente...</p>
+        <GraduadosDoctorado />
       </section>
 
       <Footer />
