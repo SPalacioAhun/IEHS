@@ -67,7 +67,7 @@ export default function CursosDoctorado() {
     Cada curso dará 1 (un) crédito cada diez (10) horas reloj dictadas. La calificación se establecerá en una escala de 0 a 10, requiriéndose un mínimo de 6 (seis) puntos para la aprobación. El CAPH podrá autorizar que los alumnos tomen cursos y seminarios en otras Unidades Académicas Universitarias del país o del exterior, siempre que la solicitud se hubiere realizado previamente y se considere que reúnen las condiciones académicas mínimas de nivel y exigencia y relevancia para la labor específica del alumno.
   </p>
   <p>
-    A tal efecto deberá adjuntar a la solicitud de autorización, el programa del mismo, el CV del docente a cargo, la duración en horas reloj y la forma de evaluación. Se reconocerá hasta un máximo del 50% de los créditos cursados posteriores al ingreso por la totalidad de los cursos efectuados en otras unidades académicas, salvo en casos excepcionales, a criterio del CAPH. LEER MÁS
+    A tal efecto deberá adjuntar a la solicitud de autorización, el programa del mismo, el CV del docente a cargo, la duración en horas reloj y la forma de evaluación. Se reconocerá hasta un máximo del 50% de los créditos cursados posteriores al ingreso por la totalidad de los cursos efectuados en otras unidades académicas, salvo en casos excepcionales, a criterio del CAPH.
   </p>
   <p>
     El Doctorado admite la inscripción de alumnos externos a los seminarios que ofrece. Para ello deberá enviarse copia del título de grado en Historia o disciplinas afines, copia de 1° y 2° hoja del DNI, copia de partida de nacimiento si en el DNI no figura la ciudad correspondiente y la planilla de inscripción correspondiente que se puede obtener en esta misma página.
