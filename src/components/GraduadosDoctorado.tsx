@@ -2895,10 +2895,10 @@ export default function GraduadosDoctorado() {
     <section className="relative flex flex-col items-center justify-center py-16 px-1 md:px-0 bg-gradient-to-br from-[#e7f5fa] via-white to-[#e8f2f9] rounded-3xl shadow-xl">
       {/* Título grande y subtítulo */}
       <div className="w-full max-w-4xl mx-auto flex flex-col items-center mb-8">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-center tracking-tight 
-  bg-gradient-to-r from-[#134e5e] via-[#22677e] to-[#f9623e] bg-clip-text text-transparent drop-shadow">
-  Egresados del Doctorado
-</h2>
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center tracking-tight leading-[1.18] bg-gradient-to-r from-[#134e5e] via-[#22677e] to-[#f9623e] bg-clip-text text-transparent drop-shadow">
+               Egresados del Doctorado
+        </h2>
+
 
         <span className="mt-1 text-lg md:text-xl text-[#22677e] font-semibold text-center opacity-80">
           Tesis defendidas y premiadas | 2000-2024
