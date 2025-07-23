@@ -2916,7 +2916,7 @@ export default function GraduadosDoctorado() {
             }`}
             onClick={() => setTab("premiadas")}
           >
-            Tesis Premiada
+            Tesis Premiadas
           </button>
           <button
             className={`px-8 py-3 text-lg font-bold rounded-t-2xl shadow transition-all duration-200 ml-2 ${
