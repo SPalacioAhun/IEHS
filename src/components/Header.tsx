@@ -242,9 +242,10 @@ export default function Header() {
       <div className="flex flex-wrap text-xs md:text-sm">
         <div className="bg-[#f9623e] text-white flex items-center justify-start px-6 py-2 gap-4 w-full md:w-auto">
           <span className="font-semibold">Seguinos:</span>
-          <a href="#" className="hover:text-white"><FaFacebookF /></a>
+          <a href="https://web.facebook.com/iehsunicen/?_rdc=1&_rdr#" className="hover:text-white" target="_blank"
+           rel="noopener noreferrer"><FaFacebookF /></a>
           <a href="#" className="hover:text-white"><FaInstagram /></a>
-          <a href="#" className="hover:text-white" aria-label="X (ex Twitter)">
+          <a href="https://x.com/iehs_tandil" className="hover:text-white" aria-label="X (ex Twitter)"target="_blank" rel="noopener noreferrer">
   <svg
     viewBox="0 0 24 24"
     className="w-4 h-4 md:w-5 md:h-5"
@@ -259,11 +260,11 @@ export default function Header() {
         <div className="bg-[#134e5e] text-white flex-grow flex items-center justify-end px-6 py-2 gap-6 flex-wrap md:flex-nowrap">
           <div className="flex items-center gap-2">
             <FiPhone className="text-lg" />
-            <span>Teléfono: (colocar)</span>
+            <span>Teléfono: +54 (0)2494445683</span>
           </div>
           <div className="flex items-center gap-2">
             <FiMail className="text-lg" />
-            <span>contacto@iehs.unicen.edu.ar</span>
+            <span>iehs@fch.unicen.edu.ar</span>
           </div>
         </div>
       </div>
