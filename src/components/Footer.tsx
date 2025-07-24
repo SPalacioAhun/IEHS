@@ -42,54 +42,52 @@ export default function Footer() {
 
         {/* Derecha: Logos institucionales */}
         <div className="flex flex-row gap-6 items-center mt-[48px] pl-8 pr-16">
-  <Link
-    href="https://www.fch.unicen.edu.ar/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="transition-transform duration-150 opacity-80 hover:opacity-100 hover:shadow-2xl hover:scale-115 hover:ring-4 hover:ring-white/50 cursor-pointer rounded-full"
-    title="Facultad de Ciencias Humanas"
-  >
-    <Image
-      src="/facufooter.png"
-      alt="Facultad de Ciencias Humanas"
-      width={60}
-      height={60}
-      className="rounded-full"
-    />
-  </Link>
-  <Link
-    href="https://www.unicen.edu.ar/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="transition-transform duration-150 opacity-80 hover:opacity-100 hover:shadow-2xl hover:scale-115 hover:ring-4 hover:ring-white/50 cursor-pointer rounded-full"
-    title="UNICEN"
-  >
-    <Image
-      src="/unifooter.png"
-      alt="UNICEN"
-      width={60}
-      height={60}
-      className="rounded-full"
-    />
-  </Link>
-  <Link
-    href="https://igehcs.conicet.gov.ar/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="transition-transform duration-150 opacity-80 hover:opacity-100 hover:shadow-2xl hover:scale-115 hover:ring-4 hover:ring-white/50 cursor-pointer rounded-full"
-    title="CONICET IGHES"
-  >
-    <Image
-      src="/igesfooter.png"
-      alt="CONICET IGHES"
-      width={60}
-      height={60}
-      className="rounded-full"
-    />
-  </Link>
-</div>
-
-
+              <Link
+                href="https://www.fch.unicen.edu.ar/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform duration-150 opacity-80 hover:opacity-100 hover:shadow-2xl hover:scale-115 hover:ring-4 hover:ring-white/50 cursor-pointer rounded-full"
+                title="Facultad de Ciencias Humanas"
+              >
+                <Image
+                  src="/facufooter.png"
+                  alt="Facultad de Ciencias Humanas"
+                  width={60}
+                  height={60}
+                  className="rounded-full"
+                />
+              </Link>
+              <Link
+                href="https://www.unicen.edu.ar/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform duration-150 opacity-80 hover:opacity-100 hover:shadow-2xl hover:scale-115 hover:ring-4 hover:ring-white/50 cursor-pointer rounded-full"
+                title="UNICEN"
+              >
+                <Image
+                  src="/unifooter.png"
+                  alt="UNICEN"
+                  width={60}
+                  height={60}
+                  className="rounded-full"
+                />
+              </Link>
+              <Link
+                href="https://igehcs.conicet.gov.ar/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform duration-150 opacity-80 hover:opacity-100 hover:shadow-2xl hover:scale-115 hover:ring-4 hover:ring-white/50 cursor-pointer rounded-full"
+                title="CONICET IGHES"
+              >
+                <Image
+                  src="/igesfooter.png"
+                  alt="CONICET IGHES"
+                  width={60}
+                  height={60}
+                  className="rounded-full"
+                />
+              </Link>
+          </div>
       </div>
 
       {/* Abajo: derechos y (futuras) redes */}
