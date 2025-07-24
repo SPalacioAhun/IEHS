@@ -17,10 +17,11 @@ export default function AutoridadesBloqueDoctorado() {
         </div>
         <div className="px-7 py-6 relative z-10">
           <div className="flex items-center gap-3 mb-3">
-            <svg className="w-8 h-8 text-[#f9623e]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-              <circle cx="12" cy="12" r="10" stroke="#f9623e" strokeWidth="2" fill="none"/>
-              <path d="M12 8v4l2 2" stroke="#f9623e" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
+            <svg className="w-8 h-8 text-[#f9623e]" fill="none" viewBox="0 0 24 24">
+  <path d="M12 3l9 4.5v3c0 5-3.8 9.4-9 11-5.2-1.6-9-6-9-11v-3L12 3z" stroke="#f9623e" strokeWidth="2" fill="none"/>
+  <path d="M12 3v17" stroke="#f9623e" strokeWidth="2" strokeLinecap="round"/>
+</svg>
+
             <h3 className="text-2xl md:text-3xl font-extrabold text-[#134e5e] tracking-wide drop-shadow">
               Autoridades
             </h3>
@@ -51,10 +52,13 @@ export default function AutoridadesBloqueDoctorado() {
         </div>
         <div className="px-7 py-6 relative z-10">
           <div className="flex items-center gap-3 mb-3">
-            <svg className="w-8 h-8 text-[#134e5e]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-              <path d="M12 6v6l4 2" stroke="#134e5e" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <circle cx="12" cy="12" r="10" stroke="#134e5e" strokeWidth="2" fill="none"/>
+            <svg className="w-8 h-8 text-[#134e5e]" fill="none" viewBox="0 0 24 24">
+                <circle cx="12" cy="8" r="3" stroke="#134e5e" strokeWidth="2"/>
+                <circle cx="6" cy="12" r="2" stroke="#134e5e" strokeWidth="2"/>
+                <circle cx="18" cy="12" r="2" stroke="#134e5e" strokeWidth="2"/>
+                <path d="M12 11v4m-6-1v2m12-2v2" stroke="#134e5e" strokeWidth="2"/>
             </svg>
+
             <h3 className="text-2xl md:text-3xl font-extrabold text-[#134e5e] tracking-wide drop-shadow">
               Comité Académico de Posgrado en Historia
             </h3>
