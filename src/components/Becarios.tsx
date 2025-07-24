@@ -19,7 +19,9 @@ export default function Becarios() {
 
   return (
     <section className="max-w-5xl mx-auto px-4 py-12">
-      <h1 className="text-4xl font-extrabold mb-10 text-center text-[#134e5e]">
+      <h1
+  className="text-4xl md:text-5xl font-extrabold mb-10 text-center bg-gradient-to-r from-[#134e5e] via-[#22677e] to-[#f9623e] bg-clip-text text-transparent drop-shadow-md tracking-tight leading-relaxed"
+>
         Becarios/as
       </h1>
       <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">

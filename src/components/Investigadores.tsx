@@ -1,58 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-// // components/Investigadores.tsx
-// "use client"
-// import React from "react"
-
-// const investigadores = [
-//   { nombre: "Marina Adamini", foto: "", descripcion: "" },
-//   { nombre: "Lucas Bilbao", foto: "", descripcion: "" },
-//   { nombre: "Gisela Coronado Schwindt", foto: "", descripcion: "" },
-//   { nombre: "Yolanda de Paz Trueba", foto: "", descripcion: "" },
-//   { nombre: "Pablo de Grande", foto: "", descripcion: "" },
-//   { nombre: "Daniel Dicósimo (emérito)", foto: "", descripcion: "" },
-//   { nombre: "Marcelino Irianni", foto: "", descripcion: "" },
-//   { nombre: "Paola Gallo", foto: "", descripcion: "" },
-//   { nombre: "Lucía Lionetti (emérita)", foto: "", descripcion: "" },
-//   { nombre: "Magdalena López Pons", foto: "", descripcion: "" },
-//   { nombre: "Magdalena Magneres", foto: "", descripcion: "" },
-//   { nombre: "Julio César Melón (emérito)", foto: "", descripcion: "" },
-//   { nombre: "Daniel Míguez", foto: "", descripcion: "" },
-//   { nombre: "Eduardo Míguez (emérito)", foto: "", descripcion: "" },
-//   { nombre: "Hernán Otero", foto: "", descripcion: "" },
-//   { nombre: "Ricardo Pasolini", foto: "", descripcion: "" },
-//   { nombre: "Juan Ignacio Quintián", foto: "", descripcion: "" },
-//   { nombre: "Gisela Sedeillán", foto: "", descripcion: "" },
-//   { nombre: "Estela Spinelli (emérita)", foto: "", descripcion: "" },
-//   { nombre: "Martín Vicente", foto: "", descripcion: "" },
-//   { nombre: "Melina Yangilevich", foto: "", descripcion: "" },
-// ]
-
-// export default function Investigadores() {
-//   return (
-//     <section className="max-w-5xl mx-auto px-4 py-12">
-//       <h1 className="text-4xl font-extrabold mb-10 text-center text-[#134e5e]">
-//         Investigadores
-//       </h1>
-//       <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-//         {investigadores.map((inv) => (
-//           <div
-//             key={inv.nombre}
-//             className="flex flex-col items-center bg-white rounded-xl shadow-lg p-6 hover:scale-105 hover:shadow-2xl transition"
-//           >
-//             <img
-//               src={inv.foto || `https://ui-avatars.com/api/?name=${encodeURIComponent(inv.nombre)}&background=134e5e&color=fff`}
-//               alt={inv.nombre}
-//               className="w-28 h-28 rounded-full mb-4 object-cover border-4 border-[#134e5e]/20"
-//             />
-//             <div className="text-xl font-bold text-[#134e5e] text-center">{inv.nombre}</div>
-//             <p className="text-gray-800 text-sm mt-2 text-center">{inv.descripcion}</p>
-//           </div>
-//         ))}
-//       </div>
-//     </section>
-//   )
-// }
-
 
 // components/Investigadores.tsx
 "use client"
@@ -88,9 +34,12 @@ export default function Investigadores() {
 
   return (
     <section className="max-w-5xl mx-auto px-4 py-12">
-      <h1 className="text-4xl font-extrabold mb-10 text-center text-[#134e5e]">
-        Investigadores
-      </h1>
+        <h1
+  className="text-4xl md:text-5xl font-extrabold mb-10 text-center bg-gradient-to-r from-[#134e5e] via-[#22677e] to-[#f9623e] bg-clip-text text-transparent drop-shadow-md tracking-tight leading-relaxed"
+      >
+  Investigadores
+        </h1>
+
       <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
         {investigadores.map((inv, idx) => (
           <div
