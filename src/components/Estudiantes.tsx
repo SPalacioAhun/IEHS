@@ -21,25 +21,54 @@ export default function Estudiantes() {
 </h1>
 
 
-      <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-        {estudiantes.map((est, idx) => (
-          <div
-            key={est.nombre}
-            className="flex flex-col items-center bg-white rounded-xl shadow-lg p-6 hover:scale-105 hover:shadow-2xl transition cursor-pointer group"
-            onClick={() => setPopupIdx(idx)}
-          >
-            <img
-              src={
-                est.foto ||
-                `https://ui-avatars.com/api/?name=${encodeURIComponent(est.nombre)}&background=134e5e&color=fff`
-              }
-              alt={est.nombre}
-              className="w-28 h-28 rounded-full mb-4 object-cover border-4 border-[#134e5e]/20"
-            />
-            <div className="text-xl font-bold text-[#134e5e] text-center">{est.nombre}</div>
-          </div>
-        ))}
+       <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3">
+  {estudiantes.map((inv, idx) => (
+    <div
+      key={inv.nombre}
+      onClick={() => setPopupIdx(idx)}
+      className="
+        flex flex-col justify-between rounded-3xl shadow-xl
+        transition-transform duration-200 hover:-translate-y-1 cursor-pointer
+        bg-white overflow-hidden min-h-[380px]
+        border border-[#134e5e]/15
+      "
+    >
+      {/* ---------- Cuerpo ---------- */}
+      <div className="flex flex-col items-center px-6 pt-10 pb-6 flex-1">
+        <img
+          src={
+            inv.foto ||
+            `https://ui-avatars.com/api/?name=${encodeURIComponent(inv.nombre)}&background=134e5e&color=fff`
+          }
+          alt={inv.nombre}
+          className="
+            w-24 h-24 rounded-full object-cover mb-4
+            border-4 border-white shadow-md ring-2 ring-[#134e5e]/15
+          "
+        />
+        <p className="text-xs text-[#f9623e] mb-1 tracking-wide uppercase">
+          Investigador/a
+        </p>
+        <h3 className="text-[1.1rem] font-semibold text-[#134e5e] text-center mb-2">
+          {inv.nombre}
+        </h3>
+        <p className="text-sm text-gray-600 text-center line-clamp-3">
+          {inv.descripcion || "—"}
+        </p>
       </div>
+      {/* ---------- Franja inferior bicolor SIN TEXTO NI ICONOS ---------- */}
+      <div
+  className="grid grid-cols-3 text-center text-white text-[0.7rem] font-medium
+             bg-gradient-to-r from-[#134e5e] to-[#f9623e]"
+>
+  <div className="py-3">&nbsp;</div>
+  <div className="py-3">&nbsp;</div>
+  <div className="py-3">&nbsp;</div>
+</div>
+
+    </div>
+  ))}
+</div>
 
       {/* Modal popup */}
       {popupIdx !== null && (
