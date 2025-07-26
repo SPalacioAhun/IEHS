@@ -84,12 +84,15 @@ export default function Becarios() {
           {/* Modal rectangular horizontal */}
           <div className="fixed inset-0 z-50 flex items-center justify-center">
             <div
-              className="bg-white border-2 border-[#134e5e] rounded-2xl shadow-2xl px-12 py-6 w-full max-w-2xl flex flex-col items-center relative animate-fadein"
-              style={{
-                minHeight: "220px",
-                maxWidth: "600px",
-              }}
-            >
+        className="
+          relative flex flex-col items-center
+          rounded-[2rem] shadow-2xl border border-[#22677e]/25
+          max-w-xl w-full pt-16 pb-8 px-8
+          bg-gradient-to-br from-[#eaf3fa] via-[#f7fafc] to-[#fce4d6]
+          animate-fadein
+        "
+        style={{ minHeight: "360px" }}
+      >
               {/* Botón cerrar */}
               <button
                 onClick={() => setPopupIdx(null)}
@@ -108,12 +111,13 @@ export default function Becarios() {
                 alt={becarios[popupIdx].nombre}
                 className="w-24 h-24 rounded-full mb-3 object-cover border-4 border-[#134e5e]/30"
               />
-              <div className="text-lg font-bold text-[#134e5e] text-left mb-2 w-full">
-                {becarios[popupIdx].nombre}
-              </div>
-              <p className="text-gray-800 text-sm text-left whitespace-pre-line w-full">
-                {becarios[popupIdx].descripcion}
-              </p>
+              <div className="text-lg font-bold text-[#134e5e] text-center  w-full">
+          {becarios[popupIdx].nombre}
+        </div>
+              <div className="w-16 h-1 rounded-full my-2 bg-gradient-to-r from-[#134e5e] to-[#f9623e]" />
+        <p className="text-gray-800 text-sm text-justify whitespace-pre-line w-full">
+             {becarios[popupIdx].descripcion}
+        </p>
             </div>
           </div>
         </>
