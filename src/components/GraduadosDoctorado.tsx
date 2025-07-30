@@ -2600,6 +2600,15 @@ const EGRESADOS: { [key: number]: React.ReactNode } = {
       <span className="block text-[#15394b]">
         <b className="text-[#f9623e]">Fecha de defensa:</b> 16 de noviembre de 2020
       </span>
+      <span className="block text-[#555] text-justify leading-relaxed mt-2">
+        La tesis aborda los trabajadores por cuenta propia en la industria metalúrgica y
+        metalmecánica del Partido de Tandil, provincia de Buenos Aires, entre 1970 y
+        2003, con el objetivo de analizar su heterogénea composición, en un período
+        caracterizado como de “desindustrialización”. Recortando un caso local y
+        analizando su especificidad reconstruye sus rasgos propios en referencia a un
+        fenómeno de alcances globales, como sería la expansión en profundidad del
+        capitalismo.
+      </span>
     </div>
     <div>
       <span className="block text-[#15394b]">
@@ -2644,6 +2653,16 @@ const EGRESADOS: { [key: number]: React.ReactNode } = {
       <span className="block text-[#15394b]">
         <b className="text-[#f9623e]">Fecha de defensa:</b> 18 de marzo de 2021
       </span>
+      <span className="block text-[#555] text-justify leading-relaxed mt-2">
+        La tesis analiza los procesos de conformación de campos de interlocución en
+        torno a la cultura e identidad regional, que involucran a ranqueles, y otros
+        productores culturales (escritores, intelectuales, historiadores profesionales y
+        aficionados, lingüistas, arqueólogos, antropólogos y funcionarios de gobiernos
+        provinciales). Para abordar esta temática, se centra en las disputas en torno a
+        los sentidos del pasado y la historia ranquel en San Luis y La Pampa entre los
+        años 1970 y 2014 como ámbito de observación privilegiado para dar cuenta de
+        las tensiones en las que se construyen estos campos de interlocución.
+      </span>
     </div>
     <div>
       <span className="block text-[#15394b]">
@@ -2660,6 +2679,19 @@ const EGRESADOS: { [key: number]: React.ReactNode } = {
       </span>
       <span className="block text-[#15394b]">
         <b className="text-[#f9623e]">Fecha de defensa:</b> 19 de marzo de 2021
+      </span>
+      <span className="block text-[#555] text-justify leading-relaxed mt-2">
+        La tesis analiza las relaciones entre la iglesia, particularmente -aunque no en
+        forma exclusiva – la Conferencia Episcopal argentina (CEA) y los gobiernos
+        nacionales que se sucedieron desde el año 1999 hasta el año 2009. Aborda
+        los diferentes posicionamientos internos entre el conjunto de obispos frente a
+        los gobiernos de la primera década del siglo XXI, qué dificultades y qué
+        oportunidades representan para la Iglesia. Los primeros diez años del siglo
+        transcurren bajo gobiernos de signo político muy diverso y bajo circunstancias
+        políticas, sociales y económicas que varían profundamente; todos estos
+        cambios presentan problemas, desafíos y beneficios para la institución
+        eclesiástica y el objetivo es analizar cómo impactan estos cambios y que
+        posturas adoptan los obispos ante los mismos.
       </span>
     </div>
     <div>
@@ -2678,6 +2710,22 @@ const EGRESADOS: { [key: number]: React.ReactNode } = {
       <span className="block text-[#15394b]">
         <b className="text-[#f9623e]">Fecha de defensa:</b> 26 de mayo de 2021
       </span>
+      <span className="block text-[#555] text-justify leading-relaxed mt-2">
+        La tesis analiza las “configuraciones policiales” en la ciudad de Buenos Aires
+        durante el período que transcurre entre las reformas borbónicas y las reformas
+        de rivadavianas. El estudio de la progresiva conformación de un poder de
+        policía desde finales del siglo XVIII, junto con la conformación de órganos
+        institucionales destinados a la agencia policial, se adentra en aspectos
+        escasamente estudiados de manera sistemática, ofreciendo una reconstrucción
+        minuciosa del perfil de los recursos humanos, de las materialidades y de la
+        espacialidad en la que se integran y actúan esas “configuraciones policiales”.
+        La investigación, centrada en los “primeros policías de la ciudad de Buenos
+        Aires”, reconstruye esas configuraciones tanto desde una perspectiva general
+        de las transformaciones acaecidas en el período como desde la singularidad de
+        las experiencias de vida y la cotidianeidad de los actores, desde un enfoque
+        interdisciplinario que combina la historia política y social de las instituciones y
+        de la justicia, con la historia crítica del derecho.
+      </span>
     </div>
     <div>
       <span className="block text-[#15394b]">
@@ -2695,6 +2743,33 @@ const EGRESADOS: { [key: number]: React.ReactNode } = {
       <span className="block text-[#15394b]">
         <b className="text-[#f9623e]">Fecha de defensa:</b> 7 de junio de 2021
       </span>
+      <span className="block text-[#555] text-justify leading-relaxed mt-2">
+        La asociación entre coleccionismo e historia natural surgió como consecuencia
+        de modos específicos de exploración y apropiación del espacio, explicables
+        desde una perspectiva de largo plazo unida a las primeras explicaciones
+        científicas sobre el origen del mundo. En Argentina, el Museo Nacional de
+        Historia Natural y el Etnográfico de la Facultad de Filosofía y Letras de Buenos
+        Aires así como el Museo de La Plata conjugaron el accionar de naturalistas con
+        el pasaje de las colecciones del dominio privado al público. Las investigaciones
+        y exploraciones que organizaron esos primeros científicos hacia el resto del
+        país contaron con el auspicio de la Ley 9.080 que no sólo establecía el carácter
+        público de ruinas y yacimientos arqueológicos y paleontológicos sino que
+        designaba a las direcciones de los museos Etnográfico y de Historia Natural
+        como asesoras del Ministerio de Justicia e Instrucción Pública de la Nación. El
+        coleccionismo, en tanto conjunto de prácticas avaladas por el Estado y
+        constitutivas de las instituciones científicas y universitarias, se conformó así en
+        un factor decisivo para la institucionalización de las Ciencias Antropológicas y
+        de las Naturales que se extendió desde fines del siglo XIX y hasta las dos
+        primeras décadas del XX.
+        La tesis aborda la relación entre profesionalización y coleccionismo a partir del
+        análisis de las redes de relaciones personales e institucionales establecidas en
+        torno a la gesta fundacional y posterior consolidación de museos de ciencias
+        naturales regionales en el sudeste de la provincia de Buenos Aires entre 1925 y
+        1980. Se plantea así conocer las vicisitudes de un campo profesional en
+        formación por medio de un conjunto de objetos de estudio poco transitados
+        cuyo análisis permite acceder al nudo de relaciones personales e itinerarios
+        institucionales que se consolida y condensa hacia la década de 1980.
+      </span>
     </div>
     <div>
       <span className="block text-[#15394b]">
@@ -2711,6 +2786,30 @@ const EGRESADOS: { [key: number]: React.ReactNode } = {
       </span>
       <span className="block text-[#15394b]">
         <b className="text-[#f9623e]">Fecha de defensa:</b> 27 de agosto de 2021
+      </span>
+      <span className="block text-[#555] text-justify leading-relaxed mt-2">
+        La tesis analiza la experiencia e incidencia de un grupo de inmigrantes sirio-
+        libaneses en una región específica de Argentina, considerada –a efectos
+        analíticos, de frontera. La importancia del análisis de este colectivo en el oeste
+        del Chubut se cimienta mayormente en sus aspectos cualitativos, aporte que se
+        considera relevante a distintos aspectos del fenómeno inmigratorio.
+        Considerando que estos migrantes constituyeron la cuarta corriente migratoria
+        dentro del período aluvional, desde 1880 hasta 1920, detrás de los italianos,
+        españoles y franceses, se busca explicar cómo se insertaron en un área
+        considerada periférica a la región pampeana, analizando la manera en qué los
+        sirio-libaneses que arribaron a la región, penetraban y se afianzaban en redes
+        comerciales establecidas entre criollos e indígenas. Las historias de vida de los
+        migrantes cobran un papel fundamental a la hora de la reconstrucción de estos
+        procesos. Se analizan las rupturas y continuidades culturales de este grupo en
+        ambos extremos del fenómeno, los factores que pesaron en la decisión de
+        emigrar teniendo en cuenta no sólo causales macro de expulsión y recepción
+        sino también su relación con los procesos locales e incluso, personales. Dado
+        el número de migrantes arribados, el planteo desde lo micro y cualitativo brinda
+        la posibilidad de reconstruir el trayecto de llegada, las relaciones establecidas
+        con los nativos, la ampliación comercial y los vínculos familiares. Contrario a lo
+        que podría esperarse, el asentamiento en un área periférica de Argentina,
+        abierto y en cierta manera improvisado, condujo a momentos de tensión al
+        interior de esa comunidad sirio-libanesa aparentemente insondable.
       </span>
     </div>
   </div>
@@ -2735,6 +2834,28 @@ const EGRESADOS: { [key: number]: React.ReactNode } = {
       <span className="block text-[#15394b]">
         <b className="text-[#f9623e]">Fecha de defensa:</b> 16 de diciembre de 2022
       </span>
+      <span className="block text-[#555] text-justify leading-relaxed mt-2">
+        El propósito de la tesis es iluminar momentos en los que se perfilaron los
+        tránsitos y las modulaciones que configuraron diversas expresiones del
+        nacionalismo a mediados del siglo XX, observando la trama de una cultura
+        política local que, si bien comparte redes de sociabilidad y contenidos
+        simbólicos identitarios, se vería atravesada y quebrada por el impacto de la
+        conflictividad política nacional e internacional durante los largos años sesenta.
+        A partir del estudio de itinerarios intelectuales y de la reconstrucción de
+        experiencias colectivas insertas en las dinámicas institucionales universitarias y
+        periodísticas mendocinas, se pretende dar cuenta de las distintas escenas
+        temporales y argumentales del nacionalismo local, en su mayor parte
+        identificadas con el catolicismo, perfiladas al calor de las sucesivas
+        confrontaciones políticas, entre peronismo/antiperonismo, derechas e
+        izquierdas, en el marco de los procesos de modernización y dependencia que
+        se debaten en América Latina y de la confrontación entre comunismo y
+        capitalismo en el contexto de la Guerra Fría.
+        La hipótesis inicial prefigura que, dentro del espectro de intelectuales
+        identificados con el nacionalismo y en gran parte con el catolicismo, se genera
+        un magma de representaciones cuyo potencial interpretativo alentaría distintas
+        derivas ideológicas –hacia la derecha y también hacia la izquierda– marcadas
+        por la conflictividad política nacional e internacional.        
+      </span>
     </div>
     <div>
       <span className="block text-[#15394b]">
@@ -2751,6 +2872,25 @@ const EGRESADOS: { [key: number]: React.ReactNode } = {
       </span>
       <span className="block text-[#15394b]">
         <b className="text-[#f9623e]">Fecha de defensa:</b> 15 de marzo de 2022
+      </span>
+      <span className="block text-[#555] text-justify leading-relaxed mt-2">
+        La tesis analiza la trayectoria de lxs trabajadorxs de limpieza e higiene sanitaria
+        en los servicios de salud municipales de Tandil en el lapso comprendido entre
+        la profundización del modelo neoliberal bajo las presidencias consecutivas de
+        Carlos Saúl Menem y la actualidad. Al enfocarse en estas tres décadas, la
+        investigación repone las complejas dimensiones que atraviesan a este trabajo y
+        a quienes lo realizan a la luz de las políticas públicas que se desarrollaron y se
+        desarrollan en torno al mismo, las contradicciones y tensiones que gravitan en
+        su definición en cuanto trabajo, la intervención de los sindicatos vinculados a la
+        actividad y/o el espacio laboral, el reconocimiento de derechos y las demandas
+        y luchas de lxs trabajadorxs vinculados a las múltiples y complejas tareas que
+        componen este particular mundo del trabajo.
+        El enfoque histórico permite situar la especificidad del proceso abordado y
+        considerar transformaciones de larga duración. El análisis de los trabajos de
+        limpieza, su proceso de precarización, y las desigualdades interseccionales
+        que lo atraviesan evidencia las limitaciones del trabajo como garante del
+        acceso a derechos y sostén de la inclusión social, desde una perspectiva que
+        recupera las experiencias situadas de lxs trabajadorxs.
       </span>
     </div>
     <div>
@@ -2769,6 +2909,19 @@ const EGRESADOS: { [key: number]: React.ReactNode } = {
       <span className="block text-[#15394b]">
         <b className="text-[#f9623e]">Fecha de defensa:</b> 8 de julio de 2022
       </span>
+      <span className="block text-[#555] text-justify leading-relaxed mt-2">
+        La tesis tiene por objetivo general examinar la dinámica institucional y política
+        del Poder Judicial a partir de la provincialización del Territorio Nacional de La
+        Pampa, impulsada por el gobierno peronista en 1951. El periodo de estudio
+        avanza entre las proscripciones, golpes de Estado y fluctuaciones sociales de
+        los años sesenta; y finaliza a inicios de la década siguiente, cuando se
+        produjeron diversas modificaciones en la judicatura y en el gobierno. La
+        principal hipótesis apunta a que durante este periodo la judicatura pampeana
+        definió su posicionamiento en el marco de los poderes públicos como un
+        interlocutor ineludible, a partir de su marco normativo y de la vinculación con
+        otras entidades extraestatales, como los Colegios de profesionales del
+        derecho.
+      </span>
     </div>
     <div>
       <span className="block text-[#15394b]">
@@ -2785,6 +2938,19 @@ const EGRESADOS: { [key: number]: React.ReactNode } = {
       </span>
       <span className="block text-[#15394b]">
         <b className="text-[#f9623e]">Fecha de defensa:</b> 4 de agosto de 2022
+      </span>
+      <span className="block text-[#555] text-justify leading-relaxed mt-2">
+        La tesis analiza las configuraciones y trayectorias intelectuales de una localidad
+        del interior bonaerense, Azul, durante el período que comprende 1920 a 1960.
+        En ese recorrido apunta, a partir de indagaciones en torno a la Historia
+        Intelectual en clave regional, la Historia Cultural y la Historia de la Educación
+        con perspectiva de género, a realizar un abordaje transdisciplinario que se
+        detiene muy especialmente en las agencias de las mujeres a partir del análisis
+        de sus trayectorias durante el periodo en cuestión, en diálogo con los itinerarios
+        de sus compañeros varones. Tomar como eje la localidad de Azul apunta a la
+        luz de los diversos abordajes que se retoman en esta tesis, a un tratamiento
+        relacional, en diálogo con aportes y experiencias de otros espacios del interior
+        bonaerense, otras provincias y en ocasiones otros países.
       </span>
     </div>
   </div>
@@ -2809,6 +2975,17 @@ const EGRESADOS: { [key: number]: React.ReactNode } = {
       <span className="block text-[#15394b]">
         <b className="text-[#f9623e]">Fecha de defensa:</b> 13 de diciembre de 2023
       </span>
+      <span className="block text-[#555] text-justify leading-relaxed mt-2">
+        La tesis analiza las últimas décadas de la monarquía católica y su disolución en
+        el Paraguay entre los años 1779-1840, concentrándose fundamentalmente en
+        entender las raíces de la crisis de ese modelo y su desenlace durante el
+        gobierno de Gaspar Rodríguez de Francia.
+        Parte de la trayectoria excepcional de Paraguay, que se emancipó en 1813 de
+        las Provincias Unidas del Río de la Plata, mientras gran parte de
+        Hispanoamérica se sumergía en guerras civiles y entraba en una profunda
+        crisis de gobernabilidad. Particularidad que le permitiría a Paraguay conservar
+        el orden social y moral y mantener las jerarquías estamentales coloniales.
+      </span>
     </div>
     <div>
       <span className="block text-[#15394b]">
@@ -2825,6 +3002,19 @@ const EGRESADOS: { [key: number]: React.ReactNode } = {
       </span>
       <span className="block text-[#15394b]">
         <b className="text-[#f9623e]">Fecha de defensa:</b> 17 de febrero de 2023
+      </span>
+      <span className="block text-[#555] text-justify leading-relaxed mt-2">
+        La tesis aborda la relación entre el Estado y la conflictividad social en la historia
+        argentina reciente. La investigación focaliza en el período que va desde enero
+        de 1997 a febrero de 2002, desde una escala localizada, la ciudad de Mar del
+        Plata, abordando la conflictividad social y problematizando las formas en que
+        las agencias estatales tramitan el conflicto, reparando en una multiplicidad de
+        formatos, acciones y actores escasamente atendidos por la historiografía
+        interesada en esta problemática. En el análisis se problematiza uno de los más
+        habituales mecanismos de control y disciplinamiento social puestos en juego
+        con la profundización del modelo neoliberal en la Argentina: el atinente a los
+        procesos de criminalización de la protesta y judicialización de la política
+        inscriptos en ella.
       </span>
     </div>
     <div>
@@ -2843,6 +3033,22 @@ const EGRESADOS: { [key: number]: React.ReactNode } = {
       <span className="block text-[#15394b]">
         <b className="text-[#f9623e]">Fecha de defensa:</b> 3 de octubre de 2023
       </span>
+      <span className="block text-[#555] text-justify leading-relaxed mt-2">
+        En un punto de confluencia entre la denominada historia social de la campaña
+        bonaerense y los estudios de género, la tesis se propone abordar las prácticas
+        hereditarias de pequeños y medianos propietarios del Luján entre la segunda
+        mitad del siglo XVIII y principios del siglo XIX desde una perspectiva de género
+        y un enfoque atento a las interacciones entre prácticas y discursos normativos.
+        Dos desafíos orientan la investigación: articular los aportes que la perspectiva
+        de género supone para la comprensión de procesos más generales, y la
+        intención de superar los dos niveles interpretativos entre los que esta tradición
+        ha oscilado durante mucho tiempo. Focalizar el estudio en las dinámicas de
+        herencia permiten tomar distancia, al menos analítica, de los enfoques que
+        privilegian el esquema de contradicción entre ideal- realidad y norma-práctica,
+        así como subordinación-dominación ya que, en tanto prácticas reguladas por el
+        derecho castellano, las mujeres encuentran aquí un espacio de igualdad en
+        relación a los hombres.
+      </span>
     </div>
     <div>
       <span className="block text-[#15394b]">
@@ -2859,6 +3065,19 @@ const EGRESADOS: { [key: number]: React.ReactNode } = {
       </span>
       <span className="block text-[#15394b]">
         <b className="text-[#f9623e]">Fecha de defensa:</b> 30 de octubre de 2023
+      </span>
+      <span className="block text-[#555] text-justify leading-relaxed mt-2">
+        La tesis propone analizar comparativamente dos catolicismos sociales
+        latinoamericanos entre 1930 y 1958: el mexicano y el argentino. Para cumplir
+        con este objetivo se consideran tres ejes comparativos: los orígenes de los
+        catolicismos sociales, las organizaciones sociales y las personalidades. Esta
+        problemática permite comprender cómo en contextos de secularización
+        distintos, con laicidades diferentes, incluso opuestas, se desarrollan dos
+        catolicismos sociales y dos movimientos católicos disímiles. De este modo, se
+        propone aportar al conocimiento de las laicidades mexicana y argentina a
+        través del estudio del catolicismo social en un periodo en el que se sucedieron
+        dos fenómenos populistas como el cardenismo en el caso mexicano y el
+        peronismo en el argentino.
       </span>
     </div>
   </div>
@@ -2881,6 +3100,59 @@ const EGRESADOS: { [key: number]: React.ReactNode } = {
       </span>
       <span className="block text-[#15394b]">
         <b className="text-[#f9623e]">Fecha de defensa:</b> 23 de febrero de 2024
+      </span>
+      <span className="block text-[#555] text-justify leading-relaxed mt-2">
+        En las últimas décadas del siglo XX profundas transformaciones afectaron al
+        mundo rural pampeano, en especial al interior bonaerense. Entre otros
+        cambios, se modificaron las formas de la tenencia de la tierra; disminuyó la
+        demanda de mano de obra; se incorporaron nuevas tecnologías al proceso
+        productivo; se acentuó el movimiento de población hacia zonas urbanizadas;
+        las prácticas culturales existentes fueron confluyendo con un avance en el
+        proceso de globalización que poco a poco fue penetrando en el entramado
+        social del interior rural bonaerense, reconfigurándolo. Así, los partidos y
+        localidades que se erigieron, crecieron y se desarrollaron en torno al auge de la
+        actividad agropecuaria fueron adquiriendo una nueva fisonomía. La tesis
+        propone las fiestas populares como analíticos privilegiados para comprender
+        las transformaciones en la trama rural-urbana bonaerense hacia la segunda
+        mitad del siglo XX.
+        Desde un abordaje comparativo, toma como eje de la investigación el análisis
+        de dos fiestas que se celebran en el sur/ sudeste de la provincia de Buenos
+        Aires: la “Fiesta Nacional del Ternero y Día de la Yerra” celebrada en el partido
+        de Ayacucho desde el año 1969; y, por otra parte, la “Fiesta Provincial del
+        Trigo” celebrada en el partido de Tres Arroyos desde 1970. Esas celebraciones,
+        que recuperaban y reivindicaban elementos y prácticas considerados
+        tradicionales por esas comunidades, se convirtieron en espacios destinados a
+        la revalorización y la re-significación de los mismos, en un momento en el cual
+        estaban siendo puestos en cuestión por los cambios acaecidos.
+      </span>
+    </div>
+    <div>
+      <span className="block text-[#15394b]">
+        <b className="text-[#f9623e]">Título:</b> “Itinerarios, textos y contextos: Una biografía intelectual de Juan Ricardo Nervi (1921-2004)”
+      </span>
+      <span className="block text-[#134e5e]">
+        <b className="text-[#f9623e]">Tesista:</b> Leda García
+      </span>
+      <span className="block text-[#15394b]">
+        <b className="text-[#f9623e]">Directora:</b> Dra. Claudia Salomón Tarquini (CONICET-UNLPam)
+      </span>
+      <span className="block text-[#134e5e]">
+        <b className="text-[#f9623e]">Jurados:</b> Dra. Soledad Martínez Zuccardi (UNT-CONICET), Dra. Alejandra Mailhe (UNLP-CONICET) y Dra. Lucía Lionetti (IEHS-UNICEN)
+      </span>
+      <span className="block text-[#15394b]">
+        <b className="text-[#f9623e]">Fecha de defensa:</b> 10 de diciembre de 2024
+      </span>
+      <span className="block text-[#555] text-justify leading-relaxed mt-2">
+        La tesis se centra en la trayectoria intelectual de Juan Ricardo Nervi, una figura
+        muy poco estudiada, que comienza como intelectual de provincia y alcanza una
+        proyección mayor a partir de su derrotero, que incluye una importante
+        diversificación en áreas temáticas y circuitos editoriales varios, y su
+        desplazamiento desde la Pampa a Buenos Aires primero, y a México después
+        (en el marco del exilio durante la última dictadura cívico-militar). La biografía y la
+        obra de Nervi, por las preguntas de investigación poco transitadas que
+        suscitan, permiten indagar en torno al papel de este tipo de figuras que
+        articulan lo local, lo nacional y lo internacional, forjando redes intelectuales que
+        ponen en juego varias disciplinas y diversas escalas de alcance.
       </span>
     </div>
   </div>
