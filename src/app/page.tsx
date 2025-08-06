@@ -160,16 +160,17 @@ export default function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.06)_0%,_transparent_70%)]" />
       </section>
 
-      {/* SECCIONES: Proyectos y Doctorado */}
-      <main className="flex-grow bg-[#f9fbfc] py-16" id="proyectos">
-  <section className="container mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-10">
+     <main className="flex-grow bg-[#f9fbfc] py-16" id="proyectos">
+  <section className="container mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-10">
+    {/* Bloque Proyectos */}
     <div className="p-8 bg-white rounded-xl shadow-md border hover:shadow-lg transition">
       <h2 className="text-2xl font-bold text-[#134e5e] mb-2">Proyectos</h2>
       <p className="text-gray-700">
         Conocé las líneas de investigación y proyectos vigentes en el IEHS.
       </p>
     </div>
-    {/* BLOQUE DOCTORADO ENLAZADO */}
+    
+    {/* Bloque Doctorado */}
     <Link
       href="/doctorado"
       className="p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer block"
@@ -180,8 +181,21 @@ export default function Home() {
         Información del programa doctoral y requisitos de inscripción.
       </p>
     </Link>
+    
+    {/* Bloque Homenaje a Olga Echeverría */}
+    <Link
+      href="/homenajeOlga"
+      className="p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#f9623e]/10 transition cursor-pointer block"
+      prefetch
+    >
+      <h2 className="text-2xl font-bold text-[#f9623e] mb-2">Homenaje a Olga Echeverría</h2>
+      <p className="text-gray-700">
+        Descubrí la vida, legado y publicaciones de la Dra. Olga Echeverría, investigadora referente del IEHS.
+      </p>
+    </Link>
   </section>
 </main>
+
 
 
       {/* Sección Autoridades en Landing */}
