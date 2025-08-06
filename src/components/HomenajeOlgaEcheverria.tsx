@@ -5,17 +5,6 @@ import React, { useRef } from "react";
 import Publicaciones from "./Publicaciones";
 import VideosOlga from "./VideosOlga";
 
-// Ejemplo de datos: reemplazá por tus datos reales después
-const videos = [
-  {
-    titulo: "Presentación de libro Profeta del genocidio",
-    evento: "Libro de Lucas Bilbao y Ariel Lede",
-    fecha: "2016",
-    url: "https://youtube.com/", // link o null
-  },
-  // ...más videos
-];
-
 const trabajos = [
   {
     tipo: "Artículo",
