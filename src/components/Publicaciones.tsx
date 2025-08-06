@@ -116,7 +116,8 @@ interface PublicacionesProps {
 
 const Publicaciones: React.FC<PublicacionesProps> = ({ sectionRef }) => (
   <div ref={sectionRef} className="mb-12">
-    <h2 className="text-3xl font-extrabold mb-8 text-center text-[#134e5e] tracking-tight">
+    <h2 className="text-4xl md:text-5xl font-extrabold mb-10 text-center 
+  bg-gradient-to-r from-[#134e5e] via-[#22677e] to-[#f9623e] bg-clip-text text-transparent drop-shadow tracking-tight uppercase">
       Publicaciones de Olga Echeverría en el Anuario IEHS
     </h2>
     <ul className="divide-y divide-[#134e5e]/20">

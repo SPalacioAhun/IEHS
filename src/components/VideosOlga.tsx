@@ -61,7 +61,8 @@ const videos = [
 
 const VideosOlga: React.FC = () => (
   <section className="mb-14">
-    <h2 className="text-3xl font-extrabold mb-8 text-center text-[#134e5e] tracking-tight">
+    <h2 className="text-4xl md:text-5xl font-extrabold mb-10 text-center 
+  bg-gradient-to-r from-[#134e5e] via-[#22677e] to-[#f9623e] bg-clip-text text-transparent drop-shadow tracking-tight uppercase">
       Fragmentos de Videos
     </h2>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

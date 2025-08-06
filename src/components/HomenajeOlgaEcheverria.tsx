@@ -2,8 +2,10 @@
 /* eslint-disable @next/next/no-img-element */
 // components/HomenajeOlgaEcheverria.tsx
 import React, { useRef } from "react";
+import type { FC } from "react";
 import Publicaciones from "./Publicaciones";
 import VideosOlga from "./VideosOlga";
+import RepositoriosOlga from "./RepositoriosOlga";
 
 const trabajos = [
   {
@@ -133,27 +135,7 @@ const HomenajeOlgaEcheverria: React.FC = () => {
           sectionRefs.current["repositorio"] = el;
         }}
       >
-        <h2 className="text-2xl font-bold mb-4">
-          Producciones en Repositorio CONICET Digital
-        </h2>
-        <ul className="mb-8 space-y-2">
-          {trabajos.map((trab, i) => (
-            <li key={i}>
-              <span className="font-bold">{trab.tipo}</span> –{" "}
-              <span>{trab.titulo}</span> ({trab.anio}){" "}
-              {trab.url && (
-                <a
-                  href={trab.url}
-                  className="ml-2 text-blue-600 underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Ver
-                </a>
-              )}
-            </li>
-          ))}
-        </ul>
+        <RepositoriosOlga />
       </div>
 
       <div
