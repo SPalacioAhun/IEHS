@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 // components/HomenajeOlgaEcheverria.tsx
 import React, { useRef } from "react";
-import type { FC } from "react";
+
 import Publicaciones from "./Publicaciones";
 import VideosOlga from "./VideosOlga";
 import RepositoriosOlga from "./RepositoriosOlga";
