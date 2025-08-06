@@ -7,15 +7,7 @@ import Publicaciones from "./Publicaciones";
 import VideosOlga from "./VideosOlga";
 import RepositoriosOlga from "./RepositoriosOlga";
 
-const trabajos = [
-  {
-    tipo: "Artículo",
-    titulo: "En busca de un orden jerárquico...",
-    anio: 2013,
-    url: "https://digital.conicet.gov.ar/", // link real
-  },
-  // ...más trabajos
-];
+
 
 const tesis = [
   {
