@@ -3,10 +3,9 @@
 // components/HomenajeOlgaEcheverria.tsx
 import React, { useRef } from "react";
 import Publicaciones from "./Publicaciones";
+import VideosOlga from "./VideosOlga";
 
 // Ejemplo de datos: reemplazá por tus datos reales después
-
-
 const videos = [
   {
     titulo: "Presentación de libro Profeta del genocidio",
@@ -137,28 +136,7 @@ const HomenajeOlgaEcheverria: React.FC = () => {
           sectionRefs.current["videos"] = el;
         }}
       >
-        <h2 className="text-2xl font-bold mb-4">Fragmentos de Videos</h2>
-        <ul className="mb-8 space-y-4">
-          {videos.map((vid, i) => (
-            <li key={i}>
-              <p className="font-semibold">{vid.titulo}</p>
-              <span className="text-gray-500">
-                {vid.evento} – {vid.fecha}
-              </span>
-              {vid.url && (
-                <div className="mt-2">
-                  {/* Si tenés video embebido: */}
-                  <iframe
-                    src={vid.url}
-                    title={vid.titulo}
-                    className="w-full max-w-xl aspect-video rounded-xl shadow"
-                    allowFullScreen
-                  />
-                </div>
-              )}
-            </li>
-          ))}
-        </ul>
+        <VideosOlga />
       </div>
 
       <div
