@@ -91,6 +91,11 @@ const HomenajeOlgaEcheverria: React.FC = () => {
         ))}
       </nav>
 
+      {/* Separador moderno y elegante */}
+      <div className="w-full flex justify-center my-10">
+        <div className="w-2/3 h-2 rounded-full bg-gradient-to-r from-[#f96b1c] via-[#a043d3] to-[#1e1446] opacity-70" />
+      </div>
+
       {/* Secciones */}
       <div
         ref={(el) => {
@@ -98,6 +103,11 @@ const HomenajeOlgaEcheverria: React.FC = () => {
         }}
       >
         <Publicaciones />
+      </div>
+
+      {/* Separador entre secciones */}
+      <div className="w-full flex justify-center my-10">
+        <div className="w-2/3 h-2 rounded-full bg-gradient-to-r from-[#f96b1c] via-[#a043d3] to-[#1e1446] opacity-70" />
       </div>
 
       <div
@@ -108,6 +118,11 @@ const HomenajeOlgaEcheverria: React.FC = () => {
         <VideosOlga />
       </div>
 
+      {/* Separador entre secciones */}
+      <div className="w-full flex justify-center my-10">
+        <div className="w-2/3 h-2 rounded-full bg-gradient-to-r from-[#f96b1c] via-[#a043d3] to-[#1e1446] opacity-70" />
+      </div>
+
       <div
         ref={(el) => {
           sectionRefs.current["repositorio"] = el;
@@ -116,12 +131,22 @@ const HomenajeOlgaEcheverria: React.FC = () => {
         <RepositoriosOlga />
       </div>
 
+      {/* Separador entre secciones */}
+      <div className="w-full flex justify-center my-10">
+        <div className="w-2/3 h-2 rounded-full bg-gradient-to-r from-[#f96b1c] via-[#a043d3] to-[#1e1446] opacity-70" />
+      </div>
+
       <div
         ref={(el) => {
           sectionRefs.current["tesis"] = el;
         }}
       >
         <TesisOlga />
+      </div>
+
+      {/* Separador entre secciones */}
+      <div className="w-full flex justify-center my-10">
+        <div className="w-2/3 h-2 rounded-full bg-gradient-to-r from-[#f96b1c] via-[#a043d3] to-[#1e1446] opacity-70" />
       </div>
 
       <div
