@@ -8,18 +8,7 @@ import VideosOlga from "./VideosOlga";
 import RepositoriosOlga from "./RepositoriosOlga";
 import TesisOlga from "./TesisOlga";
 
-const tesis = [
-  {
-    grado: "Licenciatura",
-    titulo: "Autoritarismo y represión...",
-    url: "/pdfs/tesis-lic.pdf",
-  },
-  {
-    grado: "Doctorado",
-    titulo: "‘Una inteligencia disciplinada y disciplinante’...",
-    url: "/pdfs/tesis-doc.pdf",
-  },
-];
+
 
 const fotos = [
   {
