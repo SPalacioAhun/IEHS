@@ -6,8 +6,7 @@ import React, { useRef } from "react";
 import Publicaciones from "./Publicaciones";
 import VideosOlga from "./VideosOlga";
 import RepositoriosOlga from "./RepositoriosOlga";
-
-
+import TesisOlga from "./TesisOlga";
 
 const tesis = [
   {
@@ -135,23 +134,7 @@ const HomenajeOlgaEcheverria: React.FC = () => {
           sectionRefs.current["tesis"] = el;
         }}
       >
-        <h2 className="text-2xl font-bold mb-4">Tesis</h2>
-        <ul className="mb-8 space-y-4">
-          {tesis.map((tes, i) => (
-            <li key={i}>
-              <span className="font-bold">{tes.grado}</span> –{" "}
-              <span>{tes.titulo}</span>
-              <a
-                href={tes.url}
-                className="ml-2 px-3 py-1 bg-blue-600 text-white rounded-full text-sm shadow hover:bg-blue-700"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Descargar PDF
-              </a>
-            </li>
-          ))}
-        </ul>
+        <TesisOlga />
       </div>
 
       <div
