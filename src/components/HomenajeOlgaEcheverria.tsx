@@ -85,7 +85,7 @@ const HomenajeOlgaEcheverria: React.FC = () => {
         {navItems.map((item) => (
           <button
             key={item.id}
-            className="px-5 py-2 rounded-xl bg-gradient-to-r from-[#f96b1c] via-[#a043d3] to-[#1e1446] text-white font-semibold shadow-lg transition-all duration-200 transform hover:scale-105 hover:from-[#a043d3] hover:to-[#f96b1c] focus:outline-none focus:ring-2 focus:ring-[#a043d3]"
+            className="px-7 py-4 rounded-2xl bg-gradient-to-r from-[#f96b1c] via-[#a043d3] to-[#1e1446] text-white font-bold text-lg shadow-lg transition-all duration-200 transform hover:scale-105 hover:from-[#a043d3] hover:to-[#f96b1c] focus:outline-none focus:ring-2 focus:ring-[#a043d3]"
             onClick={() => handleNavClick(item.id)}
           >
             {item.label}
