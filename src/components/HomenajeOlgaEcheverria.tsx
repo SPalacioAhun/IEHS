@@ -8,8 +8,6 @@ import VideosOlga from "./VideosOlga";
 import RepositoriosOlga from "./RepositoriosOlga";
 import TesisOlga from "./TesisOlga";
 
-
-
 const fotos = [
   {
     src: "/fotos/olga1.jpg",
