@@ -7,15 +7,7 @@ import Publicaciones from "./Publicaciones";
 import VideosOlga from "./VideosOlga";
 import RepositoriosOlga from "./RepositoriosOlga";
 import TesisOlga from "./TesisOlga";
-
-const fotos = [
-  {
-    src: "/fotos/olga1.jpg",
-    alt: "Olga Echeverría presentando libro en 2016",
-    pie: "Presentación de libro Profeta del genocidio, 2016 – Foto: Luciano Di Salvo",
-  },
-  // ...más fotos
-];
+import FotosOlga from "./FotosOlga";
 
 const navItems = [
   { id: "publicaciones", label: "Publicaciones" },
@@ -154,21 +146,7 @@ const HomenajeOlgaEcheverria: React.FC = () => {
           sectionRefs.current["fotos"] = el;
         }}
       >
-        <h2 className="text-2xl font-bold mb-4">Álbum Fotográfico</h2>
-        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2">
-          {fotos.map((foto, i) => (
-            <figure key={i} className="rounded-xl bg-gray-100 shadow p-3">
-              <img
-                src={foto.src}
-                alt={foto.alt}
-                className="rounded-xl object-cover w-full h-56 mb-3"
-              />
-              <figcaption className="text-sm text-gray-600">
-                {foto.pie}
-              </figcaption>
-            </figure>
-          ))}
-        </div>
+       <FotosOlga />
       </div>
 
       {/* Footer opcional */}
