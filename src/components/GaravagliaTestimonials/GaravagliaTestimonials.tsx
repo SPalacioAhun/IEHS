@@ -1,5 +1,5 @@
 import styles from './GaravagliaTestimonials.module.css';
-import type { Testimonial } from '../data/garavaglia';
+import type { Testimonial } from '../../data/garavaglia';
 
 interface TestimonialsProps {
   testimonials: Testimonial[];

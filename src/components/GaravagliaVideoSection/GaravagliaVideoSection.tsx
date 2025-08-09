@@ -1,5 +1,5 @@
 import styles from './GaravagliaVideoSection.module.css';
-import type { VideoCategory } from '../data/garavaglia';
+import type { VideoCategory } from '../../data/garavaglia';
 
 interface VideoSectionProps {
   categories: VideoCategory[];

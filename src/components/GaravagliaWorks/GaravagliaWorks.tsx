@@ -1,5 +1,5 @@
 import styles from './GaravagliaWorks.module.css';
-import type { Work } from '../data/garavaglia';
+import type { Work } from '../../data/garavaglia';
 
 interface WorksProps {
   works: Work[];

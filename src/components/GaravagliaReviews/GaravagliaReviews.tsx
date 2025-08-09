@@ -1,5 +1,5 @@
 import styles from './GaravagliaReviews.module.css';
-import type { Review } from '../data/garavaglia';
+import type { Review } from '../../data/garavaglia';
 
 interface ReviewsProps {
   reviews: Review[];
