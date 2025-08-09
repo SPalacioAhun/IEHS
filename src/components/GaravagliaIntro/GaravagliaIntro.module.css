@@ -1,0 +1,19 @@
+/*
+ * Styles for the introductory section of the homenaje page.
+ * This section provides an overview of the purpose of the site and
+ * welcomes visitors.  It's styled with generous margins and a
+ * readable line length to encourage careful reading.
+ */
+
+.intro {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  line-height: 1.7;
+  font-size: 1.125rem;
+  color: var(--text-primary, #334155);
+}
+
+.paragraph {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,42 @@
+/*
+ * Styles for the footer of the homage page.  The footer is divided
+ * into sections and laid out responsively using CSS grid.  Text
+ * colours and link styles reference variables defined in globals.css.
+ */
+
+.footer {
+  background-color: var(--footer-bg, #f1f5f9);
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.section {}
+
+.heading {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary, #0f172a);
+}
+
+.text {
+  margin: 0.25rem 0;
+  font-size: 0.875rem;
+  color: var(--text-primary, #334155);
+}
+
+.link {
+  color: var(--link-color, #2563eb);
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: var(--link-hover-color, #1e40af);
+}

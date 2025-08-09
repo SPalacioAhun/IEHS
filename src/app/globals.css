@@ -3,6 +3,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* 🎨 Variables extra para los componentes Garavaglia */
+  --header-bg: #ffffff;
+  --footer-bg: #f1f5f9;
+  --card-bg: #ffffff;
+  --section-header-bg: #f8fafc;
+  --link-color: #2563eb;
+  --link-hover-color: #1d4ed8;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --border-color: #e2e8f0;
 }
 
 @theme inline {
@@ -16,6 +27,17 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+
+    /* Ajustes de color en modo oscuro */
+    --header-bg: #1e293b;
+    --footer-bg: #0f172a;
+    --card-bg: #1e293b;
+    --section-header-bg: #334155;
+    --link-color: #60a5fa;
+    --link-hover-color: #3b82f6;
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --border-color: #475569;
   }
 }
 
@@ -25,11 +47,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ✨ Utilidades que ya tenías */
 .text-shadow-custom {
   text-shadow: 2px 2px 4px #134e5e; /* O el color que quieras */
 }
 
 .text-outline-black {
   -webkit-text-stroke: 1px #000;  /* Ancho y color del contorno */
-  
 }

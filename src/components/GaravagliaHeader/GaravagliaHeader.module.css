@@ -1,0 +1,47 @@
+/*
+ * Header styles for the Juan Carlos Garavaglia homage site.
+ *
+ * This module defines the look and feel of the navigation bar that
+ * appears at the top of the page.  The nav is sticky so it remains
+ * visible while the user scrolls through the content.  Feel free to
+ * adjust the colours in `globals.css` via CSS variables.
+ */
+
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: var(--header-bg, #ffffff);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item a {
+  color: var(--link-color, #2563eb);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.item a:hover,
+.item a:focus {
+  background-color: var(--link-hover-bg, #e0f2fe);
+  color: var(--link-hover-color, #1e40af);
+}
