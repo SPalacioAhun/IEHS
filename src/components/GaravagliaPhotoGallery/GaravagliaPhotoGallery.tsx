@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from './GaravagliaPhotoGallery.module.css';
-import type { Photo } from '../data/garavaglia';
+import type { Photo } from '../../data/garavaglia';
 
 interface PhotoGalleryProps {
   photos: Photo[];
