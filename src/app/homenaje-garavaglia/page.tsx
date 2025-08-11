@@ -5,7 +5,10 @@ import GaravagliaVideoSection from '@/components/GaravagliaVideoSection/Garavagl
 import GaravagliaTestimonials from '@/components/GaravagliaTestimonials/GaravagliaTestimonials';
 import GaravagliaWorks from '@/components/GaravagliaWorks/GaravagliaWorks';
 import GaravagliaReviews from '@/components/GaravagliaReviews/GaravagliaReviews';
-import GaravagliaFooter from '@/components/GaravagliaFooter/GaravagliaFooter';
+import GaravagliaBanner from '@/components/GaravagliaBanner/GaravagliaBanner';
+//import GaravagliaFooter from '@/components/GaravagliaFooter/GaravagliaFooter';
+import Header from "@/components/Header"
+import Footer from '@/components/Footer';
 
 import {
   introParagraphs,
@@ -25,8 +28,10 @@ import {
 export default function HomenajeGaravagliaPage() {
   return (
     <>
+      <Header />
       <GaravagliaHeader />
       <main>
+        <GaravagliaBanner />   {/* ⬅️ acá va antes del párrafo */}
         <GaravagliaIntro paragraphs={introParagraphs} />
         <GaravagliaPhotoGallery photos={photos} />
         <GaravagliaVideoSection categories={videoCategories} />
@@ -34,12 +39,14 @@ export default function HomenajeGaravagliaPage() {
         <GaravagliaWorks works={works} />
         <GaravagliaReviews reviews={reviews} />
       </main>
-      <GaravagliaFooter
+
+      <Footer />
+      {/* <GaravagliaFooter
         address="Instituto de Estudios Histórico-Sociales (IEHS) – Facultad de Humanidades, UNICEN, Tandil, Argentina"
         email="iehs@fh.unicen.edu.ar"
         license="Esta obra está bajo una Licencia Creative Commons Atribución-NoComercial 4.0 Internacional."
         credits="Sitio desarrollado a partir de una plantilla TEMPLATED y actualizado por el equipo IEHS."
-      />
+      /> */}
     </>
   );
 }
