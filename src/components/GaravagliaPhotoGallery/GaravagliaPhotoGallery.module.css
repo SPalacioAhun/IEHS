@@ -1,46 +1,193 @@
-/*
- * Styles for the photo gallery section.  Uses CSS grid to lay out
- * photographs responsively.  Each figure includes a caption for
- * accessibility and context.
- */
-
 .gallery {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
+  /* Fondo diferenciado */
+  background: linear-gradient(120deg, #f0f4ff 0%, #e0e7ff 100%);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 32px rgba(99, 102, 241, 0.08);
 }
 
 .title {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
   color: var(--text-primary, #0f172a);
+  text-align: center;
+  letter-spacing: 0.02em;
+  position: relative;
+  font-family: "Montserrat", "Segoe UI", Arial, sans-serif;
 }
 
+.title::after {
+  content: "";
+  display: block;
+  margin: 0.5rem auto 0;
+  width: 3.5rem;
+  height: 0.25rem;
+  background: linear-gradient(90deg, #0ea5e9 0%, #6366f1 100%);
+  border-radius: 1rem;
+  opacity: 0.85;
+}
+
+/* Grid de miniaturas de alto variable (sin recortes) */
 .grid {
   display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+/* 2 columnas en mobile, 3 en tablet, 4 en desktop */
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1025px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .card {
-  background-color: var(--card-bg, #ffffff);
-  border-radius: 8px;
+  background: var(--card-bg, #fff);
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: 0.75rem;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
 }
 
+.thumbButton {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  display: block;
+  cursor: zoom-in;
+  width: 100%;
+}
+
+/* Miniatura SIN altura fija: respeta proporciones reales */
 .image {
+  display: block;
   width: 100%;
   height: auto;
-  object-fit: cover;
-  display: block;
+  object-fit: contain;
+  background: #00000008; /* leve base para imágenes pequeñas/transp. */
 }
 
 .caption {
-  padding: 0.75rem 1rem;
-  font-size: 0.875rem;
-  color: var(--text-muted, #475569);
-  background-color: var(--section-header-bg, #f8fafc);
+  display: none !important; /* oculto por ahora */
+  padding: 0.75rem 0.75rem 1rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary, #475569);
+}
+
+/* Lightbox */
+.lightboxOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.8); /* slate-900/80 */
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.lightboxDialog {
+  position: relative;
+  width: min(96vw, 1100px);
+  height: min(92vh, 850px);
+  background: var(--card-bg, #0b1220);
+  border-radius: 1rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.imageWrap {
+  position: absolute;
+  inset: 2.5rem 3.25rem 3.5rem; /* espacio para botones y caption */
+  display: flex;
+  flex-direction: column; /* imagen arriba, caption abajo */
+  align-items: center;
+  justify-content: center; /* centrado vertical/horizontal */
+  gap: 0.75rem;
+}
+
+/* Foto grande: encaja en el viewport sin recortar */
+.fullImage {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  background: #000;
+  display: block;
+}
+
+.fullCaption {
+  color: #e5e7eb;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Controles */
+.closeBtn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  font-size: 2rem;
+  line-height: 1;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 9999px;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  transition: background 0.2s ease;
+}
+
+.navBtn:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+.prevBtn {
+  left: 0.75rem;
+}
+.nextBtn {
+  right: 0.75rem;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .card {
+    border-color: #334155;
+  }
+  .lightboxDialog {
+    background: #0b1220;
+  }
+  /* Dark mode: fondo más oscuro y suave */
+  .gallery {
+    background: linear-gradient(120deg, #1e293b 0%, #334155 100%);
+  }
 }
