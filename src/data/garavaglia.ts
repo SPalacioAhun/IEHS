@@ -46,6 +46,8 @@ export interface Video {
    * the title alone will be shown.
    */
   description?: string;
+   letter?: string;            // ⬅️ opcional, carta larga
+  letterSignature?: string;   // ⬅️ opcional, firma (autor/fecha)
 }
 
 export interface VideoCategory {
@@ -372,31 +374,165 @@ export const photos: Photo[] = [
 // them with the actual IDs of the tribute recordings.
 export const videoCategories: VideoCategory[] = [
   {
-    name: 'Homenaje Ravignani 2017',
+    name: 'Homenaje del Ravignani 1',
     videos: [
       {
-        id: 'presentacion-gelman-fradkin',
-        title: 'Presentación de Gelman y Fradkin',
-        url: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-        description: 'Homenaje realizado en marzo de 2017 en el Instituto Ravignani con la participación de Jorge Gelman y Raúl Fradkin.'
+        id: 'rav1-video1',
+        title: 'Presentación Gelman Fradkin',
+        url: 'https://www.youtube.com/embed/_zOMHh1phUY',
+        description: 'Instituto de Historia Argentina y Americana Dr. Emilio Ravignani Bs. As. 15 de Marzo de 2017. Creación y administración del Canal YouTube del Instituto Ravignani: María Eugenia Druetta (CONICET) - Tomás Guzmán (FFyL-UBA) Grabación y Edición de video Julieta Fradkin - Christian Poczynok (FFyL-UBA) - Edgardo Riera (CONICET)'
       },
       {
-        id: 'despedida-garavaglia',
-        title: 'Despedida y agradecimientos',
-        url: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-        description: 'Palabras de despedida y agradecimientos de colegas y amigos.'
+        id: 'rav1-video2',
+        title: 'Jose Mateo',
+        url: 'https://www.youtube.com/embed/idrLAdIYrsk',
+        description: 'Instituto de Historia Argentina y Americana Dr. Emilio Ravignani Bs. As. 15 de Marzo de 2017. Creación y administración del Canal YouTube del Instituto Ravignani: María Eugenia Druetta (CONICET) - Tomás Guzmán (FFyL-UBA) Grabación y Edición de video Julieta Fradkin - Christian Poczynok (FFyL-UBA) - Edgardo Riera (CONICET)'
+      },
+      {
+        id: 'rav1-video3',
+        title: 'Mariana Canedo',
+        url: 'https://www.youtube.com/embed/Ufy5CMj8Mbg',
+        description: 'Instituto de Historia Argentina y Americana Dr. Emilio Ravignani Bs. As. 15 de Marzo de 2017. Creación y administración del Canal YouTube del Instituto Ravignani: María Eugenia Druetta (CONICET) - Tomás Guzmán (FFyL-UBA) Grabación y Edición de video Julieta Fradkin - Christian Poczynok (FFyL-UBA) - Edgardo Riera (CONICET)'
+      },
+      {
+        id: 'rav1-video4',
+        title: 'Eduardo Miguez',
+        url: 'https://www.youtube.com/embed/gOJqw1RDVnY',
+        description: 'Instituto de Historia Argentina y Americana Dr. Emilio Ravignani Bs. As. 15 de Marzo de 2017. Creación y administración del Canal YouTube del Instituto Ravignani: María Eugenia Druetta (CONICET) - Tomás Guzmán (FFyL-UBA) Grabación y Edición de video Julieta Fradkin - Christian Poczynok (FFyL-UBA) - Edgardo Riera (CONICET)'
+      },
+      {
+        id: 'rav1-video5',
+        title: 'Sara Mata',
+        url: 'https://www.youtube.com/embed/oLj7dFtX4IQ',
+        description: 'Instituto de Historia Argentina y Americana Dr. Emilio Ravignani Bs. As. 15 de Marzo de 2017. Creación y administración del Canal YouTube del Instituto Ravignani: María Eugenia Druetta (CONICET) - Tomás Guzmán (FFyL-UBA) Grabación y Edición de video Julieta Fradkin - Christian Poczynok (FFyL-UBA) - Edgardo Riera (CONICET)'
+      },
+      {
+        id: 'rav1-video6',
+        title: 'Rossana Barragán',
+        url: 'https://www.youtube.com/embed/FX_dZbnZ0Wo',
+        description: 'Instituto de Historia Argentina y Americana Dr. Emilio Ravignani Bs. As. 15 de Marzo de 2017. Creación y administración del Canal YouTube del Instituto Ravignani: María Eugenia Druetta (CONICET) - Tomás Guzmán (FFyL-UBA) Grabación y Edición de video Julieta Fradkin - Christian Poczynok (FFyL-UBA) - Edgardo Riera (CONICET)'
       }
     ]
   },
   {
-    name: 'XVI Jornadas Interescuelas',
+    name: 'Homenaje del Ravignani 2',
     videos: [
       {
-        id: 'mesa-redonda',
-        title: 'Mesa redonda en las XVI Jornadas Interescuelas',
-        url: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-        description: 'Mesa redonda dedicada a la memoria de Juan Carlos Garavaglia durante las XVI Jornadas Interescuelas.'
+        id: 'rav2-video1',
+        title: 'Daniel Divinsky',
+        url: 'https://www.youtube.com/embed/P2X3DUutkME',
+        description: 'Instituto de Historia Argentina y Americana Dr. Emilio Ravignani Bs. As. 15 de Marzo de 2017. Creación y administración del Canal YouTube del Instituto Ravignani: María Eugenia Druetta (CONICET) - Tomás Guzmán (FFyL-UBA) Grabación y Edición de video Julieta Fradkin - Christian Poczynok (FFyL-UBA) - Edgardo Riera (CONICET)'
+      },
+      {
+        id: 'rav2-video2',
+        title: 'Judith Farberman',
+        url: 'https://www.youtube.com/embed/-L1HcWXXUOY',
+        description: 'Instituto de Historia Argentina y Americana Dr. Emilio Ravignani Bs. As. 15 de Marzo de 2017. Creación y administración del Canal YouTube del Instituto Ravignani: María Eugenia Druetta (CONICET) - Tomás Guzmán (FFyL-UBA) Grabación y Edición de video Julieta Fradkin - Christian Poczynok (FFyL-UBA) - Edgardo Riera (CONICET)'
+      },
+      {
+        id: 'rav2-video3',
+        title: 'María Stella Spinelli',
+        url: 'https://www.youtube.com/embed/LkWbg-3LgDc',
+        description: 'Instituto de Historia Argentina y Americana Dr. Emilio Ravignani Bs. As. 15 de Marzo de 2017. Creación y administración del Canal YouTube del Instituto Ravignani: María Eugenia Druetta (CONICET) - Tomás Guzmán (FFyL-UBA) Grabación y Edición de video Julieta Fradkin - Christian Poczynok (FFyL-UBA) - Edgardo Riera (CONICET)'
+      },
+      {
+        id: 'rav2-video4',
+        title: 'Ana Frega',
+        url: 'https://www.youtube.com/embed/9rebMGNqVFA',
+        description: 'Instituto de Historia Argentina y Americana Dr. Emilio Ravignani Bs. As. 15 de Marzo de 2017. Creación y administración del Canal YouTube del Instituto Ravignani: María Eugenia Druetta (CONICET) - Tomás Guzmán (FFyL-UBA) Grabación y Edición de video Julieta Fradkin - Christian Poczynok (FFyL-UBA) - Edgardo Riera (CONICET)'
+      },
+      {
+        id: 'rav2-video5',
+        title: 'Gladys Perry',
+        url: 'https://www.youtube.com/embed/K3VUCeApvHE',
+        description: 'Instituto de Historia Argentina y Americana Dr. Emilio Ravignani Bs. As. 15 de Marzo de 2017. Creación y administración del Canal YouTube del Instituto Ravignani: María Eugenia Druetta (CONICET) - Tomás Guzmán (FFyL-UBA) Grabación y Edición de video Julieta Fradkin - Christian Poczynok (FFyL-UBA) - Edgardo Riera (CONICET)'
+      },
+      {
+        id: 'rav2-video6',
+        title: 'Andrés Regalsky',
+        url: 'https://www.youtube.com/embed/iCU0X8BqHrw',
+        description: 'Instituto de Historia Argentina y Americana Dr. Emilio Ravignani Bs. As. 15 de Marzo de 2017. Creación y administración del Canal YouTube del Instituto Ravignani: María Eugenia Druetta (CONICET) - Tomás Guzmán (FFyL-UBA) Grabación y Edición de video Julieta Fradkin - Christian Poczynok (FFyL-UBA) - Edgardo Riera (CONICET)'
+      },
+      {
+        id: 'rav2-video7',
+        title: 'Cuento de J. C. Garavaglia y Mensajes',
+        url: 'https://www.youtube.com/embed/Ofs-8g4XIFc',
+        description: 'Instituto de Historia Argentina y Americana Dr. Emilio Ravignani Bs. As. 15 de Marzo de 2017. Creación y administración del Canal YouTube del Instituto Ravignani: María Eugenia Druetta (CONICET) - Tomás Guzmán (FFyL-UBA) Grabación y Edición de video Julieta Fradkin - Christian Poczynok (FFyL-UBA) - Edgardo Riera (CONICET)'
       }
+    ]
+  },
+  {
+    name: 'Homenaje XVI Jornadas Interescuelas',
+    videos: [
+      {
+        id: 'Mesa redonda de cierre en homenaje a Juan Carlos Garavaglia',
+        title: 'Mesa redonda en las XVI Jornadas Interescuelas',
+        url: 'https://www.youtube.com/embed/RxETuu4B2aI',
+        description: 'XVI Jornadas Interescuelas Mar del Plata, realizadas del 9 al 11 de Agosto 2017 Integrantes de la mesa: Darío Barriera, Raúl Fradkin, Jorge Gelman, Alejandro Rabinovich “La contribución de Juan Carlos Garavaglia a la historiografía argentina y latinoamericana”. Coordinador: Eduardo Míguez (UNICEN-UNMdP)'
+      }
+    ]
+  },
+  {
+    name: 'Conferencias',
+    videos: [
+      {
+        id: 'conf-video1',
+        title: 'Conferencia en la UNLPam - 2015',
+        url: 'https://www.youtube.com/embed/JD70JFuFDxQ',
+        description: '"Las fuerzas de guerra argentinas durante el conflicto de la Triple Alianza". Gentileza de CPA UNLPam'
+      },
+      {
+        id: 'conf-video2',
+        title: 'Conferencia en el IEHS - 2015',
+        url: 'https://www.youtube.com/embed/irLWJjOLfMw',
+        description: 'Conferencia del Dr. Juan Carlos Garavaglia "Desigualdad, finanzas y guerra. Argentina, 1865-1870", realizada en el Instituto de Estudios Histórico Sociales el 23 de setiembre de 2015. IEHS'
+      },
+      {
+        id: 'conf-video3',
+        title: 'Conferencia en el Seminario SIProD - 2012',
+        url: 'https://www.youtube.com/embed/Hd5weyIrjfU',
+        description: 'Presentación de Juan Carlos Garavaglia en el SIProD: "Elite, fiscalidad y endeudamiento en la construcción del Estado. El caso de Buenos Aires 1852-1861" (09/08/2012). (Audio aceptable, Definición de imagen regular)'
+      },
+    ]
+  },
+  {
+    name: 'Gara',
+    videos: [
+      {
+        id: 'gara-video1',
+        title: 'Juan Carlos y sus dotes de bailarin',
+        url: '/video/garaenaccion.mp4',
+        description: 'Video grabado en la casa de una de las doctorandas del proyecto, Viviana Velasco, en Quito, en octubre de 2012. Allí estan Juan Pro, Pilar López Bejarano, Elisa Caselli, Juan Carlos, Jorge Gelman, Rodolfo González Lebrero, Silvia Battaglia. En un momento se ve también a Raúl Fradkin y a la anfitriona, Viviana. (Video de Rodolfo González Lebrero)'
+      },
+      {
+  id: 'gara-video2',
+  title: 'Juan Carlos Garavaglia en un archivo al aire libre',
+  url: '/video/negrete.mp4',
+  description: 'Visita a la ciudad de Ranchos, su museo, la estancia Negrete y un pequeño campo de pastores y labradores, junto a Raúl Fradkin y Rodolfo González Lebrero en agosto de 1995',
+  letter: `Era agosto de 1995. En algún encuentro, Juan Carlos había comentado su interés por visitar algunas de las centenarias estancias bonaerenses, inmerso ya en la tarea de desentrañar la trama del mundo rural y la vida social de la campaña, que vislumbraba más complejo de lo que hasta entonces parecía. En aquel agosto, un par de eventos afortunados me habían abierto la posibilidad de visitar una de esas estancias: Negrete, muy cerca de Ranchos (General Paz). Un ex tambero de la zona que yo conocía, Romualdo Tati Cerio, trabajaba como encargado de la estancia. Nos contactamos con él, quien a su vez consultó con su patrona, que se mostró muy interesada en nuestra posible visita. Sólo teníamos que ponerle fecha.
+
+Y así nos largamos el 12 de agosto, haciendo los 120 kilómetros que separan a Buenos Aires de Ranchos, Juan Carlos, Raúl Fradkin y su (ahora ex) esposa Miriam Feldman, mi mujer (Silvia Battaglia) y yo. El plan, que Tati Cerio se ocupó de facilitar, prometía mucho. Y cumplió.
+
+La primera emoción de las varias que experimentaríamos, fue la visita a un ícono de Ranchos, el soguero Martín Gómez, visita de la cual no encuentro registros fotográficos. Pero recuerdo el entusiasmo del Gara por conversar con don Martín, como lo llamaban en el pueblo. El taller plagado de herramientas gastadas por el uso, soguitas, cuchillos y miles de lonjas de cuero colgando de techo, esperando ser transformadas en alhajados aperos o empuñaduras de facones. Juan Carlos sentía fascinación frente a los utensilios que veía. Y aunque sabía que don Martín era famoso por su trabajo, le encantó su sencillez, que pensaba característica de los hombres y mujeres que él quería rescatar del olvido.
+
+El segundo paso, que es el que inicia el video, fue el Museo Histórico Regional “Marta Inés Martínez”. Nada de lo que allí se exponía quedó fuera de la mirada del Gara. Boleadoras, morteros, fusiles, bancos de hueso, cencerros, un arado de tiro, vestidos, muebles e incluso el edificio que albergaba la muestra fue escudriñado (nunca tan a propósito la palabreja) por los inquietos ojos de Juan Carlos. Y allí tendríamos también un adelanto de lo que íbamos a visitar al día siguiente: instrumentos para la esquila traídos de la estancia Negrete (fechados en 1826).
+
+El domingo 13 de agosto llegamos a Negrete (4’ 35” del video). Si bien la estancia existe desde el último cuarto del siglo XVIII, fundada por Ciriaco Negrete, el casco que visitamos fue construido en 1863 por orden de otro propietario, el escocés John Hannah, que la había comprado en 1836 comenzando la cría de ovejas merino. En 1870 y antes de volver a Escocia, Hannah le vendió la estancia a David Shennan quien continúo con la cría de ovejas y la construcción de algunos de los establos y depósitos que pueden verse en el video.
+
+Tati Cerio nos recibió en la entrada y nos acompañó todo el tiempo que duró la visita. Juan Carlos estaba exultante. Un militante de la historia recorriendo los restos casi arqueológicos de la estancia, que parecían empecinados en mantenerse en pie sólo para darle el gusto. Documentos materiales que daban carnadura a las palabras de los legajos que devoraba en los archivos con entusiasmo juvenil. Si las construcciones que veíamos lo fascinaban, su evidente fragilidad o su ruinoso estado -el cementerio de la estancia lo tocó particularmente- le provocaba una gran tristeza. La misma que lo invadía ante cada documento escrito que la indiferencia y los malos cuidados hicieran ilegible en cualquier archivo. No estoy interpretando: cuando se lo ve caminando con las manos en los bolsillos, medio cabizbajo y seguido de cerca por un perro rengo (una escena que haría las delicias del neorrealismo italiano), lo invadía, así lo dijo, un sentimiento de impotencia por el deterioro de un bien histórico que hubiera merecido mejor suerte.
+
+La dueña del campo se sumó de a ratos al paseo, haciendo las veces de guía. Ella nos contó del árbol plantado por “el rey Jorge V” -como se me escucha repetir a mí- en 1881 (a Jorgito le faltaban casi 30 años para coronarse) y también nos mostró la placa clavada a un pilar de la entrada que dice Aquí en Negrete, el eminente criador Sr. John Hannah desarrolló la industria de la lana argentina, que Juan leyó con sorna en voz alta. Estaba Juan -todos lo estábamos- satisfecho por la visita, pero Tati Cerio nos tenía reservada una sorpresa, que sería la frutilla del postre de este fin de semana inolvidable.
+
+Transitando por caminos de tierra en medio de campos predominantemente ganaderos, Tati nos abre la amplia tranquera de otra estancia y nos internamos en ella, hasta una más modesta puerta de alambre y palos mal conservados. Al frente, (minuto 20 del video) un grupo de construcciones de adobe y palos, nos dicen que llegamos a la casa de una familia campesina. Dueños de 25 hectáreas y rodeados por la estancia que nos abrió sus puertas, una pareja mayor nos espera. Allí estaban: la gente común del campo, los pastores y labradores que parecían emerger del siglo XIX, con su rancho de adobe más que centenario y con el piso hundido unos 50 cm respecto del campo que les daba el sustento. Juan Carlos mostraba una alegría juvenil en el descubrimiento de cada pequeña o gran cosa que lo volviera materialmente al tema que lo desvelaba por entonces. Se asombraba por los útiles de labranza, un (otro) arado de tiro, los sulkis, la oxidada balanza que me pidió filmara expresamente. Y la charla con la dueña de casa fue, en su balance, de lo más enriquecedor de la larga jornada que estaba por terminar.
+
+Con Juan Carlos como motor de un barco que sabe adónde va, habíamos visto la vida material de la gente común y los estancieros; todo en un mismo día. Juan Carlos había puesto la misma pasión con que escribía, al examinar las piezas del museo, las ajadas paredes de la estancia Negrete o el troje lleno de choclos de los campesinos de Ranchos. Para él, museo, estancia y parcela campesina eran una especie de archivo al aire libre que contaba mucho de lo que por entonces era su interés como investigador. Además, lo que habíamos visto tenía un importante valor didáctico para el Gara. Así, en el segundo semestre de 1996, mientras dictaba un seminario de doctorado en la UBA que tituló “Historia agraria Rioplatense 1750-1885”, me pidió mostrar el video de aquellas jornadas a sus alumnos de entonces. Era coherente con lo que siempre hizo: conocer los ámbitos físicos de los temas en los que trabajaba. El mismo criterio usó en el proyecto que dirigió en Barcelona -State Building in Latin America- promoviendo reuniones de sus doctorandos en los países cuyos procesos de construcción estatal investigaban.
+
+El entusiasmo de Juan Carlos no es precisamente una novedad para quienes lo conocieron. Pero me gustaría dar un ejemplo que me parece revelador de cuán contagioso podía ser. La pasión, el interés y los comentarios del Gara admiraron tanto a nuestro anfitrión, Tati Cerio -el tambero devenido encargado de una estancia- que compró en un remate un balde volcador, sólo para regalárselo.
+
+Un Maestro.`,
+  letterSignature: `Rodolfo Eduardo González Lebrero — julio de 2017`
+}
+
     ]
   }
 ];

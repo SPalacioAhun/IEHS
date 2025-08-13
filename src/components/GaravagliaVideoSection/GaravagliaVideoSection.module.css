@@ -12,9 +12,25 @@
 }
 
 .title {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
   color: var(--text-primary, #0f172a);
+  text-align: center;
+  letter-spacing: 0.02em;
+  position: relative;
+  font-family: "Montserrat", "Segoe UI", Arial, sans-serif;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  margin: 0.5rem auto 0;
+  width: 3.5rem;
+  height: 0.25rem;
+  background: linear-gradient(90deg, #0ea5e9 0%, #6366f1 100%);
+  border-radius: 1rem;
+  opacity: 0.85;
 }
 
 .accordion {
@@ -23,21 +39,55 @@
   gap: 1rem;
 }
 
+/* Item del acordeón */
 .category {
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: 10px;
   overflow: hidden;
   background-color: var(--card-bg, #ffffff);
+  transition: box-shadow 0.18s ease;
 }
 
+.category[open] {
+  box-shadow: 0 6px 20px rgba(2, 6, 23, 0.06);
+}
+
+/* Header clickeable */
 .summary {
-  padding: 0.75rem 1rem;
-  font-weight: 500;
-  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.9rem 1rem;
+  font-weight: 600;
+  font-size: 1.05rem;
   cursor: pointer;
   background-color: var(--section-header-bg, #f8fafc);
+  list-style: none;
 }
 
+.summary::-webkit-details-marker {
+  display: none;
+}
+
+.catName {
+  color: var(--text-primary, #0f172a);
+}
+
+/* contador de videos por categoría */
+.count {
+  min-width: 2rem;
+  height: 2rem;
+  border-radius: 9999px;
+  background: #0f172a0d;
+  color: var(--text-primary, #0f172a);
+  display: grid;
+  place-items: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* Contenido de videos dentro de una categoría */
 .videoList {
   padding: 1rem;
   display: flex;
@@ -45,34 +95,106 @@
   gap: 2rem;
 }
 
-.videoItem {}
+/* Tarjeta de cada video */
+.videoItem {
+  background: var(--card-bg, #ffffff);
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+/* Header del video (título + descripción) */
+.videoHeader {
+  max-width: 900px;
+  margin: 0 auto 1rem auto;
+  text-align: left;
+}
 
 .videoTitle {
-  font-size: 1.25rem;
-  margin-bottom: 0.25rem;
+  font-size: 1.4rem;
+  margin: 0 0 0.35rem 0;
   color: var(--text-primary, #0f172a);
+  letter-spacing: 0.2px;
 }
 
 .videoDescription {
-  font-size: 0.875rem;
-  margin-bottom: 0.5rem;
-  color: var(--text-muted, #475569);
+  font-size: 0.95rem;
+  color: var(--text-secondary, #475569);
+  line-height: 1.6;
 }
 
+/* Wrapper 16:9 responsivo centrado, con sombra leve */
 .videoWrapper {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
+  width: min(900px, 100%);
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  background: #000;
 }
 
 .videoWrapper iframe {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+/* ========================= */
+/* Carta (solo si existe)    */
+/* ========================= */
+.videoLetter {
+  max-width: 900px;
+  margin: 1.5rem auto 0;
+  padding: 1.25rem 1.25rem 1.5rem;
+  background: #fafafa;
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-left: 6px solid #134e5e; /* acento institucional */
+  border-radius: 10px;
+  color: var(--text-primary, #0f172a);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.letterParagraph {
+  font-size: 1.06rem; /* un toque más grande */
+  line-height: 1.9; /* lectura cómoda */
+  text-align: justify; /* estilo carta */
+  margin: 0 0 1rem 0;
+  text-wrap: pretty;
+}
+
+.letterDivider {
+  border: 0;
+  border-top: 1px solid var(--border-color, #e2e8f0);
+  margin: 1rem 0 0.75rem 0;
+}
+
+.letterSignature {
+  font-size: 0.98rem;
+  color: var(--text-secondary, #475569);
+  text-align: right;
+  font-style: italic;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .count {
+    background: #f1f5f914;
+  }
+  .videoItem {
+    border-color: #334155;
+  }
+  .videoLetter {
+    background: #0b1220;
+    border-color: #334155;
+  }
+  .letterParagraph {
+    color: var(--text-primary, #f1f5f9);
+  }
+  .letterSignature {
+    color: #cbd5e1;
+  }
 }
