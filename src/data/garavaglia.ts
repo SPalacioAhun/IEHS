@@ -72,6 +72,10 @@ export interface Testimonial {
    * This can be used to display an appropriate icon next to the link.
    */
   type?: 'pdf' | 'external';
+  /**
+   * Optional thumbnail image for the testimonial.
+   */
+  thumb?: string;
 }
 
 export interface Work {
@@ -546,34 +550,82 @@ export const testimonials: Testimonial[] = [
   {
     title: 'Adieux Gara',
     author: 'Pilar González Bernaldo de Quirós',
-    href: '/testimonios/adieux-gara.pdf',
-    type: 'pdf'
+    href: '/testimonios/Adieux Gara.pdf',
+    type: 'pdf',
+    thumb: '/imagenes/testimonio1.jpg'
   },
   {
     title: 'Juan Carlos Garavaglia, el pastuzo porteño',
     author: 'Carmen Bernand',
-    href: '/testimonios/pastuzo-porteno.pdf',
-    type: 'pdf'
+    href: '/testimonios/Juan Carlos Garavaglia.pdf',
+    type: 'pdf',
+    thumb: '/imagenes/testimonio2.jpg'
   },
   {
     title: 'Juan Carlos Garavaglia. Hasta siempre.',
     author: 'Christophe Giudicelli',
-    href: '/testimonios/hasta-siempre.pdf',
-    type: 'pdf'
+    href: '/testimonios/Juan Carlos Garavaglia-Tandil.pdf',
+    type: 'pdf',
+    thumb: '/imagenes/testimonio3.jpg'
   },
   {
     title: 'Para Juan Carlos Garavaglia',
     author: 'Wilma Peres Costa',
-    href: '/testimonios/para-garavaglia.pdf',
-    type: 'pdf'
+    href: '/testimonios/Para Juan Carlos Garavaglia.pdf',
+    type: 'pdf',
+    thumb: '/imagenes/testimonio4.jpg'
+  },
+  {
+    title: 'Un torbellino intelectual: Juan Carlos Garavaglia en México en los años de 1980-1984, un testimonio personal.',
+    author: 'Carlos Marichal',
+    href: '/testimonios/Un torbellino intelectual Juan Carlos G, Marichal.pdf',
+    type: 'pdf',
+    thumb: '/imagenes/testimonio5.jpg'
+  },
+  {
+    title: 'Un gran proyecto de Juan Carlos Garavaglia: La construcción del Estado en América Latina',
+    author: 'Rodolfo González Lebrero',
+    href: '/testimonios/Proyecto.pdf',
+    type: 'pdf',
+    thumb: '/imagenes/testimonio6.jpg'
+  },
+  {
+    title: 'Juan Carlos Garavaglia hasta siempre',
+    author: 'Raúl Fradkin y Jorge Gelman',
+    href: '/testimonios/Anuario IEHS 32(1) o.Fradkin&Gelman.pdf',
+    type: 'pdf',
+    thumb: '/imagenes/testimonio7.jpg'
+  },
+  {
+    title: 'Al maestro Juan Carlos Garavaglia',
+    author: 'Melina Yangilevich',
+    href: '/testimonios/Anuario IEHS 32(1) o.Yangilevich.pdf',
+    type: 'pdf',
+    thumb: '/imagenes/testimonio8.jpg'
+  },
+  {
+    title: 'Homenaje a Juan Carlos Garavaglia',
+    author: 'Instituto Ravignani',
+    href: '/testimonios/Homenaje Ravignani.pdf',
+    type: 'pdf',
+    thumb: '/imagenes/testimonio9.jpg'
+  },
+  {
+    title: 'Homenaje a Juan Carlos Garavaglia reviviendo polémicas: el debate en torno a Orden y Virtud de Jorge Myers',
+    author: 'Bárbara Caletti Garciadiego',
+    href: '/testimonios/Homenaje a Juan Carlos Garavaglia reviviendo polémicas el debate en torno a Orden y Virtud de Jorge Myers.pdf',
+    type: 'pdf',
+    thumb: '/imagenes/testimonio10.jpg'
   },
   {
     title: 'Una historia mejor',
     author: 'María Elena Barral',
-    href: 'https://www.pagina12.com.ar/',
-    type: 'external'
+    href: 'https://www.pagina12.com.ar/16355-una-historia-mejor',
+    type: 'external',
+    thumb: '/imagenes/testimonio11.jpg'
   }
 ];
+
 
 // Sample works (trabajos).  Add as many items as necessary; include
 // informative titles and links to the digital versions of the works.
