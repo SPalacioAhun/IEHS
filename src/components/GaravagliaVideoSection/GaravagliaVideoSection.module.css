@@ -180,6 +180,17 @@
 }
 
 /* Dark mode */
+@media (max-width: 600px) {
+  .category {
+    background-color: var(--card-bg, #ffffff);
+  }
+  .videoItem {
+    background: var(--card-bg, #ffffff);
+  }
+  .summary {
+    background-color: var(--section-header-bg, #f8fafc);
+  }
+}
 @media (prefers-color-scheme: dark) {
   .count {
     background: #f1f5f914;
