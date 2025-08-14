@@ -5,7 +5,7 @@ export default function GaravagliaBanner() {
         <video
           src="/garavaglia/banner.mp4"
           autoPlay
-          
+          loop
           muted
           playsInline
           className="w-full h-[240px] md:h-[360px] object-cover"
