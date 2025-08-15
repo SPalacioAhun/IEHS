@@ -264,7 +264,7 @@ export default function Home() {
                 textShadow: "0 4px 24px rgba(0,0,0,0.25)",
               }}
             >
-              Bienvenidos al <span className="text-[#f9623e]">IEHS</span>
+              Bienvenidos al IEHS
             </h1>
 
             {/* Texto */}
@@ -359,38 +359,35 @@ export default function Home() {
               </p>
             </Link>
 
-            <Link
-              href="/homenajeOlga"
-              className="p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer block"
-              prefetch
-            >
-              <h2 className="text-2xl font-bold text-[#134e5e] mb-2">
-                Homenaje a Olga Echeverría
-              </h2>
-              <p className="text-gray-700">
-                Descubrí la vida, legado y publicaciones de la Dra. Olga
-                Echeverría, investigadora referente del IEHS.
-              </p>
-            </Link>
-
-            <Link
-              href="/homenaje-garavaglia"
-              className="p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer block"
-              prefetch
-            >
-              <h2 className="text-2xl font-bold text-[#134e5e] mb-2">
-                Homenaje a Juan Carlos Garavaglia
-              </h2>
-              <p className="text-gray-700">
-                Explorá la vida, trayectoria académica y legado intelectual del
-                historiador Juan Carlos Garavaglia.
-              </p>
-            </Link>
+            
           </section>
         </main>
 
-        {/* Autoridades */}
-        <Autoridades />
+            {/* Autoridades */}
+            <Autoridades />
+            <main className="flex-grow bg-[#f9fbfc] py-16" id="proyectos">
+              <section className="container mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-10">
+                <Link
+                  href="/homenajeOlga"
+                  className="p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer block"
+                  prefetch
+                >
+                  <h2 className="text-2xl font-bold text-[#134e5e] mb-2">
+                    Homenaje a Olga Echeverría
+                  </h2>
+                </Link>
+
+                <Link
+                  href="/homenaje-garavaglia"
+                  className="p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer block"
+                  prefetch
+                >
+                  <h2 className="text-2xl font-bold text-[#134e5e] mb-2">
+                    Homenaje a Juan Carlos Garavaglia
+                  </h2>
+                </Link>
+              </section>
+            </main>
 
         <Footer />
       </div>
