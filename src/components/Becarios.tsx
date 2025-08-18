@@ -49,7 +49,7 @@ export default function Becarios() {
             border-4 border-white shadow-md ring-2 ring-[#134e5e]/15
           "
         />
-        <p className="text-xs text-[#f9623e] mb-1 tracking-wide uppercase">
+        <p className="text-xs text-[#134e5e] mb-1 tracking-wide uppercase">
           Becarios/as
         </p>
         <h3 className="text-[1.1rem] font-semibold text-[#134e5e] text-center mb-2">
