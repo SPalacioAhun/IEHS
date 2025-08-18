@@ -39,7 +39,7 @@ export default function Doctorado() {
         opacity-95 font-medium tracking-wide text-[#ffe9e2] drop-shadow
       "
     >
-      CONEAU &quot;A&quot; – <span className="font-bold text-[#f9623e]">Res. CONEAU N°357/07 y 41/18</span>
+      CONEAU &quot;A&quot; – Res. CONEAU N°357/07 y 41/18
     </p>
     {/* Nav interno */}
     <DoctoradoHeaderNav />
