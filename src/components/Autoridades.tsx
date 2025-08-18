@@ -133,7 +133,7 @@ export default function Autoridades() {
               <div className="text-white text-2xl font-bold drop-shadow-md">
                 {a.nombre}
               </div>
-              <div className="text-[#f9623e] mt-1 uppercase tracking-wide text-sm font-semibold">
+              <div className="text-white mt-1 uppercase tracking-wide text-sm font-semibold">
                 {a.cargo}
               </div>
             </div>
