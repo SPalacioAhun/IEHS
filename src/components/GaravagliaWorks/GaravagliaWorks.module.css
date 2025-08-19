@@ -1,9 +1,3 @@
-/*
- * Styles for the list of works (trabajos).  Each item shows the title
- * along with publication year and additional details.  Links open in
- * a new tab to preserve the user’s current page.
- */
-
 .works {
   max-width: 1200px;
   margin: 0 auto;
@@ -11,40 +5,151 @@
 }
 
 .title {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.25rem;
   color: var(--text-primary, #0f172a);
+  border-bottom: 3px solid var(--accent-color, #134e5e);
+  padding-bottom: 0.5rem;
 }
 
+/* Controles (tabs) */
+.controls {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.partBtn {
+  appearance: none;
+  border: 1px solid var(--border-color, #e2e8f0);
+  background: #ffffff;
+  color: var(--text-primary, #0f172a);
+  padding: .5rem .8rem;
+  border-radius: .6rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .15s ease, border-color .15s ease, transform .02s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.partBtn:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.partBtn:active {
+  transform: translateY(1px);
+}
+
+.partBtnActive {
+  background: #0f172a;
+  color: #fff;
+  border-color: #0f172a;
+}
+
+.badge {
+  min-width: 1.75rem;
+  height: 1.4rem;
+  border-radius: 999px;
+  background: #0f172a1a;
+  color: currentColor;
+  display: grid;
+  place-items: center;
+  font-size: .85rem;
+  padding: 0 .4rem;
+}
+
+/* Lista de trabajos */
 .list {
   list-style: none;
   padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  margin: .5rem 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .6rem;
 }
 
+
+
 .item {
-  font-size: 1rem;
+  background: var(--card-bg, #fff);
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: .75rem;
+  padding: .75rem .9rem;
+  line-height: 1.55;
+  box-shadow: 0 2px 8px rgba(2,6,23,0.03);
 }
 
 .link {
-  color: var(--link-color, #2563eb);
-  text-decoration: underline;
+  color: var(--link-color, #0f172a);
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .link:hover {
-  color: var(--link-hover-color, #1e40af);
+  text-decoration: underline;
+}
+
+.itemTitle {
+  /* Por si hay títulos largos, cortar elegante */
+  display: inline-block;
+  overflow-wrap: anywhere;
 }
 
 .year {
-  font-weight: 500;
-  margin-left: 0.25rem;
+  color: var(--text-secondary, #475569);
 }
 
 .details {
-  margin-left: 0.25rem;
-  font-size: 0.875rem;
-  color: var(--text-muted, #475569);
+  color: var(--text-secondary, #475569);
+}
+
+/* Pie con acciones */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin-top: 1rem;
+}
+
+.moreBtn {
+  appearance: none;
+  border: 1px solid #0f172a;
+  background: #0f172a;
+  color: #fff;
+  padding: .6rem 1rem;
+  border-radius: .65rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .15s ease, transform .02s ease;
+}
+
+.moreBtn:hover {
+  background: #122033;
+}
+
+.moreBtn:active {
+  transform: translateY(1px);
+}
+
+.hint {
+  color: var(--text-secondary, #475569);
+  font-size: .95rem;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .partBtn { background: #0b1220; border-color: #334155; color: #e5e7eb; }
+  .partBtn:hover { background: #0f172a; }
+  .partBtnActive { background: #134e5e; border-color: #134e5e; }
+  .badge { background: #ffffff22; }
+  .item { border-color: #334155; background: #0b1220; }
+  .moreBtn { background: #134e5e; border-color: #134e5e; }
+  .moreBtn:hover { background: #0f3f4b; }
 }

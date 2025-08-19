@@ -81,11 +81,12 @@ export interface Testimonial {
 export interface Work {
   title: string;
   /** Year of publication or completion. */
-  year: number;
+  year?: number;
   /** Additional reference information such as page numbers. */
   details?: string;
   /** URL to the work itself (external or internal). */
   href: string;
+  part: 1 | 2 | 3;
 }
 
 export interface Review {
@@ -630,24 +631,173 @@ export const testimonials: Testimonial[] = [
 // Sample works (trabajos).  Add as many items as necessary; include
 // informative titles and links to the digital versions of the works.
 export const works: Work[] = [
+  // ---------------------------
+  // PARTE 1 (17 ítems)
+  // ---------------------------
   {
     title: 'El comercio virreinal 1779–1784',
     year: 1970,
-    details: 'Tesis de licenciatura (UBA)',
-    href: 'https://repositorio.uba.ar/comm/handle/123456789/12345'
+    details: 'Tesis de licenciatura. Págs. 111.',
+    href: 'http://repositorio.filo.uba.ar/bitstream/handle/filodigital/4206/uba_ffyl_t_1970_se_Garavaglia.pdf?sequence=3&isAllowed=y',
+    part: 1
   },
   {
-    title: 'Los textiles de la tierra en el contexto colonial rioplatense',
+    title: 'Los textiles de la tierra en el contexto colonial rioplatense: ¿una revolución industrial fallida?',
     year: 1986,
-    details: 'Anuario IEHS 1 (1986): 73–93',
-    href: 'https://repositorio.iehs/1986-textiles.pdf'
+    details: 'Juan Carlos Garavaglia Anuario IEHS: Instituto de Estudios histórico sociales, ISSN 0326-9671, N. 1, 1986, Págs. 45-87.',
+    href: 'http://bit.ly/2vmHw0o',
+    part: 1
   },
   {
     title: '¿Existieron los gauchos?',
     year: 1987,
-    details: 'Anuario IEHS 2 (1987): 45–62',
-    href: 'https://repositorio.iehs/1987-gauchos.pdf'
-  }
+    details: 'Anuario IEHS: Instituto de Estudios histórico sociales, ISSN 0326-9671, N. 2, 1987, Págs. 42-52.',
+    href: 'http://bit.ly/2g2OR30',
+    part: 1
+  },
+  { 
+    title: 'El abasto de una villa novohispana: mercancías y flujos mercantiles en Tepeaca (1780-1820)', 
+    year: 1987, 
+    details: 'Juan Carlos Garavaglia, Juan Carlos Grosso Anuario IEHS: Instituto de Estudios histórico sociales, ISSN 0326-9671, N. 2, 1987, Págs. 217-253.', 
+    href: 'http://bit.ly/2wBCzVQ', 
+    part: 1 
+  },
+  { 
+    title: 'Un nuevo aporte a la historia del textil colonial: los ponchos frente al mercado porteño (1750-1850)', 
+    year: 1989, 
+    details: 'Juan Carlos Garavaglia, Claudia Wentzel Anuario IEHS: Instituto de Estudios histórico sociales, ISSN 0326-9671, N. 4, 1989', 
+    href: 'http://bit.ly/2wBqnnR', 
+    part: 1 
+  },
+  { 
+    title: 'El comportamiento demográfico de una parroquia poblana de la colonia al México independiente: Tepeaca y su entorno agrario, 1740-1850', 
+    year: 1991, 
+    details: 'Juan C. Garavaglia y Juan C. Grosso,en Historia mexicana, Vol. XL, Nº 1, 1991, Págs. 615-671.', 
+    href: 'http://bit.ly/2wvs2fz', 
+    part: 1 
+  },
+  { 
+    title: 'Las relaciones entre el medio y las sociedades humanas en su perspectiva histórica', 
+    year: 1992, 
+    details: "Anuario IEHS: Instituto de Estudios histórico sociales, ISSN 0326-9671, N. 7, 1992 (Ejemplar dedicado a: América' 92), Págs. 41-57.", 
+    href: 'http://bit.ly/2vmqj7g', 
+    part: 1 
+  },
+  { 
+    title: 'De la carne al cuero. Los mercados para los productos pecuarios (Buenos Aires y su campaña, 1700-1825)', 
+    year: 1994, 
+    details: 'Anuario IEHS: Instituto de Estudios histórico sociales, ISSN 0326-9671, N. 9, 1994, Págs. 61-96.', 
+    href: 'http://bit.ly/2vbMOMM', 
+    part: 1 
+  },
+  { 
+    title: 'Rural History of the Río de la Plata, 1600-1850: Results of a Historiographical Renaissance', 
+    year: 1995, 
+    details: 'Garavaglia, Juan C. y  Gelman, Jorge (1995),  en Latin American Research Review, vol 30, Nº 3, Págs. 75-105.', 
+    href: 'http://bit.ly/2vbOwxH', 
+    part: 1 
+  },
+  { 
+    title: 'Indios, campesinos y mercado. La región de Puebla a finales del siglo XVIII', 
+    year: 1996, 
+    details: 'Juan Carlos Garavaglia, Juan Carlos Grosso Historia mexicana, ISSN 0185-0172, Vol. 46, Nº. 2, 1996, Págs. 245-278.', 
+    href: 'http://bit.ly/2xpSRhx', 
+    part: 1 
+  },
+  { 
+    title: 'El teatro del poder: ceremonias, tensiones y conflictos en el estado colonial', 
+    year: 1996, 
+    details: ' Boletín del Instituto de Historia Ar¬gentina y Americana "Dr. Emilio Ravignani", 3a. serie, 14: Págs.7-30, Facultad de Filosofía y Letras, UBA, Buenos Aires, 1996', 
+    href: 'http://bit.ly/2w0P8aQ', 
+    part: 1 
+  },
+  { 
+    title: 'De ‘mingas’ y ‘convites’: la reciprocidad campesina entre los paisanos rioplatenses', 
+    year: 1997, 
+    details: 'Anuario IEHS: Instituto de Estudios histórico sociales, ISSN 0326-9671, N. 12, 1997, Págs. 131-139.', 
+    href: 'http://bit.ly/2wl4wBe', 
+    part: 1 
+  },
+  { 
+    title: 'Intensidad de uso de la tierra y tasas de ocupación ganadera en la pradera pampeana (1816-1852)', 
+    year: 1998, 
+    details: 'Quinto Sol, Revista de historia regional, 2, Instituto de Historia Regional, Universidad Nacional de la Pampa, 1998. Págs.5-23.', 
+    href: 'http://bit.ly/2vWak3k', 
+    part: 1 
+  },
+  { 
+    title: 'Criollos, mestizos e indios: etnias y clases sociales en Mexico colonial a fines del siglo XVIII', 
+    year: 1994, 
+    details: 'Juan Carlos Garavaglia y Juan Carlos Grosso. ISSN: 0186-0348, ISSN electrónico: 2395-8464 Secuencia (1994), 29, mayo-agosto, Págs. 39-80.', 
+    href: '/GARAVAGLIA GROSSO CRIOLLOS MESTIZOS E INDIOS.pdf', 
+    part: 1 
+  },
+  { 
+    title: 'Diezmos, producción agraria y mercados: Mendoza y Cuyo, 1710-1830',  
+    details: 'Juan Carlos Garavaglia y María del Rosario Prieto. Boletín del Instituto de Historia Argentina y Americana "Dr. Emilio Ravignani" Tercera serie n°30. Págs. 7-33.', 
+    href: '/GARAVAGLIA PRIETO DIEZMOS CUYO.pdf', 
+    part: 1 
+  },
+  { 
+    title: 'Servir al Estado, servir al poder: la burocracia en el proceso de construcción estatal en América Latina', 
+    year: 2012, 
+    details: 'Juan Carlos Garavaglia. Almanack. Guarulhos, n.03,1º semestre de 2012. Págs. 5-26.', 
+    href: '/GARAVAGLIA SERVIR AL ESTADO.pdf', 
+    part: 1 
+  },
+  { 
+    title: 'Discursos, textos y contexto. Breves reflexiones acerca de un libro reciente. Myers, Jorge: Orden y virtud. El discurso republicano en el régimen rosista, Bernal, Universidad Nacional de Quilmes, 1995.', 
+    year: 2017, 
+    details: 'Reseña Juan Carlos Garavaglia. Rey Desnudo Año 6  Nº 11 - Primavera 2017. Págs 333-341', 
+    href: 'https://reydesnudo.com.ar/rey-desnudo/article/view/419/376', 
+    part: 1 
+  },
+
+  // ---------------------------
+  // PARTE 2 (16 ítems)
+  // ---------------------------
+  { title: 'Migraciones internas y poblamiento', year: 1981, details: 'Revista D', href: '#', part: 2 },
+  { title: 'Producción textil doméstica y comercio', year: 1983, details: 'Revista D', href: '#', part: 2 },
+  { title: 'Cabildos y elites locales', year: 1984, details: 'Capítulo de libro', href: '#', part: 2 },
+  { title: 'Rentas reales y administración colonial', year: 1985, details: 'Revista E', href: '#', part: 2 },
+  { title: 'Comercio interprovincial y arrieros', year: 1986, details: 'Revista E', href: '#', part: 2 },
+  { title: 'Militarización de la campaña rioplatense', year: 1987, details: 'Anuario C', href: '#', part: 2 },
+  { title: 'Precios, salarios y canastas coloniales', year: 1988, details: 'Anuario C', href: '#', part: 2 },
+  { title: 'Conflictos por el uso de la tierra', year: 1989, details: 'Revista F', href: '#', part: 2 },
+  { title: 'Producción cerealera y abastecimiento', year: 1990, details: 'Revista F', href: '#', part: 2 },
+  { title: 'Redes mercantiles y agentes locales', year: 1991, details: 'Revista G', href: '#', part: 2 },
+  { title: 'Bandolerismo y justicia rural', year: 1992, details: 'Dossier', href: '#', part: 2 },
+  { title: 'Fiscalidad y economías domésticas', year: 1993, details: 'Revista H', href: '#', part: 2 },
+  { title: 'Poder local y negociación política', year: 1994, details: 'Capítulo de libro', href: '#', part: 2 },
+  { title: 'Abasto urbano y cadenas de suministro', year: 1995, details: 'Revista H', href: '#', part: 2 },
+  { title: 'Mercados negros y contrabando menor', year: 1996, details: 'Revista I', href: '#', part: 2 },
+  { title: 'Fiscalidad parroquial y diezmos', year: 1997, details: 'Anuario D', href: '#', part: 2 },
+
+  // ---------------------------
+  // PARTE 3 (22 ítems)
+  // ---------------------------
+  { title: 'Crisis económicas y resiliencia rural', year: 1978, details: 'Revista J', href: '#', part: 3 },
+  { title: 'Ganados, cueros y exportaciones', year: 1979, details: 'Revista J', href: '#', part: 3 },
+  { title: 'Estructuras agrarias comparadas', year: 1980, details: 'Capítulo de libro', href: '#', part: 3 },
+  { title: 'Mercado interno y circulación monetaria', year: 1981, details: 'Revista K', href: '#', part: 3 },
+  { title: 'Propiedad y tenencia de la tierra', year: 1982, details: 'Revista K', href: '#', part: 3 },
+  { title: 'Comerciantes portugueses en el Río de la Plata', year: 1983, details: 'Dossier', href: '#', part: 3 },
+  { title: 'Rutas fluviales y puertos secundarios', year: 1984, details: 'Revista L', href: '#', part: 3 },
+  { title: 'Economía de frontera y violencia', year: 1985, details: 'Revista L', href: '#', part: 3 },
+  { title: 'Trabajo indígena y mestizo', year: 1986, details: 'Revista M', href: '#', part: 3 },
+  { title: 'Comercio atlántico y redes globales', year: 1987, details: 'Capítulo de libro', href: '#', part: 3 },
+  { title: 'Sistemas productivos mixtos', year: 1988, details: 'Revista N', href: '#', part: 3 },
+  { title: 'Estancias y mano de obra', year: 1989, details: 'Revista N', href: '#', part: 3 },
+  { title: 'Población, familia y demografía rural', year: 1990, details: 'Anuario E', href: '#', part: 3 },
+  { title: 'Instituciones fiscales y reforma borbónica', year: 1991, details: 'Revista O', href: '#', part: 3 },
+  { title: 'Abigeato y control territorial', year: 1992, details: 'Revista O', href: '#', part: 3 },
+  { title: 'Producción ovina y mercados', year: 1993, details: 'Revista P', href: '#', part: 3 },
+  { title: 'Relaciones laborales y contratos', year: 1994, details: 'Revista P', href: '#', part: 3 },
+  { title: 'Fiscalidad del comercio interregional', year: 1995, details: 'Anuario F', href: '#', part: 3 },
+  { title: 'Pequeña propiedad y arrendamientos', year: 1996, details: 'Revista Q', href: '#', part: 3 },
+  { title: 'Redes sociales de comerciantes', year: 1997, details: 'Revista Q', href: '#', part: 3 },
+  { title: 'Milicias, frontera y defensa', year: 1998, details: 'Capítulo de libro', href: '#', part: 3 },
+  { title: 'Circuitos de ferias y trueque', year: 1999, details: 'Revista R', href: '#', part: 3 }
 ];
 
 // Sample reviews of Garavaglia’s work.  Each item cites the work reviewed

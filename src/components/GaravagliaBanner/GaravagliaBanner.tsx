@@ -18,9 +18,7 @@ export default function GaravagliaBanner() {
           <h1 className="text-3xl md:text-5xl font-bold text-white drop-shadow-md">
             Juan Carlos Garavaglia
           </h1>
-          <p className="mt-3 text-white/90 text-lg md:text-xl tracking-wide">
-            Sitio homenaje
-          </p>
+          
         </div>
       </div>
     </section>
