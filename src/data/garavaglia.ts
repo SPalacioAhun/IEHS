@@ -872,28 +872,157 @@ export const works: Work[] = [
   // ---------------------------
   // PARTE 3 (22 ítems)
   // ---------------------------
-  { title: 'Crisis económicas y resiliencia rural', year: 1978, details: 'Revista J', href: '#', part: 3 },
-  { title: 'Ganados, cueros y exportaciones', year: 1979, details: 'Revista J', href: '#', part: 3 },
-  { title: 'Estructuras agrarias comparadas', year: 1980, details: 'Capítulo de libro', href: '#', part: 3 },
-  { title: 'Mercado interno y circulación monetaria', year: 1981, details: 'Revista K', href: '#', part: 3 },
-  { title: 'Propiedad y tenencia de la tierra', year: 1982, details: 'Revista K', href: '#', part: 3 },
-  { title: 'Comerciantes portugueses en el Río de la Plata', year: 1983, details: 'Dossier', href: '#', part: 3 },
-  { title: 'Rutas fluviales y puertos secundarios', year: 1984, details: 'Revista L', href: '#', part: 3 },
-  { title: 'Economía de frontera y violencia', year: 1985, details: 'Revista L', href: '#', part: 3 },
-  { title: 'Trabajo indígena y mestizo', year: 1986, details: 'Revista M', href: '#', part: 3 },
-  { title: 'Comercio atlántico y redes globales', year: 1987, details: 'Capítulo de libro', href: '#', part: 3 },
-  { title: 'Sistemas productivos mixtos', year: 1988, details: 'Revista N', href: '#', part: 3 },
-  { title: 'Estancias y mano de obra', year: 1989, details: 'Revista N', href: '#', part: 3 },
-  { title: 'Población, familia y demografía rural', year: 1990, details: 'Anuario E', href: '#', part: 3 },
-  { title: 'Instituciones fiscales y reforma borbónica', year: 1991, details: 'Revista O', href: '#', part: 3 },
-  { title: 'Abigeato y control territorial', year: 1992, details: 'Revista O', href: '#', part: 3 },
-  { title: 'Producción ovina y mercados', year: 1993, details: 'Revista P', href: '#', part: 3 },
-  { title: 'Relaciones laborales y contratos', year: 1994, details: 'Revista P', href: '#', part: 3 },
-  { title: 'Fiscalidad del comercio interregional', year: 1995, details: 'Anuario F', href: '#', part: 3 },
-  { title: 'Pequeña propiedad y arrendamientos', year: 1996, details: 'Revista Q', href: '#', part: 3 },
-  { title: 'Redes sociales de comerciantes', year: 1997, details: 'Revista Q', href: '#', part: 3 },
-  { title: 'Milicias, frontera y defensa', year: 1998, details: 'Capítulo de libro', href: '#', part: 3 },
-  { title: 'Circuitos de ferias y trueque', year: 1999, details: 'Revista R', href: '#', part: 3 }
+  { 
+    title: 'Entrevista a Juan Carlos Garavaglia', 
+    details: 'en Quinto Sol, revista de historia.', 
+    href: 'http://cerac.unlpam.edu.ar/index.php/quintosol/article/view/1114', 
+    part: 3 
+  },
+  { 
+    title: 'Sara Mata de López, Tierra y poder en Salta. El noroeste argentino en vísperas de la independencia, Diputación de Sevilla, Sevilla, 2000, 367 páginas. ', 
+    year: 2017, 
+    details: 'RESEÑA de Juan Carlos Garavaglia Nuevo Mundo Mundos Nuevos [En ligne], Comptes rendus et essais historiographiques, mis en ligne le 07 février 2005, consulté le 08 juin 2017', 
+    href: 'http://nuevomundo.revues.org/362', 
+    part: 3 
+  },
+  { 
+    title: 'Garavaglia, Juan Carlos y Pierre Gautreau (editores), Mensurar la tierra, controlar el territorio. América Latina, siglos XVIII-XIX,326 pp. ', 
+    year: 2011, 
+    details: 'RESEÑA de Manriana Canedo. Rosario, Prohistoria Ediciones-State Building in Latin America, 2011.', 
+    href: '/Reseña Mensurar la tierra...pdf', 
+    part: 3 
+  },
+  { 
+    title: 'Garavaglia, J.C. Pastores y labradores de Buenos Aires. Una historia agraria de la campaña bonaerense, 1700-1830. 385 páginas.', 
+    year: 1999, 
+    details: 'RESEÑA de Julio Djenderedjian. Buenos Aires, Ediciones de la Flor, 1999.', 
+    href: '/DjenderedjianPastyLabr.pdf', 
+    part: 3 
+  },
+  { 
+    title: 'PARA QUE NUESTROS HIJOS PUEDAN SABER. Garavaglia, Juan Carlos. Una juventud en los años sesenta. 208 páginas.', 
+    year: 2015, 
+    details: 'RESEÑA de Daniel Villar. Ciudad Autónoma de Buenos Aires, Prometeo Libros, 2015.', 
+    href: '/Daniel Villar.pdf', 
+    part: 3 
+  },
+  { 
+    title: 'En busca del tiempo perdido. La economía de Buenos Aires en el país de la abundancia 1750-1865.', 
+    year: 2004, 
+    details: 'RESEÑA de Eduardo José Míguez. Buenos Aires, Prometeo, 2004.', 
+    href: '/MIGUEZ.pdf', 
+    part: 3 
+  },
+  { 
+    title: 'Por qué leer Poder, conflicto y relaciones sociales. El Río de la Plata, XVIII y XIX', 
+    details: 'RESEÑA de José Mateo.', 
+    href: '/Por qué leer Poder, conflicto y relaciones sociales....pdf', 
+    part: 3 
+  },
+  { 
+    title: 'Por qué seguir leyendo Población, sociedad, familia y migraciones en el espacio rioplatense. Siglos XVIII y XIX (Buenos Aires, Cántaro, 1993) de Juan Carlos Garavaglia y José Luis Moreno (comps.)',  
+    details: 'RESEÑA de Judith Farberman.', 
+    href: '/Por qué seguir leyendo Población Judith Farberman.pdf', 
+    part: 3 
+  },
+  { 
+    title: 'Población, sociedad, familia y migraciones en el espacio rioplatense. Siglos XVIII y XIX', 
+    year: 1994, 
+    details: ' Fernando Boro, reseña de Juan Carlos Garavaglia y José Luis Moreno (comps.)Buenos Aires, Cántaro, Colección de Estudios Sociopolíticos, 1993, en Boletín del Instituto de Historia Argentina y Americana “Dr. Emilio Ravignani” Tercera serie, núm. 9, 1er- semestre de 1994.', 
+    href: 'http://ravignanidigital.com.ar/_bol_ravig/n09/n09a06.pdf', 
+    part: 3 
+  },
+  { 
+    title: 'La región de Puebla y la economía novohispana: las alcabalas en la Nueva España, 1776-1821', 
+    year: 1998, 
+    details: 'Carlos Marichal, reseña de Juan Carlos Garavaglia y Juan Carlos Grosso,  Instituto Mora/Universidad Autónoma de Puebla, México, 1996, en Secuencia, Nº 42, 1998', 
+    href: 'http://aleph.org.mx/jspui/bitstream/56789/25080/1/35-140-1986-0549.pdf', 
+    part: 3 
+  },
+  { 
+    title: 'Poder, conflicto y relaciones sociales. El Río de la Plata, XVIII-XIX', 
+    year: 1999, 
+    details: 'Nidia Areces, reseña de Garavaglia, Juan Carlos Colección Pasados Posibles, Horno Sapiens Ediciones, Rosario 1999. 212 pp. Gráficos, cuadros y mapas. Localización: Prohistoria: historia, políticas de la historia, ISSN 1514-0032, Nº. 3, 1999, Págs. 331-335.', 
+    href: 'https://dialnet.unirioja.es/servlet/articulo?codigo=5851815', 
+    part: 3 
+  },
+  { 
+    title: 'Pastores y labradores de Buenos Aires. Una historia agraria de la campaña bonaerense 1700-1830', 
+    year: 2000, 
+    details: 'Griselda Tarragó, reseña de Juan Carlos Garavaglia,  Buenos Aires, Ediciones de la Flor, 1999, 408 páginas, en Prohistoria, Nº 4, 2000.', 
+    href: 'https://dialnet.unirioja.es/servlet/articulo?codigo=5852403', 
+    part: 3 
+  },
+  { 
+    title: 'América Latina de los orígenes a la independencia', 
+    year: 1990, 
+    details: 'María Inés Moraes Vázquez, reseña de Juan Carlos Garavaglia y Juan MarchenaBarcelona, Crítica, 2 vols., 2005, 563 Págs., en Investigaciones de Historia Económica', 
+    href: '#', 
+    part: 3 
+  },
+  { 
+    title: 'Construir el estado, inventar la nación. El Río de la Plata, siglos XVIII-XIX', 
+    year: 2008, 
+    details: 'Corva, María Angélica, reseña de Juan Carlos Garavaglia, en Mundo Agrario, vol. 9, núm. 17, 2008', 
+    href: 'http://www.redalyc.org/articulo.oa?id=84511268011', 
+    part: 3 
+  },
+  { 
+    title: 'Renán Silva, reseña de Lois, justice, coutume. Amérique et Europe latines (16e-19e siècle)', 
+    year: 2012, 
+    details: 'Bajo la dirección de Juan Carlos Garavaglia,Jean-Frédéric Schaub, París: EHESS, 2005. 317 pp., en Fronteras de la Historia, Vol. 17, Nº 1, 2012.', 
+    href: 'http://www.icanh.gov.co/index.php?idcategoria=12692', 
+    part: 3 
+  },
+  { 
+    title: 'Guerras, burocracias y fiscalidad: discutiendo la génesis de un problema. Las fuerzas de guerra en la construcción del Estado, América Latina, siglo XIX', 
+    year: 2013, 
+    details: 'reseña de Germán Soprano, de Juan Carlos Garavaglia, Juan Pro Ruiz y Eduardo Zimmermann (eds.), en Localización: PolHis: Boletín Bibliográfico Electrónico, ISSN-e 1853-7723, Año 6, Nº. 12, 2013, Págs. 307-312.', 
+    href: 'https://dialnet.unirioja.es/servlet/articulo?codigo=4739847', 
+    part: 3 
+  },
+  { 
+    title: 'Latin American Bureaucracy and the State Building Process (1780-1860)', 
+    year: 2016, 
+    details: 'Juan Luis Ossa Santa Cruz, reseña de Juan Carlos Garavaglia and Juan Pro Ruiz (eds.) Newcastle upon Tyne, UK: Cambridge Scholars Publishing, 2013, en Journal of Latin American Studies, Vol. 48, Nº 4, 2016 ', 
+    href: 'http://www.cambridgescholars.com/download/sample/59371', 
+    part: 3 
+  },
+  { 
+    title: 'Juan Carlos Garavaglia, Una juventud en los años sesenta', 
+    year: 2017, 
+    details: 'Luc Capdevila, Nuevo Mundo Mundos Nuevos [En ligne], Comptes rendus et essais historiographiques, mis en ligne le 10 décembre 2016, consulté le 08 juin 2017.', 
+    href: 'http://nuevomundo.revues.org/70062', 
+    part: 3 
+  },
+  { 
+    title: 'Actas de Calificaciones', 
+    year: 1974, 
+    details: ' Mesa de exámen del 19 diciembre de 1974, donde examinó a 27 alumnos regulares en la asignatura "Historia Argentina y Americana (S.XVI-XVIII)"', 
+    href: '/Garavaglia - Acta calificaciones UNS.pdf', 
+    part: 3 
+  },
+  { 
+    title: 'Programa "Historia Argentina", 1° cuatrimestre de 1974', 
+    year: 1974, 
+    details: 'Juan Carlos Garavaglia, Hernán Silva y Esther Iglesias.', 
+    href: '/Garavaglia - PHA UNS.pdf', 
+    part: 3 
+  },
+  { 
+    title: 'Programa "Historia Argentina Contemporánea",  2°cuatrimestre de 1974', 
+    year: 1974, 
+    details: ' Juan Carlos Garavaglia y E. Iglesias.', 
+    href: '/Garavaglia - PHAC UNS.pdf', 
+    part: 3 
+  },
+  { 
+    title: 'Programa "Historia Argentina y Americana (s. XVI-XVIII),  2°cuatrimestre de 1974', 
+    year: 1974, 
+    details: ' Juan Carlos Garavaglia.', 
+    href: '/Garavaglia - PHAyA UNS.pdf', 
+    part: 3 
+  }
 ];
 
 // Sample reviews of Garavaglia’s work.  Each item cites the work reviewed
