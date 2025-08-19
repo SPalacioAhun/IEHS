@@ -43,13 +43,8 @@ const HomenajeOlgaEcheverria: React.FC = () => {
         {/* Título central */}
         <div className="relative z-10 flex flex-col items-center text-center">
           <h1 className="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg mb-4 tracking-tight">
-            Homenaje a Olga Echeverría
+            Olga Echeverría
           </h1>
-          {/* Si querés subtítulo o frase, descomentá esto: */}
-          <p className="text-lg md:text-2xl text-white font-medium drop-shadow mt-2 max-w-xl">
-            “Página dedicada a Olga Echeverría en la cual recorreremos su
-            trayectoria.”
-          </p>
         </div>
       </div>
 

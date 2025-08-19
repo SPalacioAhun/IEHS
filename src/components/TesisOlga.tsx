@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
 // Rutas a los PDFs y las imágenes de tapa
@@ -6,14 +7,12 @@ const tesis = [
     grado: "Tesis de Licenciatura",
     titulo:
       "Autoritarismo y represión. Los enemigos de la sociedad militarizada. Argentina 1976-1983",
-    url: "https://www.unicen.edu.ar/iehs/OlgaEcheverr%C3%ADa/Licenciatura%20en%20Historia.pdf",
     img: "/LIC.png", // Cambia por tu imagen real
   },
   {
     grado: "Tesis de Doctorado",
     titulo:
       '"Una inteligencia disciplinada y disciplinante". Los intelectuales autoritarios de derechas: su concepción estética ideológica y la representación de la sociedad. Argentina, primeras décadas del siglo XX.',
-    url: "https://www.unicen.edu.ar/iehs/OlgaEcheverr%C3%ADa/Doctorado%20Inter%20Universitario%20en%20Historia.pdf",
     img: "/DOC.png", // Cambia por tu imagen real
   },
 ];
@@ -44,15 +43,7 @@ const TesisOlga: React.FC = () => (
           <p className="text-gray-800 text-base mb-6 text-center font-serif leading-relaxed">
             {tes.titulo}
           </p>
-          <a
-            href={tes.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-auto block px-10 py-3 rounded-xl border-2 border-[#134e5e] bg-gradient-to-r from-[#f9fbfc] to-[#eaf3fa] text-[#134e5e] font-extrabold text-lg tracking-wide transition hover:bg-[#f9623e] hover:text-[#f96b1c] hover:shadow-lg"
-            download
-          >
-            DESCARGAR
-          </a>
+          
         </div>
       ))}
     </div>
