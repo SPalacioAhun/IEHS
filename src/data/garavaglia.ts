@@ -756,22 +756,118 @@ export const works: Work[] = [
   // ---------------------------
   // PARTE 2 (16 ítems)
   // ---------------------------
-  { title: 'Migraciones internas y poblamiento', year: 1981, details: 'Revista D', href: '#', part: 2 },
-  { title: 'Producción textil doméstica y comercio', year: 1983, details: 'Revista D', href: '#', part: 2 },
-  { title: 'Cabildos y elites locales', year: 1984, details: 'Capítulo de libro', href: '#', part: 2 },
-  { title: 'Rentas reales y administración colonial', year: 1985, details: 'Revista E', href: '#', part: 2 },
-  { title: 'Comercio interprovincial y arrieros', year: 1986, details: 'Revista E', href: '#', part: 2 },
-  { title: 'Militarización de la campaña rioplatense', year: 1987, details: 'Anuario C', href: '#', part: 2 },
-  { title: 'Precios, salarios y canastas coloniales', year: 1988, details: 'Anuario C', href: '#', part: 2 },
-  { title: 'Conflictos por el uso de la tierra', year: 1989, details: 'Revista F', href: '#', part: 2 },
-  { title: 'Producción cerealera y abastecimiento', year: 1990, details: 'Revista F', href: '#', part: 2 },
-  { title: 'Redes mercantiles y agentes locales', year: 1991, details: 'Revista G', href: '#', part: 2 },
-  { title: 'Bandolerismo y justicia rural', year: 1992, details: 'Dossier', href: '#', part: 2 },
-  { title: 'Fiscalidad y economías domésticas', year: 1993, details: 'Revista H', href: '#', part: 2 },
-  { title: 'Poder local y negociación política', year: 1994, details: 'Capítulo de libro', href: '#', part: 2 },
-  { title: 'Abasto urbano y cadenas de suministro', year: 1995, details: 'Revista H', href: '#', part: 2 },
-  { title: 'Mercados negros y contrabando menor', year: 1996, details: 'Revista I', href: '#', part: 2 },
-  { title: 'Fiscalidad parroquial y diezmos', year: 1997, details: 'Anuario D', href: '#', part: 2 },
+  { 
+    title: 'Mucha tierra y poca gente: un nuevo balance historiográfico de la historia rural platense (1750-1850)', 
+    year: 1998, 
+    details: ' Garavaglia, Juan C. y  Gelman, Jorge (1998),en Historia Agraria, Nº 15, Murcia, Págs. 29-50.', 
+    href: 'http://repositori.uji.es/xmlui/handle/10234/123804', 
+    part: 2 
+  },
+  { 
+    title: 'De Caseros a la guerra del Paraguay: El disciplinamiento de la población campesina en el Buenos Aires postrosista (1852-1865)', 
+    year: 2001, 
+    details: 'Juan Carlos Garavaglia, Illes i imperis: Estudios de historia de las sociedades en el mundo colonial y post-colonial, ISSN 1575-0698, Nº. 5, 2001, Págs. 53-80. ', 
+    href: 'http://www.raco.cat/index.php/IllesImperis/article/view/69411', 
+    part: 2 
+  },
+  { 
+    title: 'Buenos Aires y Salta en rito cívico: la revolución y las Fiestas Mayas', 
+    year: 2002, 
+    details: ' Andes. Antropología e Historia,  13, Salta, 2002: Págs. 173-212.', 
+    href: 'http://www.redalyc.org/html/127/12701307/', 
+    part: 2 
+  },
+  { 
+    title: 'Capitalismo agrario en la frontera. Buenos Aires y la región pampeana en el siglo XIX', 
+    year: 2003, 
+    details: 'Garavaglia, Juan C. y  Gelman, Jorge (2003), en Historia Agraria, Nº 29, Murcia, Págs. 105-122.', 
+    href: 'http://www.historiaagraria.com/numero.php?n=29', 
+    part: 2 
+  },
+  { 
+    title: 'Elecciones y luchas políticas en los pueblos de la campaña de Buenos Aires: San Antonio de Areco (1813-1844)', 
+    year: 2005, 
+    details: 'Boletín del Instituto de Historia Ar¬gentina y Ameri¬cana "Dr. Emilio Ravignani", 3a. serie, 27, Buenos Aires, 2005: Págs. 49-74.', 
+    href: 'http://www.scielo.org.ar/scielo.php?script=sci_arttext&pid=S0524-97672005000100002', 
+    part: 2 
+  },
+  { 
+    title: 'La construcción nacional en la Argentina: rentas, presupuestos y niveles de estatalidad (1856-1865)', 
+    year: 2013, 
+    details: 'Juan Carlos Garavaglia, Prohistoria: historia, políticas de la historia, ISSN 1514-0032, Nº. 20, 2013, Págs. 3-43.', 
+    href: 'http://www.scielo.org.ar/scielo.php?script=sci_arttext&pid=S1851-95042013000200001', 
+    part: 2 
+  },
+  { 
+    title: 'Las dos márgenes de un problema', 
+    year: 2017, 
+    details: 'Juan Carlos Garavaglia et Denis Merklen,, Nuevo Mundo Mundos Nuevos [En ligne], Questions du temps présent, mis en ligne le 21 janvier 2008, consulté le 08 juin 2017', 
+    href: 'http://nuevomundo.revues.org/17383', 
+    part: 2 
+  },
+  { 
+    title: 'Una breve nota acerca de los "patriotas criollos" en el Río de la Plata', 
+    year: 2008, 
+    details: 'Juan Carlos Garavaglia, Prohistoria: historia, políticas de la historia, ISSN 1514-0032, Nº. 12, 2008, Págs. 93-102.', 
+    href: 'http://www.scielo.org.ar/pdf/prohist/v12/v12a04.pdf', 
+    part: 2 
+  },
+  { 
+    title: 'Intensidad de uso de la tierra y tasas de ocupación ganadera en la pradera pampeana (1816-1852) ', 
+    year: 2017, 
+    details: 'Juan Carlos Garavaglia, Nuevo Mundo Mundos Nuevos [En ligne], Bibliothèque des Auteurs du Centre, Garavaglia, Juan Carlos, mis en ligne le 14 février 2005, consulté le 08 juin 2017', 
+    href: 'http://nuevomundo.revues.org/612', 
+    part: 2 
+  },
+  { 
+    title: 'La cuestión colonial', 
+    year: 2017, 
+    details: 'Juan Carlos Garavaglia, Nuevo Mundo Mundos Nuevos [En ligne], Débats, mis en ligne le 08 février 2005, consulté le 08 juin 2017', 
+    href: 'http://nuevomundo.revues.org/441', 
+    part: 2 
+  },
+  { 
+    title: 'Identidad, identidades: una visión desde la América hispana siglos XVIII-XIX', 
+    year: 2009, 
+    details: "Juan Carlos Garavaglia, Juan Carlos Grosso Quaderns de l'Institut Català d'Antropologia, ISSN 0211-5557, Nº. 25, 2009 (Ejemplar dedicado a: Identitats Ambivalents a debat),Págs. 19-45.", 
+    href: 'https://dialnet.unirioja.es/servlet/articulo?codigo=3242472', 
+    part: 2 
+  },
+  { 
+    title: 'La disputa por la Nación: rentas y aduanas en la construcción estatal argentina, 1850-1865', 
+    year: 2014, 
+    details: 'Juan Carlos Garavaglia Investigaciones de historia económica: revista de la Asociación Española de Historia Económica, ISSN 1698-6989, Vol. 10, Nº. 1, 2014, Págs. 34-45.', 
+    href: 'https://dialnet.unirioja.es/servlet/articulo?codigo=4603536', 
+    part: 2 
+  },
+  { 
+    title: 'Guerra y finanzas en la Argentina unificada, 1864-1872: la guerra del Paraguay y la misión De la Riestra en Londres', 
+    year: 2016, 
+    details: 'Juan Carlos Garavaglia. Quinto Sol, Vol. 20, Nº 3, septiembre-diciembre 2016 - ISSN 1851-2879, Págs. 1-33.', 
+    href: '/GARAVAGLIA GUERRA Y FINANZAS EN LA ARGENTINA UNIFICADA.pdf', 
+    part: 2 
+  },
+  { 
+    title: 'Manifestaciones iniciales de la representación en el Río de la Plata: la revolución en la laboriosa búsqueda de la autonomía del individuo (1810-1812)', 
+    year: 2004, 
+    details: 'Juan Carlos Garavaglia. Revista de Indias, 2004, vol. LXIV, núm. 231 ISSN: 0034-8341. Págs. 349-382. ', 
+    href: '/GARAVAGLIA MANIFESTACIONES INICIALES DE LA REPRESENTACIÓN.pdf', 
+    part: 2 
+  },
+  { 
+    title: 'Precios de los productos rurales y precios de la tierra en la campaña de Buenos Aires: 1750-1826', 
+    year: 1995, 
+    details: 'Juan Carlos Garavaglia. Boletín del Instituto de Historia Argentina y Americana "Dr. Emilio Ravignani" Tercera serie N°11, primer semestre de 1995. Págs 65-112.', 
+    href: '/GARAVAGLIA PRECIOS DE LOS PRODUCTOS RURALES Y PRECIOS DE LA TIERRA.pdf', 
+    part: 2 
+  },
+  { 
+    title: 'Algunos aspectos preliminares acerca de la «transición fiscal» en América Latina: 1800-1850', 
+    year: 2010, 
+    details: 'Juan Carlos Garavaglia. Rev.Illes I Imperis-13(3GL)1 8 de Junio de 2010. Págs. 159-192.', 
+    href: '/GARAVAGLIA TRANSICION FISCAL.pdf', 
+    part: 2 
+  },
 
   // ---------------------------
   // PARTE 3 (22 ítems)
