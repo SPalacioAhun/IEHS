@@ -1,50 +1,149 @@
-/*
- * Styles for the section listing reviews of Garavaglia’s work.  Each
- * list item includes the title of the review, the reviewer and
- * contextual details.  Links open in a new tab.
- */
-
 .reviews {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
+  /* Fondo para dar contraste a la sección */
+  background-color: var(--section-bg, #f8fafc);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.04);
+  border: 1px solid var(--border-color, #e6eef2);
 }
 
 .title {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.25rem;
   color: var(--text-primary, #0f172a);
+  border-bottom: 3px solid var(--accent-color, #134e5e);
+  padding-bottom: 0.5rem;
 }
 
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+.subtitle {
+  color: var(--text-secondary, #475569);
+  margin: 0.25rem 0 1.25rem 0;
+  font-size: 0.98rem;
+}
+
+/* Grid de 12 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1025px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Tarjeta */
+.card {
+  grid-column: span 3; /* 4 por fila en desktop */
+  background: var(--card-bg, #ffffff);
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: 12px;
+  min-height: 120px;
+  padding: 1rem 1rem 1rem 1.1rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
   gap: 0.75rem;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(2, 6, 23, 0.04);
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+    border-color 0.15s ease;
+  color: inherit;
 }
 
-.item {
-  font-size: 1rem;
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(2, 6, 23, 0.08);
+  border-color: #cbd5e1;
 }
 
-.link {
-  color: var(--link-color, #2563eb);
-  text-decoration: underline;
+.card:focus,
+.card:focus-visible {
+  outline: 3px solid #134e5e;
+  outline-offset: 2px;
 }
 
-.link:hover {
-  color: var(--link-hover-color, #1e40af);
+/* Contenido */
+.cardBody {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.cardTitle {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--text-primary, #0f172a);
+  line-height: 1.35;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.cardMeta {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--text-secondary, #475569);
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  flex-wrap: wrap;
 }
 
 .author {
-  color: var(--text-muted, #475569);
-  margin-left: 0.5rem;
+  font-weight: 600;
+}
+.details {
+  opacity: 0.95;
+}
+.dot {
+  opacity: 0.5;
 }
 
-.details {
-  color: var(--text-muted, #475569);
-  margin-left: 0.25rem;
-  font-size: 0.875rem;
+/* Icono lateral */
+.cardIcon {
+  display: grid;
+  place-items: center;
+  color: #134e5e;
+  opacity: 0.9;
+  padding-top: 0.25rem;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .card {
+    background: #0b1220;
+    border-color: #334155;
+  }
+  .card:hover {
+    border-color: #475569;
+  }
+  .subtitle,
+  .cardMeta {
+    color: #94a3b8;
+  }
+  .cardIcon {
+    color: #22d3ee;
+  }
+  /* Ajuste de fondo en modo oscuro para mantener contraste sin brillo excesivo */
+  .reviews {
+    background-color: rgba(6, 12, 20, 0.6);
+    border: 1px solid rgba(66, 84, 101, 0.45);
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.12);
+  }
 }

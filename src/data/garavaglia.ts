@@ -1030,21 +1030,75 @@ export const works: Work[] = [
 // reference or context.
 export const reviews: Review[] = [
   {
-    title: 'Expansión capitalista y transformaciones regionales',
+    title: 'Expansión capitalista y transformaciones regionales. Relaciones sociales y empresas agrarias en la Argentina del siglo XIX',
     author: 'Daniel Santilli',
-    href: '/reseñas/expansion-capitalista.pdf',
-    details: 'Reseña de la obra de Gelman, Garavaglia y Zeberio (1999)'
+    href: '/reseñas/Daniel Santilli.pdf',
+    details: 'RESEÑA de Daniel Santilli (Instituto Ravignani – UBA/CONICET). De Gelman, Jorge, Juan Carlos Garavaglia, y Blanca Zeberia. Buenos Aires: La Colmena, 1999.'
   },
   {
     title: 'Los caminos de la justicia rural',
     author: 'Melina Yangilevich',
-    href: '/reseñas/caminos-justicia.pdf',
-    details: 'Comentarios sobre la obra dirigida por Garavaglia (1999)'
+    href: '/reseñas/reseña Etudes Rurales.pdf',
+    details: 'RESEÑA de Melina Yangilevich (IEHS-IGEHCS-UNICEN/CONICET). De “Justice et sociétés rurales”, bajo la dirección de Juan Carlos Garavaglia, en Etudes Rurales, Éditions de l´Ecole des Hautes Études en Sciences Sociales, n° 149-150, 1999.'
   },
   {
-    title: 'Pastores y labradores de Buenos Aires',
+    title: 'Configuraciones estatales, regiones y sociedades locales. América Latina, siglos XIX-XX.',
+    author: 'Gladys Perri',
+    href: '/reseñas/RESEÑA GLADYS PERRI configuraciones estatales.....pdf',
+    details: 'RESEÑA de Gladys Perri (UNLu). Juan Carlos Garavaglia y Claudia Contente, editores. State Bulding in Latin America y Universitat Pompeu Fabra, Ed. Bellaterra, Barcelona, 2011.'
+  },
+  {
+    title: 'Juan Carlos Garavaglia y Raúl Fradkin, Hombres y mujeres de la colonia',
+    author: 'María Elena Barral',
+    href: '/reseñas/RESEÑA DE MARIA ELENA BARRAL.pdf',
+    details: 'RESEÑA de María Elena Barral. Buenos Aires, Sudamericana, 1992.'
+  },
+  {
+    title: 'Sobre la vigencia de Modos de Producción en América Latina',
+    author: 'Martín Wasserman',
+    href: '/reseñas/Reseña-Homenaje Modos de Producción en América Latina.pdf',
+    details: 'RESEÑA de Martín Wasserman.'
+  },
+  {
+    title: 'Garavaglia, Juan Carlos y Pierre Gautreau (editores), Mensurar la tierra, controlar el territorio. América Latina, siglos XVIII-XIX.',
+    author: 'Manriana Canedo',
+    href: '/reseñas/Reseña Mensurar la tierra...pdf',
+    details: 'RESEÑA de Manriana Canedo. Rosario, Prohistoria Ediciones-State Building in Latin America, 2011. 326 pp'
+  },
+  {
+    title: 'Garavaglia, J.C. Pastores y labradores de Buenos Aires. Una historia agraria de la campaña bonaerense, 1700-1830. ',
     author: 'Julio Djenderedjian',
-    href: '/reseñas/pastores-labradores.pdf',
-    details: 'Reseña sobre el libro de Garavaglia (1999)'
+    href: '/reseñas/DjenderedjianPastyLabr.pdf',
+    details: 'RESEÑA de Julio Djenderedjian. Buenos Aires, Ediciones de la Flor, 1999. 385 pp.'
+  },
+  {
+    title: 'PARA QUE NUESTROS HIJOS PUEDAN SABER. Garavaglia, Juan Carlos. Una juventud en los años sesenta. ',
+    author: 'Daniel Villar',
+    href: '/reseñas/Daniel Villar.pdf',
+    details: 'RESEÑA de Daniel Villar. Ciudad Autónoma de Buenos Aires, Prometeo Libros, 2015. 208 pp.'
+  },
+  {
+    title: 'En busca del tiempo perdido. La economía de Buenos Aires en el país de la abundancia 1750-1865.',
+    author: 'Eduardo José Míguez',
+    href: '/reseñas/MIGUEZ.pdf',
+    details: 'RESEÑA de Eduardo José Míguez. Buenos Aires, Prometeo, 2004.'
+  },
+  {
+    title: 'Por qué leer Poder, conflicto y relaciones sociales. El Río de la Plata, XVIII y XIX',
+    author: 'José Mateo',
+    href: '/reseñas/Por qué leer Poder, conflicto y relaciones sociales....pdf',
+    details: 'RESEÑA de José Mateo.'
+  },
+  {
+    title: 'Por qué seguir leyendo Población, sociedad, familia y migraciones en el espacio rioplatense. Siglos XVIII y XIX (Buenos Aires, Cántaro, 1993) de Juan Carlos Garavaglia y José Luis Moreno (comps.)',
+    author: 'Judith Farberman',
+    href: '/reseñas/Por qué seguir leyendo Población Judith Farberman.pdf',
+    details: 'RESEÑA de Judith Farberman.'
+  },
+  {
+    title: 'Guerras, burocracias y fiscalidad: discutiendo la génesis de un problema. Las fuerzas de guerra en la construcción del Estado, América Latina, siglo XIX',
+    author: 'Germán Soprano',
+    href: 'https://dialnet.unirioja.es/servlet/articulo?codigo=4739847',
+    details: 'RESEÑA de Germán Soprano, de Juan Carlos Garavaglia, Juan Pro Ruiz y Eduardo Zimmermann (eds.), en Localización: PolHis: Boletín Bibliográfico Electrónico, ISSN-e 1853-7723, Año 6, Nº. 12, 2013, Págs. 307-312.'
   }
 ];
