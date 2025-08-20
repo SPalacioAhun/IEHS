@@ -45,3 +45,6 @@
   background-color: var(--link-hover-bg, #e0f2fe);
   color: var(--link-hover-color, #1e40af);
 }
+
+/* Botón destacado para el curriculum */
+/* (El estilo .cvButton fue eliminado para heredar los estilos de .item a) */

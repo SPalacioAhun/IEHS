@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import styles from './GaravagliaHeader.module.css';
+import Link from "next/link";
+import styles from "./GaravagliaHeader.module.css";
 
 /**
  * Defines a single navigation item.  Navigation items can link to
@@ -22,12 +22,12 @@ interface HeaderProps {
 }
 
 const defaultItems: NavItem[] = [
-  { label: 'Inicio', href: '#intro' },
-  { label: 'Fotos', href: '#fotos' },
-  { label: 'Videos', href: '#videos' },
-  { label: 'Testimonios', href: '#testimonios' },
-  { label: 'Trabajos', href: '#trabajos' },
-  { label: 'Reseñas', href: '#reseñas' }
+  { label: "Inicio", href: "#intro" },
+  { label: "Fotos", href: "#fotos" },
+  { label: "Videos", href: "#videos" },
+  { label: "Testimonios", href: "#testimonios" },
+  { label: "Trabajos", href: "#trabajos" },
+  { label: "Reseñas", href: "#reseñas" },
 ];
 
 /**
@@ -35,7 +35,9 @@ const defaultItems: NavItem[] = [
  * sticky navigation bar with links to the sections of the page.  The
  * header is intentionally minimal so the content remains the focus.
  */
-export default function GaravagliaHeader({ items = defaultItems }: HeaderProps) {
+export default function GaravagliaHeader({
+  items = defaultItems,
+}: HeaderProps) {
   return (
     <header className={styles.header}>
       <nav className={styles.nav} aria-label="Navegación principal">
@@ -46,6 +48,17 @@ export default function GaravagliaHeader({ items = defaultItems }: HeaderProps) 
               <Link href={item.href}>{item.label}</Link>
             </li>
           ))}
+          {/* Botón para abrir el curriculum en nueva pestaña */}
+          <li className={styles.item}>
+            <a
+              href="/reseñas/CVGaravaglia.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir curriculum en nueva pestaña"
+            >
+              Curriculum
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
