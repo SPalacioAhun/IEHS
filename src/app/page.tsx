@@ -206,7 +206,7 @@ import Head from "next/head";
 import HiloDeFotos from "@/components/HiloDeFotos";
 
 export const metadata = {
-  title: "IEHS – UNICEN",
+  title: "IEHS",
   description: "Instituto de Estudios Histórico-Sociales",
 };
 
