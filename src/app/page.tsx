@@ -211,20 +211,20 @@ export const metadata = {
 };
 
 const FOTOS_IEHS = [
-  { src: "/galeria/1.webp", alt: "Actividad académica 1" },
-  { src: "/galeria/2 (1).webp", alt: "Actividad académica 2" },
-  { src: "/galeria/2.webp", alt: "Investigadores 1" },
-  { src: "/galeria/3.webp", alt: "Investigadores 2" },
-  { src: "/galeria/4.webp", alt: "Biblioteca IEHS" },
-  { src: "/galeria/44.webp", alt: "Conferencia 1" },
-  { src: "/galeria/biblioteca.webp", alt: "Conferencia 2" },
-  { src: "/galeria/biblioteca1.webp", alt: "Edificio IEHS" },
-  { src: "/galeria/frente.iehsReal.png", alt: "Reunión científica" },
-  { src: "/galeria/logobygpt.png", alt: "Equipo de trabajo" },
-  { src: "/galeria/unnamed (1).webp", alt: "Aula 1" },
-  { src: "/galeria/unnamed (2).webp", alt: "Aula 2" },
-  { src: "/galeria/unnamed (3).webp", alt: "Archivo histórico" },
-  { src: "/galeria/unnamed.webp", alt: "Visita institucional" },
+  { src: "/fotos/Actividad de extensión El Tata Dios y el ocaso de la frontera. Museo del Fuerte.JPG", alt: "Actividad académica 1" },
+  { src: "/fotos/Archivo Del Movimiento de Sacerdotes para el Tercer Mundo.JPG", alt: "Actividad académica 2" },
+  { src: "/fotos/2.webp", alt: "Investigadores 1" },
+  { src: "/fotos/Doctorado en Historia-Seminario Dra. Hutchinson (Universidad de Nueva México).JPG", alt: "Investigadores 2" },
+  { src: "/fotos/Flyer IEHS.JPG", alt: "Biblioteca IEHS" },
+  { src: "/fotos/Hemeroteca IEHS.jpg", alt: "Conferencia 1" },
+  { src: "/fotos/Investigadores en reunión de trabajo.jpg", alt: "Conferencia 2" },
+  { src: "/fotos/Investigadores IEHS Presentación Libro Tandil de aldea a ciudad.JPG", alt: "Edificio IEHS" },
+  { src: "/fotos/frente.iehsReal.png", alt: "Reunión científica" },
+  { src: "/fotos/Jornadas Pensar las Derechas (IEHS-UNGS).JPG", alt: "Equipo de trabajo" },
+  { src: "/fotos/Práctica Socioeducativa. FCEx-FCH (IEHS-NEES).JPG", alt: "Aula 1" },
+  { src: "/fotos/Visita estudiantes secundario.JPG", alt: "Aula 2" },
+  { src: "/fotos/biblioteca.webp", alt: "Archivo histórico" },
+  { src: "/fotos/unnamed (1).webp", alt: "Visita institucional" },
 ];
 
 export default function Home() {
