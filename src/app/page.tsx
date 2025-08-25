@@ -144,8 +144,8 @@ export default function Home() {
             <div className="mt-4">
               <HiloDeFotos
                 images={FOTOS_IEHS}
-                speedSec={28} // más chico = más rápido; ajustá a gusto
-                height={150} // alto del trencito en px
+                speedSec={40} // más chico = más rápido; ajustá a gusto
+                height={160} // alto del trencito en px
                 gap={20} // separación entre fotos en px
                 radius={20} // redondeado de cada foto
               />
@@ -160,42 +160,58 @@ export default function Home() {
         {/* Sección Proyectos */}
         <main className="flex-grow bg-[#f9fbfc] py-16" id="proyectos">
           <section className="container mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div className="p-8 bg-white rounded-xl shadow-md border hover:shadow-lg transition">
-              <h2 className="text-2xl font-bold text-[#134e5e] mb-2">
-                Proyectos
-              </h2>
-              <p className="text-gray-700">
-                Conocé las líneas de investigación y proyectos vigentes en el
-                IEHS.
-              </p>
-            </div>
+            <Link
+              href="/proyectos"
+              className="relative p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer overflow-hidden flex items-center justify-center min-h-[140px]"
+              prefetch
+              aria-label="Ir a Proyectos"
+            >
+              {/* Marca de agua: logo centrado, opaco y no interactivo */}
+              <Image
+                src="/logo-iehs.gif"
+                alt="Logo como marca de agua"
+                width={380}
+                height={380}
+                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10 pointer-events-none select-none"
+              />
+
+              {/* Contenido en primer plano */}
+              <div className="relative z-10 text-center">
+                <h2 className="text-2xl font-bold text-[#134e5e] mb-2">
+                  Proyectos
+                </h2>
+                <p className="text-gray-700">
+                  Conocé las líneas de investigación y proyectos vigentes en el
+                  IEHS.
+                </p>
+              </div>
+            </Link>
 
             <a
-  href="https://ojs2.fch.unicen.edu.ar/ojs-3.1.0/index.php/anuario-ies/index"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="relative p-8  rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer w-full overflow-hidden flex items-center justify-center min-h-[140px]"
->
-  {/* Fondo con imagen y opacidad */}
-  <Image
-    src="/fotos/Anuario IEHS.jpg"
-    alt="Anuario IEHS"
-    fill
-    className="object-cover opacity-50 absolute inset-0 z-0"
-  />
+              href="https://ojs2.fch.unicen.edu.ar/ojs-3.1.0/index.php/anuario-ies/index"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative p-8  rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer w-full overflow-hidden flex items-center justify-center min-h-[140px]"
+            >
+              {/* Fondo con imagen y opacidad */}
+              <Image
+                src="/fotos/Anuario IEHS.jpg"
+                alt="Anuario IEHS"
+                fill
+                className="object-cover opacity-50 absolute inset-0 z-0"
+              />
 
-  {/* Contenido en primer plano */}
-  <div className="relative z-10 text-center">
-    <h2 className="text-2xl font-bold text-[#134e5e] mb-2">
-      Anuario IEHS
-    </h2>
-  </div>
-</a>
-
+              {/* Contenido en primer plano */}
+              <div className="relative z-10 text-center">
+                <h2 className="text-2xl font-bold text-[#134e5e] mb-2">
+                  Anuario IEHS
+                </h2>
+              </div>
+            </a>
 
             <Link
               href="/doctorado"
-              className="relative p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer block"
+              className="relative p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer overflow-hidden flex items-center justify-center min-h-[140px]"
               prefetch
             >
               {/* Marca de agua: logo centrado, opaco y no interactivo */}
@@ -208,7 +224,7 @@ export default function Home() {
               />
 
               {/* Contenido en primer plano */}
-              <div className="relative z-10">
+              <div className="relative z-10 text-center">
                 <h2 className="text-2xl font-bold text-[#134e5e] mb-2">
                   Doctorado
                 </h2>
