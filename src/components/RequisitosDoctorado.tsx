@@ -1,8 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 // components/RequisitosDoctorado.tsx
 
-// components/RequisitosDoctorado.tsx
-
 export default function RequisitosDoctorado() {
   return (
     <div className="relative flex flex-col items-center">

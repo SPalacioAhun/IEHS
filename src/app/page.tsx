@@ -146,43 +146,67 @@
 
 //             <Link
 //               href="/doctorado"
-//               className="p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer block"
+//               className="relative p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer block"
 //               prefetch
 //             >
-//               <h2 className="text-2xl font-bold text-[#134e5e] mb-2">
-//                 Doctorado
-//               </h2>
-//               <p className="text-gray-700">
-//                 Información del programa doctoral y requisitos de inscripción.
-//               </p>
+//               {/* Marca de agua: logo centrado, opaco y no interactivo */}
+//               <Image
+//                 src="/logo-iehs.gif"
+//                 alt="Logo como marca de agua"
+//                 width={380}
+//                 height={380}
+//                 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10 pointer-events-none select-none"
+//               />
+
+//               {/* Contenido en primer plano */}
+//               <div className="relative z-10">
+//                 <h2 className="text-2xl font-bold text-[#134e5e] mb-2">
+//                   Doctorado
+//                 </h2>
+//                 <p className="text-gray-700">
+//                   Información del programa doctoral y requisitos de inscripción.
+//                 </p>
+//               </div>
 //             </Link>
 
 //             <Link
 //               href="/homenajeOlga"
-//               className="p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer block"
+//               className="relative p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer block"
 //               prefetch
 //             >
-//               <h2 className="text-2xl font-bold text-[#134e5e] mb-2">
-//                 Homenaje a Olga Echeverría
-//               </h2>
-//               <p className="text-gray-700">
-//                 Descubrí la vida, legado y publicaciones de la Dra. Olga
-//                 Echeverría, investigadora referente del IEHS.
-//               </p>
+//               {/* Marca de agua: logo centrado, opaco y no interactivo */}
+//               <Image
+//                 src="/logo-iehs.gif"
+//                 alt="Logo como marca de agua"
+//                 width={380}
+//                 height={380}
+//                 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10 pointer-events-none select-none"
+//               />
+//               <div className="relative z-10 w-full text-center">
+//                 <h2 className="text-2xl font-bold text-[#134e5e] m-0">
+//                   Homenaje a Olga Echeverría
+//                 </h2>
+//               </div>
 //             </Link>
 
 //             <Link
 //               href="/homenaje-garavaglia"
-//               className="p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer block"
+//               className="relative p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer block"
 //               prefetch
 //             >
-//               <h2 className="text-2xl font-bold text-[#134e5e] mb-2">
-//                 Homenaje a Juan Carlos Garavaglia
-//               </h2>
-//               <p className="text-gray-700">
-//                 Explorá la vida, trayectoria académica y legado intelectual del
-//                 historiador Juan Carlos Garavaglia.
-//               </p>
+//               {/* Marca de agua: logo centrado, opaco y no interactivo */}
+//               <Image
+//                 src="/logo-iehs.gif"
+//                 alt="Logo como marca de agua"
+//                 width={380}
+//                 height={380}
+//                 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10 pointer-events-none select-none"
+//               />
+//               <div className="relative z-10 w-full text-center">
+//                 <h2 className="text-2xl font-bold text-[#134e5e] m-0 whitespace-nowrap">
+//                   Homenaje a Juan Carlos Garavaglia
+//                 </h2>
+//               </div>
 //             </Link>
 //           </section>
 //         </main>
@@ -211,17 +235,38 @@ export const metadata = {
 };
 
 const FOTOS_IEHS = [
-  { src: "/fotos/Actividad de extensión El Tata Dios y el ocaso de la frontera. Museo del Fuerte.JPG", alt: "Actividad académica 1" },
-  { src: "/fotos/Archivo Del Movimiento de Sacerdotes para el Tercer Mundo.JPG", alt: "Actividad académica 2" },
+  {
+    src: "/fotos/Actividad de extensión El Tata Dios y el ocaso de la frontera. Museo del Fuerte.JPG",
+    alt: "Actividad académica 1",
+  },
+  {
+    src: "/fotos/Archivo Del Movimiento de Sacerdotes para el Tercer Mundo.JPG",
+    alt: "Actividad académica 2",
+  },
   { src: "/fotos/2.webp", alt: "Investigadores 1" },
-  { src: "/fotos/Doctorado en Historia-Seminario Dra. Hutchinson (Universidad de Nueva México).JPG", alt: "Investigadores 2" },
+  {
+    src: "/fotos/Doctorado en Historia-Seminario Dra. Hutchinson (Universidad de Nueva México).JPG",
+    alt: "Investigadores 2",
+  },
   { src: "/fotos/Flyer IEHS.JPG", alt: "Biblioteca IEHS" },
   { src: "/fotos/Hemeroteca IEHS.jpg", alt: "Conferencia 1" },
-  { src: "/fotos/Investigadores en reunión de trabajo.jpg", alt: "Conferencia 2" },
-  { src: "/fotos/Investigadores IEHS Presentación Libro Tandil de aldea a ciudad.JPG", alt: "Edificio IEHS" },
+  {
+    src: "/fotos/Investigadores en reunión de trabajo.jpg",
+    alt: "Conferencia 2",
+  },
+  {
+    src: "/fotos/Investigadores IEHS Presentación Libro Tandil de aldea a ciudad.JPG",
+    alt: "Edificio IEHS",
+  },
   { src: "/fotos/frente.iehsReal.png", alt: "Reunión científica" },
-  { src: "/fotos/Jornadas Pensar las Derechas (IEHS-UNGS).JPG", alt: "Equipo de trabajo" },
-  { src: "/fotos/Práctica Socioeducativa. FCEx-FCH (IEHS-NEES).JPG", alt: "Aula 1" },
+  {
+    src: "/fotos/Jornadas Pensar las Derechas (IEHS-UNGS).JPG",
+    alt: "Equipo de trabajo",
+  },
+  {
+    src: "/fotos/Práctica Socioeducativa. FCEx-FCH (IEHS-NEES).JPG",
+    alt: "Aula 1",
+  },
   { src: "/fotos/Visita estudiantes secundario.JPG", alt: "Aula 2" },
   { src: "/fotos/biblioteca.webp", alt: "Archivo histórico" },
   { src: "/fotos/unnamed (1).webp", alt: "Visita institucional" },
@@ -348,46 +393,76 @@ export default function Home() {
 
             <Link
               href="/doctorado"
-              className="p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer block"
+              className="relative p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer block"
               prefetch
             >
-              <h2 className="text-2xl font-bold text-[#134e5e] mb-2">
-                Doctorado
-              </h2>
-              <p className="text-gray-700">
-                Información del programa doctoral y requisitos de inscripción.
-              </p>
-            </Link>
+              {/* Marca de agua: logo centrado, opaco y no interactivo */}
+              <Image
+                src="/logo-iehs.gif"
+                alt="Logo como marca de agua"
+                width={380}
+                height={380}
+                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10 pointer-events-none select-none"
+              />
 
-            
+              {/* Contenido en primer plano */}
+              <div className="relative z-10">
+                <h2 className="text-2xl font-bold text-[#134e5e] mb-2">
+                  Doctorado
+                </h2>
+                <p className="text-gray-700">
+                  Información del programa doctoral y requisitos de inscripción.
+                </p>
+              </div>
+            </Link>
           </section>
         </main>
 
-            {/* Autoridades */}
-            <Autoridades />
-            <main className="flex-grow bg-[#f9fbfc] py-16" id="proyectos">
-              <section className="container mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-10">
-                <Link
-                  href="/homenajeOlga"
-                  className="p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer block"
-                  prefetch
-                >
-                  <h2 className="text-2xl font-bold text-[#134e5e] mb-2">
-                    Homenaje a Olga Echeverría
-                  </h2>
-                </Link>
+        {/* Autoridades */}
+        <Autoridades />
+        <main className="flex-grow bg-[#f9fbfc] py-16" id="proyectos">
+          <section className="container mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
+            <Link
+              href="/homenajeOlga"
+              className="relative p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer w-full overflow-hidden flex items-center justify-center min-h-[140px]"
+              prefetch
+            >
+              {/* Marca de agua: logo centrado, opaco y no interactivo */}
+              <Image
+                src="/logo-iehs.gif"
+                alt="Logo como marca de agua"
+                width={450}
+                height={450}
+                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10 pointer-events-none select-none"
+              />
+              <div className="relative z-10 w-full text-center">
+                <h2 className="text-2xl font-bold text-[#134e5e] m-0">
+                  Homenaje a Olga Echeverría
+                </h2>
+              </div>
+            </Link>
 
-                <Link
-                  href="/homenaje-garavaglia"
-                  className="p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer block"
-                  prefetch
-                >
-                  <h2 className="text-2xl font-bold text-[#134e5e] mb-2">
-                    Homenaje a Juan Carlos Garavaglia
-                  </h2>
-                </Link>
-              </section>
-            </main>
+            <Link
+              href="/homenaje-garavaglia"
+              className="relative p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer w-full overflow-hidden flex items-center justify-center min-h-[140px]"
+              prefetch
+            >
+              {/* Marca de agua: logo centrado, opaco y no interactivo */}
+              <Image
+                src="/logo-iehs.gif"
+                alt="Logo como marca de agua"
+                width={450}
+                height={450}
+                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10 pointer-events-none select-none"
+              />
+              <div className="relative z-10 w-full text-center">
+                <h2 className="text-2xl font-bold text-[#134e5e] m-0 whitespace-nowrap">
+                  Homenaje a Juan Carlos Garavaglia
+                </h2>
+              </div>
+            </Link>
+          </section>
+        </main>
 
         <Footer />
       </div>
