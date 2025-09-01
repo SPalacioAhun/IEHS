@@ -111,7 +111,7 @@ export default function Ediciones() {
 
       {/* Tarjetas informativas */}
       <section className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center tracking-tight leading-[1.18] bg-gradient-to-r from-[#134e5e] via-[#22677e] to-[#f9623e] bg-clip-text text-transparent drop-shadow mb-6">
           Publicaciones destacadas
         </h2>
 

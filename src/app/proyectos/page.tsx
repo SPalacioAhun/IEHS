@@ -16,7 +16,7 @@ export default function ProyectosPage() {
       <main className="flex-grow bg-[#f9fbfc] py-16">
         <div className="container mx-auto px-8">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl font-bold text-[#134e5e] mb-8 text-center">
+            <h1 className="text-4xl md:text-5xl font-extrabold text-center tracking-tight leading-[1.18] bg-gradient-to-r from-[#134e5e] via-[#22677e] to-[#f9623e] bg-clip-text text-transparent drop-shadow mb-6">
               Proyectos de Investigación
             </h1>
 
