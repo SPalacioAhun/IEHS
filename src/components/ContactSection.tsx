@@ -56,9 +56,7 @@ export default function ContactSection() {
           >
             Contacto
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Escribinos y ubicá nuestra sede. Prometo que este formulario no muerde.
-          </p>
+          
         </header>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
