@@ -7,6 +7,7 @@ import Autoridades from "@/components/Autoridades";
 import Link from "next/link";
 import Head from "next/head";
 import HiloDeFotos from "@/components/HiloDeFotos";
+import ContactSection from "@/components/ContactSection";
 
 export const metadata = {
   title: "IEHS",
@@ -281,6 +282,9 @@ export default function Home() {
             </Link>
           </section>
         </main>
+        
+        {/* Contacto + Mapa */}
+        <ContactSection />
 
         <Footer />
       </div>
