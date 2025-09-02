@@ -2,8 +2,15 @@
 import React, { useState } from "react";
 
 export default function ContactSection() {
-  const [form, setForm] = useState({ name: "", email: "", message: "", website: "" });
-  const [status, setStatus] = useState<"idle" | "sending" | "ok" | "error">("idle");
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+    website: "",
+  });
+  const [status, setStatus] = useState<"idle" | "sending" | "ok" | "error">(
+    "idle"
+  );
   const [errorMsg, setErrorMsg] = useState<string>("");
 
   const onChange =
@@ -41,27 +48,31 @@ export default function ContactSection() {
   return (
     <section
       id="contacto"
-      className="relative bg-[#f9fbfc] py-16"
+      className="relative bg-[#134e5e] py-16"
       aria-labelledby="contacto-title"
     >
       <div className="container mx-auto px-6 lg:px-10">
         <header className="text-center mb-10">
-          <span className="inline-block text-xs tracking-wide uppercase font-semibold text-[#134e5e] bg-[#134e5e]/10 px-3 py-1 rounded-full">
+          <span className="inline-block text-xs tracking-wide uppercase font-semibold text-white bg-white/10 px-3 py-1 rounded-full">
             IEHS
           </span>
           <h2
             id="contacto-title"
-            className="mt-3 text-4xl md:text-5xl font-extrabold text-center tracking-tight leading-[1.18]
-                       bg-gradient-to-r from-[#134e5e] via-[#22677e] to-[#f9623e] bg-clip-text text-transparent drop-shadow mb-6"
+            style={{
+              fontFamily: "'Playfair Display', serif",
+              letterSpacing: "0.03em",
+            }}
+            className="mt-3 text-4xl md:text-5xl font-extrabold text-center tracking-tight leading-[1.18] text-white drop-shadow mb-6"
           >
             Contacto
+          <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 h-1 w-32 bg-[#f9623e] rounded-full"></span>
           </h2>
           
         </header>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
           {/* Formulario */}
-          <div className="rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition p-6 md:p-8">
+          <div className="rounded-2xl border border-gray-200/60 bg-white/95 shadow-sm hover:shadow-md transition p-6 md:p-8">
             <form onSubmit={onSubmit} className="space-y-5">
               {/* Honeypot anti-bots */}
               <input
@@ -76,7 +87,10 @@ export default function ContactSection() {
               />
 
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-[#15394b]">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-[#15394b]"
+                >
                   Nombre
                 </label>
                 <input
@@ -84,14 +98,17 @@ export default function ContactSection() {
                   type="text"
                   value={form.name}
                   onChange={onChange("name")}
-                  className="mt-1 w-full rounded-lg border border-gray-300 focus:border-[#22677e] focus:ring-[#22677e] p-3"
-                  placeholder="Tu nombre"
+                  className="mt-1 w-full rounded-lg border border-gray-300 bg-white text-black placeholder-gray-400 outline-none focus:border-[#22677e] focus:ring-2 focus:ring-[#22677e]/30 p-3"
+                  
                   autoComplete="name"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-[#15394b]">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-[#15394b]"
+                >
                   Email <span className="text-[#f9623e]">*</span>
                 </label>
                 <input
@@ -99,15 +116,18 @@ export default function ContactSection() {
                   type="email"
                   value={form.email}
                   onChange={onChange("email")}
-                  className="mt-1 w-full rounded-lg border border-gray-300 focus:border-[#22677e] focus:ring-[#22677e] p-3"
-                  placeholder="tu@email.com"
+                  className="mt-1 w-full rounded-lg border border-gray-300 bg-white text-black placeholder-gray-400 outline-none focus:border-[#22677e] focus:ring-2 focus:ring-[#22677e]/30 p-3"
+                  
                   autoComplete="email"
                   required
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-[#15394b]">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-[#15394b]"
+                >
                   Mensaje <span className="text-[#f9623e]">*</span>
                 </label>
                 <textarea
@@ -115,7 +135,7 @@ export default function ContactSection() {
                   rows={6}
                   value={form.message}
                   onChange={onChange("message")}
-                  className="mt-1 w-full rounded-lg border border-gray-300 focus:border-[#22677e] focus:ring-[#22677e] p-3"
+                  className="mt-1 w-full rounded-lg border border-gray-300 bg-white text-black placeholder-gray-400 outline-none focus:border-[#22677e] focus:ring-2 focus:ring-[#22677e]/30 p-3"
                   placeholder="Contanos en qué podemos ayudarte"
                   required
                 />
@@ -149,27 +169,34 @@ export default function ContactSection() {
             </form>
 
             {/* Datos rápidos */}
-            <div className="mt-6 pt-6 border-t border-gray-200 grid gap-3 text-sm text-gray-600">
+            <div className="mt-6 pt-6 border-t border-gray-200/60 grid gap-3 text-sm text-gray-700">
               <p>
                 <strong className="text-[#15394b]">Email:</strong>{" "}
-                <a className="underline decoration-dotted hover:text-[#22677e]" href="mailto:iehs@fch.unicen.edu.ar">
+                <a
+                  className="underline decoration-dotted hover:text-[#22677e]"
+                  href="mailto:iehs@fch.unicen.edu.ar"
+                >
                   iehs@fch.unicen.edu.ar
                 </a>
               </p>
               <p>
                 <strong className="text-[#15394b]">Teléfono:</strong>{" "}
-                <a className="underline decoration-dotted hover:text-[#22677e]" href="tel:+542494445683">
-                  (0249) 444-5683
+                <a
+                  className="underline decoration-dotted hover:text-[#22677e]"
+                  href="tel:+542494445683"
+                >
+                  +54 (0)2494445683
                 </a>
               </p>
               <p>
-                <strong className="text-[#15394b]">Dirección:</strong> Pinto 348, Tandil, Buenos Aires (CP 7000)
+                <strong className="text-[#15394b]">Dirección:</strong> Pinto
+                348, Tandil, Buenos Aires (CP 7000)
               </p>
             </div>
           </div>
 
           {/* Mapa */}
-          <div className="rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-sm">
+          <div className="rounded-2xl overflow-hidden border border-gray-200/60 bg-white/95 shadow-sm">
             <div className="aspect-[16/10] sm:aspect-[16/9]">
               <iframe
                 title="Ubicación IEHS"
@@ -181,8 +208,11 @@ export default function ContactSection() {
                 }
               />
             </div>
-            <div className="p-4 bg-gray-50 text-gray-600 text-sm">
-              <strong className="text-[#15394b]">Instituto de Estudios Histórico-Sociales (IEHS)</strong> · Pinto 348, Tandil
+            <div className="p-4 bg-white/95 text-gray-700 text-sm">
+              <strong className="text-[#15394b]">
+                Instituto de Estudios Histórico-Sociales (IEHS)
+              </strong>{" "}
+              · Pinto 348, Tandil
             </div>
           </div>
         </div>
