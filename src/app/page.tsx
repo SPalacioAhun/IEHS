@@ -90,6 +90,7 @@ export default function Home() {
               }}
             >
               Bienvenidos al IEHS
+               <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 h-1 w-32 bg-[#f9623e] rounded-full"></span>
             </h1>
 
             {/* Texto */}
