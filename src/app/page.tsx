@@ -90,7 +90,7 @@ export default function Home() {
               }}
             >
               Bienvenidos al IEHS
-               <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 h-1 w-32 bg-[#f9623e] rounded-full"></span>
+              <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 h-1 w-32 bg-[#f9623e] rounded-full"></span>
             </h1>
 
             {/* Texto */}
@@ -164,9 +164,10 @@ export default function Home() {
           <section className="container mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-10">
             <Link
               href="/proyectos"
-              className="relative p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer overflow-hidden flex items-center justify-center min-h-[140px]"
+              className="relative p-8 bg-white rounded-xl shadow-lg border border-[#22677e] hover:shadow-2xl hover:bg-[#22677e]/10 transition-shadow duration-200 cursor-pointer overflow-hidden flex items-center justify-center min-h-[140px]"
               prefetch
               aria-label="Ir a Proyectos"
+              role="button"
             >
               {/* Marca de agua: logo centrado, opaco y no interactivo */}
               <Image
@@ -193,7 +194,8 @@ export default function Home() {
               href="https://ojs2.fch.unicen.edu.ar/ojs-3.1.0/index.php/anuario-ies/index"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative p-8  rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer w-full overflow-hidden flex items-center justify-center min-h-[140px]"
+              className="relative p-8 rounded-xl shadow-lg border border-[#22677e] hover:shadow-2xl hover:bg-[#22677e]/10 transition-shadow duration-200 cursor-pointer w-full overflow-hidden flex items-center justify-center min-h-[140px]"
+              role="button"
             >
               {/* Fondo con imagen y opacidad */}
               <Image
@@ -213,8 +215,9 @@ export default function Home() {
 
             <Link
               href="/doctorado"
-              className="relative p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer overflow-hidden flex items-center justify-center min-h-[140px]"
+              className="relative p-8 bg-white rounded-xl shadow-lg border border-[#22677e] hover:shadow-2xl hover:bg-[#22677e]/10 transition-shadow duration-200 cursor-pointer overflow-hidden flex items-center justify-center min-h-[140px]"
               prefetch
+              role="button"
             >
               {/* Marca de agua: logo centrado, opaco y no interactivo */}
               <Image
@@ -244,8 +247,9 @@ export default function Home() {
           <section className="container mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
             <Link
               href="/homenajeOlga"
-              className="relative p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer w-full overflow-hidden flex items-center justify-center min-h-[140px]"
+              className="relative p-8 bg-white rounded-xl shadow-lg border border-[#22677e] hover:shadow-2xl hover:bg-[#22677e]/10 transition-shadow duration-200 cursor-pointer w-full overflow-hidden flex items-center justify-center min-h-[140px] focus:outline-none focus:ring-2 focus:ring-[#22677e]/30"
               prefetch
+              role="button"
             >
               {/* Marca de agua: logo centrado, opaco y no interactivo */}
               <Image
@@ -264,8 +268,9 @@ export default function Home() {
 
             <Link
               href="/homenaje-garavaglia"
-              className="relative p-8 bg-white rounded-xl shadow-md border hover:shadow-lg hover:bg-[#134e5e]/10 transition cursor-pointer w-full overflow-hidden flex items-center justify-center min-h-[140px]"
+              className="relative p-8 bg-white rounded-xl shadow-lg border border-[#22677e] hover:shadow-2xl hover:bg-[#22677e]/10 transition-shadow duration-200 cursor-pointer w-full overflow-hidden flex items-center justify-center min-h-[140px] focus:outline-none focus:ring-2 focus:ring-[#22677e]/30"
               prefetch
+              role="button"
             >
               {/* Marca de agua: logo centrado, opaco y no interactivo */}
               <Image
@@ -283,7 +288,7 @@ export default function Home() {
             </Link>
           </section>
         </main>
-        
+
         {/* Contacto + Mapa */}
         <ContactSection />
 
