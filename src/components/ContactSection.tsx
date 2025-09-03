@@ -1,6 +1,13 @@
 "use client";
 import React, { useState } from "react";
-import { FaInstagram, FaYoutube } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaYoutube,
+  FaFacebook,
+  FaEnvelope,
+  FaPhone,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 
 export default function ContactSection() {
   const [form, setForm] = useState({
@@ -168,7 +175,8 @@ export default function ContactSection() {
 
             {/* Datos rápidos */}
             <div className="mt-6 pt-6 border-t border-gray-200/60 grid gap-3 text-sm text-gray-700">
-              <p>
+              <p className="flex items-center gap-2">
+                <FaEnvelope className="w-4 h-4 text-[#22677e]" />
                 <strong className="text-[#15394b]">Email:</strong>{" "}
                 <a
                   className="underline decoration-dotted hover:text-[#22677e]"
@@ -177,7 +185,8 @@ export default function ContactSection() {
                   iehs@fch.unicen.edu.ar
                 </a>
               </p>
-              <p>
+              <p className="flex items-center gap-2">
+                <FaPhone className="w-4 h-4 text-[#22677e]" />
                 <strong className="text-[#15394b]">Teléfono:</strong>{" "}
                 <a
                   className="underline decoration-dotted hover:text-[#22677e]"
@@ -186,7 +195,8 @@ export default function ContactSection() {
                   +54 (0)2494445683
                 </a>
               </p>
-              <p>
+              <p className="flex items-center gap-2">
+                <FaMapMarkerAlt className="w-4 h-4 text-[#22677e]" />
                 <strong className="text-[#15394b]">Dirección:</strong> Pinto
                 348, Tandil, Buenos Aires (CP 7000)
               </p>
@@ -225,6 +235,15 @@ export default function ContactSection() {
                   Seguinos en nuestras redes:
                 </p>
                 <div className="flex flex-col gap-4">
+                  <a
+                    href="https://web.facebook.com/iehsunicen/?_rdc=1&_rdr#"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center gap-3 text-gray-600 hover:text-[#22677e] transition-colors"
+                  >
+                    <FaFacebook className="w-6 h-6" />
+                    <span className="text-sm">Facebook</span>
+                  </a>
                   <a
                     href="https://x.com/iehs_tandil"
                     target="_blank"
