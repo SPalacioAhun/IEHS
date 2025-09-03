@@ -65,9 +65,8 @@ export default function ContactSection() {
             className="mt-3 text-4xl md:text-5xl font-extrabold text-center tracking-tight leading-[1.18] text-white drop-shadow mb-6"
           >
             Contacto
-          <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 h-1 w-32 bg-[#f9623e] rounded-full"></span>
+            <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 h-1 w-32 bg-[#f9623e] rounded-full"></span>
           </h2>
-          
         </header>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
@@ -99,7 +98,6 @@ export default function ContactSection() {
                   value={form.name}
                   onChange={onChange("name")}
                   className="mt-1 w-full rounded-lg border border-gray-300 bg-white text-black placeholder-gray-400 outline-none focus:border-[#22677e] focus:ring-2 focus:ring-[#22677e]/30 p-3"
-                  
                   autoComplete="name"
                 />
               </div>
@@ -117,7 +115,6 @@ export default function ContactSection() {
                   value={form.email}
                   onChange={onChange("email")}
                   className="mt-1 w-full rounded-lg border border-gray-300 bg-white text-black placeholder-gray-400 outline-none focus:border-[#22677e] focus:ring-2 focus:ring-[#22677e]/30 p-3"
-                  
                   autoComplete="email"
                   required
                 />
@@ -204,7 +201,7 @@ export default function ContactSection() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 src={
-                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3136.335323320546!2d-59.1439046!3d-37.3219185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95911fd14a3f7a6f%3A0x1f0c4e3f4a5b1c12!2sInstituto%20de%20Estudios%20Hist%C3%B3rico-Sociales%20(IEHS)!5e0!3m2!1ses-419!2sar!4v1700000000000"
+                  "https://www.google.com/maps?q=Pinto%20348%20Tandil&z=17&output=embed"
                 }
               />
             </div>
@@ -212,7 +209,15 @@ export default function ContactSection() {
               <strong className="text-[#15394b]">
                 Instituto de Estudios Histórico-Sociales (IEHS)
               </strong>{" "}
-              · Pinto 348, Tandil
+              ·{" "}
+              <a
+                className="underline hover:text-[#22677e]"
+                href="https://www.google.com/maps/place/Instituto+de+Estudios+Hist%C3%B3rico+Sociales/@-37.328639,-59.139435,5540m/data=!3m1!1e3!4m6!3m5!1s0x95911f99efe2eb67:0xd31c4cf43f6945cc!8m2!3d-37.3286393!4d-59.139435!16s%2Fg%2F11bc8xgjqv?hl=es-AR&entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Pinto 348, Tandil
+              </a>
             </div>
           </div>
         </div>
