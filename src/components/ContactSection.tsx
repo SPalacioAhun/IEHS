@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { FaInstagram, FaYoutube } from "react-icons/fa";
 
 export default function ContactSection() {
   const [form, setForm] = useState({
@@ -218,6 +219,48 @@ export default function ContactSection() {
               >
                 Pinto 348, Tandil
               </a>
+              {/* Redes Sociales */}
+              <div className="mt-3 pt-3 border-t border-gray-200/60">
+                <p className="text-sm text-gray-600 mb-3 font-medium">
+                  Seguinos en nuestras redes:
+                </p>
+                <div className="flex flex-col gap-4">
+                  <a
+                    href="https://x.com/iehs_tandil"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center gap-3 text-gray-600 hover:text-[#22677e] transition-colors"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="w-6 h-6"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path d="M17.53 2.47A11.998 11.998 0 0 0 12 0C5.373 0 0 5.373 0 12c0 2.314.656 4.47 1.787 6.294A11.998 11.998 0 0 0 12 24c6.627 0 12-5.373 12-12 0-2.314-.656-4.47-1.787-6.294A11.998 11.998 0 0 0 17.53 2.47ZM6.545 7.56h2.36l3.01 4.14 3.005-4.14h2.366l-4.17 5.74 4.46 6.16h-2.36l-3.305-4.56-3.31 4.56h-2.36l4.46-6.16-4.01-5.74Z" />
+                    </svg>
+                    <span className="text-sm">X</span>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/iehsunicen?igsh=MTE3enNhMHkxcHVudQ=="
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center gap-3 text-gray-600 hover:text-[#22677e] transition-colors"
+                  >
+                    <FaInstagram className="w-6 h-6" />
+                    <span className="text-sm">Instagram</span>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/channel/UCZe7s2gBuiVT5melN0Pc-bw/feed"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center gap-3 text-gray-600 hover:text-[#22677e] transition-colors"
+                  >
+                    <FaYoutube className="w-6 h-6" />
+                    <span className="text-sm">YouTube</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
