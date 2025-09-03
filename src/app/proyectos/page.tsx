@@ -20,7 +20,7 @@ export default function ProyectosPage() {
               Proyectos de Investigación
             </h1>
 
-            <div className="max-w-2xl mx-auto">
+            <div className="max-w-7xl mx-auto">
               <Proyectos />
             </div>
           </div>
