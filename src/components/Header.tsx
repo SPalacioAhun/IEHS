@@ -24,7 +24,7 @@ const navItems: NavItem[] = [
       { label: "Investigadores", href: "/integrantes/investigadores" },
       { label: "Becarios", href: "/integrantes/becarios" },
       { label: "Colaboradores", href: "/integrantes/colaboradores" },
-      { label: "Estudiantes grado y postgrado", href: "/integrantes/estudiantes" },
+      { label: "Estudiantes de Posgrado", href: "/integrantes/estudiantes" },
     ],
   },
   {

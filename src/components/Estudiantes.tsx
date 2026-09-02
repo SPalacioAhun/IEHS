@@ -1,130 +1,114 @@
-/* eslint-disable @next/next/no-img-element */
-// components/Estudiantes.tsx
 "use client"
-import React, { useState } from "react"
 
-const estudiantes = [
-  { nombre: "Prof. Juan Martín Duana", foto: "", descripcion: "" },
-  { nombre: "Prof. Iñaki Martínez", foto: "", descripcion: "" },
-  { nombre: "Lic. Carla Dátola", foto: "", descripcion: "" },
-];
+import { useEffect, useState } from "react"
+
+type EstudiantePosgrado = {
+  nombre: string
+  descripcion?: string
+  contacto?: string
+}
+
+const estudiantes: EstudiantePosgrado[] = [
+  {
+    nombre: "Pilar Bageneta",
+    descripcion:
+      "Pilar Bageneta es Profesora y Licenciada en Historia por la Universidad Nacional del Centro de la Provincia de Buenos Aires, Magister en Historia por la Universidad de Cantabria (España) y doctoranda en el Doctorado en Historia Moderna por la misma Universidad.\n\nSu tema de investigación se centra en el estudio de los matrimonios fallidos por razón de infidelidades y otros comportamientos que provocaban tensión y quiebre en las relaciones de pareja en Cantabria y el Río de la Plata en el siglo XVIII, proponiendo indagar en los márgenes de decisión y en las capacidades de gestión de las mujeres.",
+    contacto: "mailto:pilarbageneta@gmail.com",
+  },
+  { nombre: "Juan Martín Duana" },
+  {
+    nombre: "Iñaki Martínez Secchiano",
+    descripcion:
+      "Iñaki Martínez Secchiano es Profesor de Historia por la Universidad Nacional del Centro de la Provincia de Buenos Aires. Se encuentra cursando el Doctorado en Historia del Instituto de Estudios Histórico-Sociales (FCH-UNICEN). Su tema de investigación se centra en el exilio vasco en Argentina entre la Guerra Civil española y la consolidación de la España de Franco (1936-1950).",
+    contacto: "mailto:inaki.mshistoria@gmail.com",
+  },
+  {
+    nombre: "Carla Dátola",
+    descripcion:
+      "Carla Dátola es Profesora y Licenciada en Historia por la Universidad Nacional del Centro de la Provincia de Buenos Aires. Doctoranda en el Programa de Doctorado en Historia del Instituto de Estudios Histórico-Sociales (IEHS-UNICEN).\n\nSu línea de investigación se centra en el estudio de las relaciones interétnicas forjadas por los cacicazgos que desenvolvieron en las pampas, que interactuaron con los actores de la frontera bonaerense y la ciudad de Buenos Aires, durante las primeras décadas del siglo XIX, más precisamente entre 1800 y 1833.",
+    contacto: "mailto:carladatolavelez@gmail.com",
+  },
+]
 
 export default function Estudiantes() {
-  const [popupIdx, setPopupIdx] = useState<number | null>(null);
+  const [seleccionado, setSeleccionado] = useState<EstudiantePosgrado | null>(null)
+
+  useEffect(() => {
+    if (!seleccionado) return
+    const cerrarConEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setSeleccionado(null)
+    }
+    document.addEventListener("keydown", cerrarConEscape)
+    return () => document.removeEventListener("keydown", cerrarConEscape)
+  }, [seleccionado])
+
+  const enlace =
+    "text-[#134e5e] underline-offset-4 hover:text-[#f9623e] hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#f9623e]"
 
   return (
-    <section className="max-w-6xl mx-auto px-4 py-12">
-     <h1
-  className="text-2xl sm:text-3xl md:text-5xl font-extrabold mb-10 text-center bg-gradient-to-r from-[#134e5e] via-[#22677e] to-[#f9623e] bg-clip-text text-transparent drop-shadow-md tracking-tight leading-relaxed md:whitespace-nowrap"
->
-  Miembros estudiantes de grado y postgrado
-</h1>
+    <section className="mx-auto max-w-5xl px-4 py-12">
+      <h1 className="mb-10 text-center text-4xl font-extrabold leading-relaxed tracking-tight text-transparent drop-shadow-md bg-gradient-to-r from-[#134e5e] via-[#22677e] to-[#f9623e] bg-clip-text md:text-5xl">
+        Miembros Estudiantes de Posgrado
+      </h1>
 
-
-       <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3">
-  {estudiantes.map((inv, idx) => (
-    <div
-      key={inv.nombre}
-      onClick={() => setPopupIdx(idx)}
-      className="
-        flex flex-col justify-between rounded-3xl shadow-xl
-        transition-transform duration-200 hover:-translate-y-1 cursor-pointer
-        bg-white overflow-hidden min-h-[380px]
-        border border-[#134e5e]/15
-      "
-    >
-      {/* ---------- Cuerpo ---------- */}
-      <div className="flex flex-col items-center px-6 pt-10 pb-6 flex-1">
-        <img
-          src={
-            inv.foto ||
-            `https://ui-avatars.com/api/?name=${encodeURIComponent(inv.nombre)}&background=134e5e&color=fff`
-          }
-          alt={inv.nombre}
-          className="
-            w-24 h-24 rounded-full object-cover mb-4
-            border-4 border-white shadow-md ring-2 ring-[#134e5e]/15
-          "
-        />
-        <p className="text-xs text-[#134e5e] mb-1 tracking-wide uppercase">
-          Miembros estudiantes
-        </p>
-        <h3 className="text-[1.1rem] font-semibold text-[#134e5e] text-center mb-2">
-          {inv.nombre}
-        </h3>
-        <p className="text-sm text-gray-600 text-center line-clamp-3">
-          {inv.descripcion || "—"}
-        </p>
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        {estudiantes.map((estudiante) => (
+          <article
+            key={estudiante.nombre}
+            className="flex h-full min-h-[225px] flex-col rounded-3xl border border-[#134e5e]/15 bg-white p-6 shadow-xl transition-transform duration-200 hover:-translate-y-1"
+          >
+            <p className="mb-1 text-xs uppercase tracking-wide text-[#134e5e]">
+              Estudiante de Posgrado
+            </p>
+            <h2 className="mb-3 text-[1.1rem] font-semibold text-[#134e5e]">
+              {estudiante.nombre}
+            </h2>
+            {estudiante.descripcion && (
+              <p className="mb-5 line-clamp-3 flex-1 whitespace-pre-line text-sm text-gray-600">
+                {estudiante.descripcion}
+              </p>
+            )}
+            {estudiante.contacto && (
+              <div className="mt-auto flex flex-wrap gap-x-4 gap-y-2 border-t border-[#134e5e]/15 pt-4 text-sm font-medium">
+                <button type="button" onClick={() => setSeleccionado(estudiante)} className={enlace}>
+                  Ver perfil
+                </button>
+                <a href={estudiante.contacto} className={enlace}>
+                  Contacto
+                </a>
+              </div>
+            )}
+          </article>
+        ))}
       </div>
-      {/* ---------- Franja inferior bicolor SIN TEXTO NI ICONOS ---------- */}
-      <div
-  className="grid grid-cols-3 text-center text-white text-[0.7rem] font-medium
-             bg-gradient-to-r from-[#134e5e] to-[#f9623e]"
->
-  <div className="py-3">&nbsp;</div>
-  <div className="py-3">&nbsp;</div>
-  <div className="py-3">&nbsp;</div>
-</div>
 
-    </div>
-  ))}
-</div>
-
-      {/* Modal popup */}
-      {popupIdx !== null && (
-        <>
-          {/* Overlay */}
+      {seleccionado && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto p-4">
+          <button type="button" aria-label="Cerrar perfil" className="absolute inset-0 cursor-default bg-black/40" onClick={() => setSeleccionado(null)} />
           <div
-            className="fixed inset-0 bg-black/40 z-40"
-            onClick={() => setPopupIdx(null)}
-          />
-          {/* Modal */}
-          <div className="fixed inset-0 z-50 flex items-center justify-center">
-            <div
-        className="
-          relative flex flex-col items-center
-          rounded-[2rem] shadow-2xl border border-[#22677e]/25
-          max-w-xl w-full pt-16 pb-8 px-8
-          bg-gradient-to-br from-[#eaf3fa] via-[#f7fafc] to-[#fce4d6]
-          animate-fadein
-        "
-        style={{ minHeight: "360px" }}
-      >
-              {/* Cerrar */}
-              <button
-                onClick={() => setPopupIdx(null)}
-                className="absolute top-3 right-4 text-2xl text-[#134e5e] font-bold hover:text-black"
-                aria-label="Cerrar"
-              >
-                ×
-              </button>
-              <img
-                src={
-                  estudiantes[popupIdx].foto ||
-                  `https://ui-avatars.com/api/?name=${encodeURIComponent(
-                    estudiantes[popupIdx].nombre
-                  )}&background=134e5e&color=fff`
-                }
-                alt={estudiantes[popupIdx].nombre}
-                className="w-24 h-24 rounded-full mb-3 object-cover border-4 border-[#134e5e]/30"
-              />
-              <div className="text-lg font-bold text-[#134e5e] text-center  w-full">
-          {estudiantes[popupIdx].nombre}
-        </div>
-        <div className="w-16 h-1 rounded-full my-2 bg-gradient-to-r from-[#134e5e] to-[#f9623e]" />
-        <p className="text-gray-800 text-sm text-justify whitespace-pre-line w-full">
-             {estudiantes[popupIdx].descripcion}
-        </p>
-            </div>
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-estudiante-titulo"
+            className="relative z-10 max-h-[calc(100vh-2rem)] w-full max-w-xl overflow-y-auto rounded-[2rem] border border-[#22677e]/25 bg-gradient-to-br from-[#eaf3fa] via-[#f7fafc] to-[#fce4d6] px-6 py-8 shadow-2xl animate-fadein sm:px-8 sm:py-10"
+          >
+            <button type="button" onClick={() => setSeleccionado(null)} className="absolute right-4 top-3 text-2xl font-bold text-[#134e5e] hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#f9623e]" aria-label="Cerrar perfil">
+              ×
+            </button>
+            <h2 id="modal-estudiante-titulo" className="pr-8 text-center text-lg font-bold text-[#134e5e]">
+              {seleccionado.nombre}
+            </h2>
+            <div className="my-3 h-1 w-16 rounded-full bg-gradient-to-r from-[#134e5e] to-[#f9623e]" />
+            <p className="whitespace-pre-line text-justify text-sm text-gray-800">{seleccionado.descripcion}</p>
+            {seleccionado.contacto && (
+              <a href={seleccionado.contacto} className={`${enlace} mt-6 inline-block text-sm font-medium`}>
+                Contacto
+              </a>
+            )}
           </div>
-        </>
+        </div>
       )}
-      <style>
-        {`
-          @keyframes fadein { from { opacity: 0; transform: scale(0.96); } to { opacity: 1; transform: scale(1); } }
-          .animate-fadein { animation: fadein 0.2s ease; }
-        `}
-      </style>
+
+      <style>{`@keyframes fadein { from { opacity: 0; transform: scale(0.96); } to { opacity: 1; transform: scale(1); } } .animate-fadein { animation: fadein 0.2s ease; }`}</style>
     </section>
-  );
+  )
 }

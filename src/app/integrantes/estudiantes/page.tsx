@@ -3,8 +3,8 @@ import Estudiantes from "@/components/Estudiantes";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Miembros estudiantes de grado y postgrado – IEHS – UNICEN",
-  description: "Estudiantes de grado y postgrado del IEHS",
+  title: "Miembros Estudiantes de Posgrado – IEHS – UNICEN",
+  description: "Miembros estudiantes de posgrado del IEHS",
 };
 
 export default function EstudiantesPage() {
