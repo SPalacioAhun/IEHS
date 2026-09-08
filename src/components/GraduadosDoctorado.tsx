@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-const ANIOS = Array.from({ length: 2024 - 2000 + 1 }, (_, i) => 2000 + i);
+const ANIOS = Array.from({ length: 2025 - 2000 + 1 }, (_, i) => 2000 + i);
 
 const EGRESADOS: { [key: number]: React.ReactNode } = {
   2000: (
@@ -1636,6 +1636,53 @@ const EGRESADOS: { [key: number]: React.ReactNode } = {
     </div>
   </div>
 ),
+
+2025: (
+  <div className="space-y-8">
+    <div>
+      <span className="block text-[#15394b]">
+        <b className="text-[#15394b]">Título:</b> Luis Juan Guerrero. Luces y sombras en la historia de la filosofía argentina: de la Reforma Universitaria al primer peronismo
+      </span>
+      <span className="block text-[#134e5e]">
+        <b className="text-[#15394b]">Tesista:</b> Ricardo M. Ibarlucía
+      </span>
+      <span className="block text-[#15394b]">
+        <b className="text-[#15394b]">Director:</b> Dr. Fernando Devoto
+      </span>
+      <span className="block text-[#134e5e]">
+        <b className="text-[#15394b]">Jurados:</b> Dr. Juan Carlos Pereda Failache (UNAM), Dr. Hugo Vezzetti (UBA-CONICET) y Dr. Ricardo Pasolini (UNICEN-CONICET)
+      </span>
+      <span className="block text-[#15394b]">
+        <b className="text-[#15394b]">Fecha de defensa:</b> 12 de septiembre de 2025
+      </span>
+      <span className="block text-[#555] text-justify leading-relaxed mt-2">
+        La tesis tiene por objetivo presentar a Luis Juan Guerrero en toda la dimensión de su trayectoria como hombre político y editor, traductor, germanista, docente de Ética y Psicología, precursor de los estudios de historia de las ideas filosóficas argentinas y autor de Estética operatoria en sus tres direcciones, una de las obras más ambiciosas y originales que se han escrito en la Argentina.
+        <br /><br />
+        Desde un punto de vista metodológico, el trabajo se aventura en el terreno de la biografía. El interés por la trayectoria intelectual de un filósofo argentino no obedece únicamente a la intención de rescatar una obra caída en el olvido y subrayar su actualidad teórica; estudiándola, se busca abrir una perspectiva en la historia de la filosofía y de las ideas estéticas en tanto aspectos de la historia cultural de la Argentina de la primera mitad del siglo XX.
+      </span>
+    </div>
+    <div>
+      <span className="block text-[#15394b]">
+        <b className="text-[#15394b]">Título:</b> La vida entre muros. Presos, guardias y jueces en las cárceles de la provincia de Buenos Aires (Mercedes, 1854-1906)
+      </span>
+      <span className="block text-[#134e5e]">
+        <b className="text-[#15394b]">Tesista:</b> Gustavo Federico Belzunces
+      </span>
+      <span className="block text-[#15394b]">
+        <b className="text-[#15394b]">Director:</b> Prof. Raúl Fradkin
+      </span>
+      <span className="block text-[#134e5e]">
+        <b className="text-[#15394b]">Jurados:</b> Dra. Elisa Speckman Guerra (UNAM), Dr. Jeremías Silva (UNGS) y Dr. Eduardo Míguez (IEHS-UNICEN)
+      </span>
+      <span className="block text-[#15394b]">
+        <b className="text-[#15394b]">Fecha de defensa:</b> 7 de octubre de 2025
+      </span>
+      <span className="block text-[#555] text-justify leading-relaxed mt-2">
+        La tesis analiza la transición entre las penas coloniales y las penas de encierro hasta fines del siglo XIX, abordando las penas de la justicia del Departamento Centro sobre los presos de la cárcel de Mercedes, con el objeto de determinar su accionar y sus posibles relaciones con la vida institucional de la cárcel. Al mismo tiempo, analiza las practicas institucionales al interior de la prisión observada, haciendo énfasis en el accionar de sus protagonistas, como los presos y los guardias. Finalmente, indaga en las relaciones de esta institución hacia la vida extramuros. Como su relación con la vida de la ciudad donde se ubicó, sus manifestaciones en la prensa, así como sus alcances y límites en los objetivos institucionales que pensaron las elites liberales que las impulsaron.
+      </span>
+    </div>
+  </div>
+),
 };
 
 export default function GraduadosDoctorado() {
@@ -1652,7 +1699,7 @@ export default function GraduadosDoctorado() {
 
 
         <span className="mt-1 text-lg md:text-xl text-[#22677e] font-semibold text-center opacity-80">
-          Tesis defendidas y premiadas | 2000-2024
+          Tesis defendidas y premiadas | 2000-2025
         </span>
       </div>
 
@@ -1754,7 +1801,7 @@ export default function GraduadosDoctorado() {
           {tab === "egresados" && (
             <div>
               <h3 className="text-xl md:text-2xl font-extrabold mb-4 text-[#134e5e]">
-                Egresados del Doctorado <span className="text-base text-[#888]">(2000-2024)</span>
+                Egresados del Doctorado <span className="text-base text-[#888]">(2000-2025)</span>
               </h3>
               <div className="divide-y divide-[#e7f5fa] rounded-lg">
                 {ANIOS.filter(anio => EGRESADOS[anio]).map(anio => (
