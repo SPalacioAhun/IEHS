@@ -38,7 +38,7 @@ const navItems: NavItem[] = [
     label: "Hemeroteca y fondos documentales",
     sub: [
       { label: "Hemeroteca del IEHS", href: "/hemeroteca" },
-      { label: "Fondos", href: "/fondos" },
+      { label: "Fondos Documentales", href: "/fondos" },
     ],
   },
 ]
@@ -112,7 +112,7 @@ export default function Header() {
 
           {/* Botón hamburguesa (mobile) */}
           <button
-            className="md:hidden p-2 ml-2 rounded focus:outline-none"
+            className="lg:hidden p-2 ml-2 rounded focus:outline-none"
             onClick={() => setMenuOpen((v) => !v)}
             aria-label="Abrir menú"
           >
@@ -122,7 +122,7 @@ export default function Header() {
           </button>
 
           {/* Nav para desktop */}
-          <nav className="hidden md:flex space-x-6 items-center">
+          <nav className="hidden lg:flex space-x-6 items-center">
             {navItems.map((item, idx) =>
               item.sub ? (
                 <Dropdown
@@ -238,7 +238,7 @@ function MobileMenu({
 
   return (
     <div
-      className={`fixed inset-0 bg-white z-50 flex flex-col md:hidden transition-transform duration-200 ${
+      className={`fixed inset-0 bg-white z-50 flex flex-col lg:hidden transition-transform duration-200 ${
         open ? "translate-x-0" : "-translate-x-full"
       }`}
       style={{ boxShadow: open ? "0 0 0 100vw rgba(0,0,0,0.20)" : "none" }}
