@@ -18,6 +18,7 @@ type NavItem = {
 // ---- Items de navegación ----
 const navItems: NavItem[] = [
   { label: "Autoridades", href: "/autoridades" },
+  { label: "Grupos de Estudio", href: "/grupos-de-estudio" },
   {
     label: "Integrantes",
     sub: [
@@ -97,16 +98,16 @@ export default function Header() {
 
       {/* Main nav */}
       <div className="bg-white relative z-40">
-        <div className="container mx-auto px-6 py-4 flex justify-between items-center relative z-40">
+        <div className="container mx-auto px-8 sm:px-10 lg:px-12 py-4 flex justify-between items-center relative z-40">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 min-w-[140px]">
+          <Link href="/" className="flex items-center space-x-2 min-w-[88px] sm:min-w-[104px] lg:min-w-[128px]">
             <Image
-              src="/logo-iehs.gif"
-              alt="Logo IEHS UNICEN"
-              width={260}
-              height={120}
+              src="/Logo IEHS 40 años 2.jpg"
+              alt="Logo del Instituto de Estudios Histórico-Sociales - 40 años"
+              width={132}
+              height={150}
               priority
-              className="h-18 w-auto max-w-[260px]"
+              className="h-[96px] w-auto max-w-[86px] object-contain sm:h-[112px] sm:max-w-[100px] lg:h-[128px] lg:max-w-[128px]"
             />
           </Link>
 
@@ -247,11 +248,12 @@ function MobileMenu({
       <div className="flex items-center justify-between px-6 py-4 border-b">
         <Link href="/" onClick={() => setOpen(false)}>
           <Image
-            src="/logo-iehs.gif"
-            alt="Logo IEHS UNICEN"
-            width={120}
-            height={80}
+            src="/Logo IEHS 40 años 2.jpg"
+            alt="Logo del Instituto de Estudios Histórico-Sociales - 40 años"
+            width={88}
+            height={100}
             priority
+            className="h-[92px] w-auto max-w-[80px] object-contain"
           />
         </Link>
         <button

@@ -11,11 +11,11 @@ export default function Footer() {
         <div className="flex flex-col items-start gap-2 max-w-md ml-[74px]">
   {/* Logo */}
   <Image
-    src="/logo_footer.png"
-    alt="IEHS Logo"
-    width={230}
-    height={60}
-    className="mb-2"
+    src="/Logo IEHS 40 años 2.jpg"
+    alt="Logo del Instituto de Estudios Histórico-Sociales - 40 años"
+    width={132}
+    height={150}
+    className="mb-2 h-[132px] w-auto max-w-[132px] object-contain"
     priority
   />
   {/* Textos */}

@@ -31,8 +31,8 @@ export default function RequisitosDoctorado() {
       >
         {/* MARCA DE AGUA, siempre detrás del contenido */}
         <img
-          src="/logo-iehs.gif"
-          alt="Marca de agua IEHS"
+          src="/Logo IEHS 40 años 2.jpg"
+          alt="Logo del Instituto de Estudios Histórico-Sociales - 40 años"
           className="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none"
           style={{
             width: "820px",   // Bien grande!

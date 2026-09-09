@@ -171,10 +171,10 @@ export default function Home() {
             >
               {/* Marca de agua: logo centrado, opaco y no interactivo */}
               <Image
-                src="/logo-iehs.gif"
-                alt="Logo como marca de agua"
-                width={380}
-                height={380}
+                src="/Logo IEHS 40 años 2.jpg"
+                alt="Logo del Instituto de Estudios Histórico-Sociales - 40 años"
+                width={260}
+                height={295}
                 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10 pointer-events-none select-none"
               />
 
@@ -221,10 +221,10 @@ export default function Home() {
             >
               {/* Marca de agua: logo centrado, opaco y no interactivo */}
               <Image
-                src="/logo-iehs.gif"
-                alt="Logo como marca de agua"
-                width={380}
-                height={380}
+                src="/Logo IEHS 40 años 2.jpg"
+                alt="Logo del Instituto de Estudios Histórico-Sociales - 40 años"
+                width={260}
+                height={295}
                 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10 pointer-events-none select-none"
               />
 
@@ -253,10 +253,10 @@ export default function Home() {
             >
               {/* Marca de agua: logo centrado, opaco y no interactivo */}
               <Image
-                src="/logo-iehs.gif"
-                alt="Logo como marca de agua"
-                width={450}
-                height={450}
+                src="/Logo IEHS 40 años 2.jpg"
+                alt="Logo del Instituto de Estudios Histórico-Sociales - 40 años"
+                width={300}
+                height={340}
                 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10 pointer-events-none select-none"
               />
               <div className="relative z-10 w-full text-center">
@@ -274,10 +274,10 @@ export default function Home() {
             >
               {/* Marca de agua: logo centrado, opaco y no interactivo */}
               <Image
-                src="/logo-iehs.gif"
-                alt="Logo como marca de agua"
-                width={450}
-                height={450}
+                src="/Logo IEHS 40 años 2.jpg"
+                alt="Logo del Instituto de Estudios Histórico-Sociales - 40 años"
+                width={300}
+                height={340}
                 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10 pointer-events-none select-none"
               />
               <div className="relative z-10 w-full text-center">
