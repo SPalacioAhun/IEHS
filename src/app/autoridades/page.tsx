@@ -12,7 +12,7 @@ export default function AutoridadesPage() {
     <div className="flex flex-col min-h-screen bg-white">
       <Header />
 
-      <main className="flex-grow py-16 bg-white">
+      <main className="flex-grow bg-[#f6f2e9]">
         <Autoridades />
       </main>
 

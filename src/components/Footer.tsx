@@ -1,96 +1,11 @@
-// components/Footer.tsx
 import Image from "next/image";
-import Link from "next/link";
 
+const socialLinks = [["Facebook", "https://web.facebook.com/iehsunicen/?_rdc=1&_rdr#"], ["X", "https://x.com/iehs_tandil"], ["Instagram", "https://www.instagram.com/iehsunicen?igsh=MTE3enNhMHkxcHVudQ=="], ["YouTube", "https://www.youtube.com/channel/UCZe7s2gBuiVT5melN0Pc-bw/feed"]];
+const institutionalLogos = [["IGEHCS", "/igesfooter.png", "https://igehcs.conicet.gov.ar/"], ["Facultad de Ciencias Humanas", "/facufooter.png", "https://www.fch.unicen.edu.ar/"], ["Universidad Nacional del Centro", "/unifooter.png", "https://www.unicen.edu.ar/"]];
 
 export default function Footer() {
-  return (
-    <footer className="bg-gray-800 text-gray-200 py-10 mt-8">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-        {/* Izquierda: Logo IEHS + descripción */}
-        <div className="flex flex-col items-start gap-2 max-w-md ml-[74px]">
-  {/* Logo */}
-  <Image
-    src="/Logo IEHS 40 años 2.jpg"
-    alt="Logo del Instituto de Estudios Histórico-Sociales - 40 años"
-    width={132}
-    height={150}
-    className="mb-2 h-[132px] w-auto max-w-[132px] object-contain"
-    priority
-  />
-  {/* Textos */}
-  <span className="italic text-xs opacity-80">
-    Instituto de Estudios Histórico-Sociales, Prof. Juan Carlos Grosso.
-  </span>
-  <span className="text-xs opacity-70 mt-1">
-    Pinto 348-C.P 7000, Tandil, Buenos Aires, Argentina.
-  </span>
-</div>
-
-
-        {/* Derecha: Logos institucionales */}
-        <div className="flex flex-row gap-6 items-center mt-[48px] pl-8 pr-16">
-              <Link
-                href="https://www.fch.unicen.edu.ar/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-transform duration-150 opacity-80 hover:opacity-100 hover:shadow-2xl hover:scale-115 hover:ring-4 hover:ring-white/50 cursor-pointer rounded-full"
-                title="Facultad de Ciencias Humanas"
-              >
-                <Image
-                  src="/facufooter.png"
-                  alt="Facultad de Ciencias Humanas"
-                  width={60}
-                  height={60}
-                  className="rounded-full"
-                />
-              </Link>
-              <Link
-                href="https://www.unicen.edu.ar/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-transform duration-150 opacity-80 hover:opacity-100 hover:shadow-2xl hover:scale-115 hover:ring-4 hover:ring-white/50 cursor-pointer rounded-full"
-                title="UNICEN"
-              >
-                <Image
-                  src="/unifooter.png"
-                  alt="UNICEN"
-                  width={60}
-                  height={60}
-                  className="rounded-full"
-                />
-              </Link>
-              <Link
-                href="https://igehcs.conicet.gov.ar/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-transform duration-150 opacity-80 hover:opacity-100 hover:shadow-2xl hover:scale-115 hover:ring-4 hover:ring-white/50 cursor-pointer rounded-full"
-                title="CONICET IGHES"
-              >
-                <Image
-                  src="/igesfooter.png"
-                  alt="CONICET IGHES"
-                  width={60}
-                  height={60}
-                  className="rounded-full"
-                />
-              </Link>
-          </div>
-      </div>
-
-      {/* Abajo: derechos y (futuras) redes */}
-      <div className="container mx-auto flex flex-col md:flex-row items-center md:justify-between mt-8 border-t border-gray-700 pt-4 text-xs">
-  {/* El texto siempre centrado en mobile, y centrado en desktop porque el div es w-full */}
-  <div className="w-full text-center">
-    <span>
-      © {new Date().getFullYear()} IEHS – UNICEN. Todos los derechos reservados.
-    </span>
-  </div>
-  <div className="flex gap-3 mt-2 md:mt-0">
-    {/* Links a redes sociales (placeholder) */}
-  </div>
-</div>
-
-    </footer>
-  );
+  return <footer className="site-footer">
+    <div className="site-shell site-footer__top"><div className="site-footer__identity"><Image src="/Logo IEHS 40 años 2.jpg" alt="Logo del Instituto de Estudios Histórico-Sociales - 40 años" width={3780} height={4288} className="site-footer__logo" /><p>Instituto de Estudios Histórico-Sociales,<br />Prof. Juan Carlos Grosso.<br />Pinto 348-C.P 7000, Tandil, Buenos Aires, Argentina.</p></div><div className="site-footer__socials"><p>Seguinos en nuestras redes:</p><nav aria-label="Redes sociales">{socialLinks.map(([label, href]) => <a key={label} href={href} target="_blank" rel="noreferrer">{label}</a>)}</nav></div></div>
+    <div className="site-shell site-footer__bottom"><nav className="site-footer__institutional" aria-label="Instituciones">{institutionalLogos.map(([alt, src, href]) => <a key={alt} href={href} target="_blank" rel="noreferrer" title={alt}><Image src={src} alt={alt} width={116} height={114} /></a>)}</nav><p>© 2026 IEHS – UNICEN. Todos los derechos reservados.</p></div>
+  </footer>;
 }
